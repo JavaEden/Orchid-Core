@@ -1,0 +1,813 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Copper Demo</title>
+
+
+<meta name="description" content="Build and deploy beautiful documentation sites that grow with you">
+
+
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/869b433b/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/plugins.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-full">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="tile is-ancestor">
+  <div class="tile is-vertical">
+  
+    <div class="tile">
+    
+      <div class="tile is-parent is-4 is-vertical">
+      
+
+        <a href="https://github.com/copper-leaf/trellis" 
+class="tile is-child hover notification is-success is-clearfix "
+>
+        
+          <span class="icon is-pulled-right" style="margin-right: -20px;">
+                    <i class="fas fa-external-link-alt"></i>
+                </span>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Trellis</span></p>
+<p class="subtitle"><span class="stars">
+    <span class="icon"><i class="fas fa-star"></i></span>
+    <span>3</span>
+</span></p>
+
+<div class="subtitle"><p>A Kotlin implementation of the Specification Pattern</p></div>
+
+
+        </a>
+      
+      </div>
+    
+      <div class="tile is-parent is-8 is-vertical">
+      
+
+        <a href="https://github.com/copper-leaf/clog" 
+class="tile is-child hover notification is-primary is-clearfix "
+>
+        
+          <span class="icon is-pulled-right" style="margin-right: -20px;">
+                    <i class="fas fa-external-link-alt"></i>
+                </span>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Clog</span></p>
+<p class="subtitle"><span class="stars">
+    <span class="icon"><i class="fas fa-star"></i></span>
+    <span>14</span>
+</span></p>
+
+<div class="subtitle"><p>Zero-config Kotlin multiplatform logging utility</p></div>
+
+
+        </a>
+      
+      </div>
+    
+    </div>
+  
+    <div class="tile">
+    
+      <div class="tile is-parent is-4 is-vertical">
+      
+
+        <a href="https://github.com/copper-leaf/kudzu" 
+class="tile is-child hover notification is-info is-clearfix "
+>
+        
+          <span class="icon is-pulled-right" style="margin-right: -20px;">
+                    <i class="fas fa-external-link-alt"></i>
+                </span>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Kudzu</span></p>
+<p class="subtitle"><span class="stars">
+    <span class="icon"><i class="fas fa-star"></i></span>
+    <span>2</span>
+</span></p>
+
+<div class="subtitle"><p>A monadic (I think...) recursive-descent parser written in Kotlin</p></div>
+
+
+        </a>
+      
+
+        <a href="https://github.com/copper-leaf/krow" 
+class="tile is-child hover notification is-primary is-clearfix "
+>
+        
+          <span class="icon is-pulled-right" style="margin-right: -20px;">
+                    <i class="fas fa-external-link-alt"></i>
+                </span>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Krow</span></p>
+<p class="subtitle"><span class="stars">
+    <span class="icon"><i class="fas fa-star"></i></span>
+    <span>2</span>
+</span></p>
+
+<div class="subtitle"><p>A small library for generating tables in ASCII or HTML formats</p></div>
+
+
+        </a>
+      
+      </div>
+    
+      <div class="tile is-parent is-8 is-vertical">
+      
+
+        <a href="https://github.com/orchidhq/Orchid" 
+class="tile is-child hover notification is-danger is-clearfix "
+>
+        
+          <span class="icon is-pulled-right" style="margin-right: -20px;">
+                    <i class="fas fa-external-link-alt"></i>
+                </span>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Orchid</span></p>
+<p class="subtitle"><span class="stars">
+    <span class="icon"><i class="fas fa-star"></i></span>
+    <span>436</span>
+</span></p>
+
+<div class="subtitle"><p>Build and deploy beautiful documentation sites that grow with you</p></div>
+
+
+        </a>
+      
+      </div>
+    
+    </div>
+  
+    <div class="tile">
+    
+      <div class="tile is-parent is-12 is-vertical">
+      
+
+        <a href="https://orchid.run/news/2020-5-28/0-21-0-released" 
+class="tile is-child hover notification is-info is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>0.21.0 Released</span></p>
+<p class="subtitle">May 2020 Orchid News</p>
+
+<div class="subtitle"><p>Being stuck at home may not be the most exciting, but it has given me lots of time to fix bugs and make Orchid better
+for you! This latest release, 0.21.0, includes many bug fixes identified (and sometimes fixed!) by the community, and
+also...</p></div>
+
+
+        </a>
+      
+      </div>
+    
+    </div>
+  
+    <div class="tile">
+    
+      <div class="tile is-parent is-4 is-vertical">
+      
+
+        <a href="https://orchid.run" 
+class="tile is-child hover notification is-success is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Home</span></p>
+<p class="subtitle">Ut tempor sed nisi et scelerisque. Nam.</p>
+
+
+        </a>
+      
+
+        <a href="https://orchid.run" 
+class="tile is-child hover notification is-info is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Home</span></p>
+<p class="subtitle">Aliquam vitae metus at ante sagittis tristique.</p>
+
+
+        </a>
+      
+      </div>
+    
+      <div class="tile is-parent is-4 is-vertical">
+      
+
+        <a href="https://orchid.run" 
+class="tile is-child hover notification is-primary is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Home</span></p>
+<p class="subtitle">Aliquam a ex non erat ultricies egestas.</p>
+
+
+        </a>
+      
+      </div>
+    
+      <div class="tile is-parent is-4 is-vertical">
+      
+
+        <a href="https://orchid.run" 
+class="tile is-child hover notification is-success is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Home</span></p>
+<p class="subtitle">Class aptent taciti sociosqu ad litora torquent.</p>
+
+
+        </a>
+      
+
+        <a href="https://orchid.run" 
+class="tile is-child hover notification is-info is-clearfix "
+>
+        
+        
+
+
+
+
+    
+
+
+<p class="title"><span>Home</span></p>
+<p class="subtitle">Donec malesuada dui et sem congue mollis.</p>
+
+
+        </a>
+      
+      </div>
+    
+    </div>
+  
+  </div>
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" disabled>
+    <span class="inner">
+      <span class="icon"><i class="fas fa-chevron-left"></i></span>
+      Previous
+    </span>
+  </a>
+
+
+
+  <a class="pagination-next" disabled>
+    <span class="inner">
+      Next
+      <span class="icon"><i class="fas fa-chevron-right"></i></span>
+    </span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/869b433b/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/869b433b/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/869b433b/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/869b433b/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/869b433b/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

@@ -1,0 +1,922 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>All About Archetypes</title>
+
+
+<meta name="description" content="Learn the unique way that Orchid enables a site to grow and adapt to large sites.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/whats-on-the-menu">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/amazing-admin-panel">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/all-about-archetypes" aria-current="page">All About Archetypes</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">All About Archetypes</h2>
+<p class="subtitle is-4">Learn the unique way that Orchid enables a site to grow and adapt to large sites.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>While Orchid can be used for smaller sites, it really starts to shine when you start using Archetypes to easily
+configure many pages at once. This tutorial will introduce you to this concept.</p>
+<p>Before continuing, make sure you have followed along with the previous tutorial and have started your local Orchid
+server with <code>gradle orchidServe</code>. We will be building on that example in this tutorial.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/06">OrchidTutorials repository</a>.</p>
+<h2 id="the-problem-with-large-sites"><a href="#the-problem-with-large-sites" id="the-problem-with-large-sites" class="anchor"></a>The Problem With Large Sites</h2>
+<p>There are literally hundreds of static site generators out there, but nearly all of them are affected with the same
+issue: how do you easily manage a site which may contain hundreds, or even <em>thousands</em>, of pages? Most sites will
+contain large collections of pages which all need similar configurations, but most generators do not offer any way to
+keep the configurations for all these pages in sync. Scaffolding pages with common configurations built-in only works
+for new pages, but doesn't help at all when you are making large changes to the site. There must be a better way!</p>
+<p>Orchid was created to solve exactly these kinds of issues, of building and maintaining sites at large scale over a long
+period of time and many iterations. It principally uses a technique called <strong>Archetypes</strong> to solve this issue, but
+before we get too deep into the solution, let's make sure we fully understand the problem.</p>
+<h3 id="repeated-configuration"><a href="#repeated-configuration" id="repeated-configuration" class="anchor"></a>Repeated Configuration</h3>
+<p>In our example of building a website for a small business with multiple locations, we ended up creating one page for
+each location. The final site has pages at <code>/locations/houston</code>, <code>/locations/dallas</code> and <code>/locations/austin</code>, with
+corresponding Markdown files within the <code>pages</code> directory of our site resources directory. These files each contain a
+lot of information in their Front Matter that is unique to that one location, such as its address, phone number, or
+business hours, but also contains quite a lot of information that is intended to be the same across <em>all</em> of the
+locations. An example of the full Front Matter for one of our locations pages follows:</p>
+<pre><code class="language-yaml">---
+city: 'Houston'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+template: 'location' 
+menu:
+  - type: pageIds
+    structure: nested
+  - type: separator
+    title: 'All Locations'
+  - type: pages
+    group: 'locations'
+---
+</code></pre>
+<p>We can break this one Front Matter heading into two sections: one section for the configuration values common to all
+locations, and one unique to this location:</p>
+<pre><code class="language-yaml"># unique to Houston location
+city: 'Houston'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+  
+# common to all locations
+template: 'location' 
+menu:
+  - type: pageIds
+    structure: nested
+  - type: separator
+    title: 'All Locations'
+  - type: pages
+    group: 'locations'
+---
+</code></pre>
+<p>While we could keep copying this common configuration to all new locations, it definitely isn't ideal. It requires us to
+make sure that all new locations have properly copied over this new configuration, or else setting up a scaffold to do
+this for us that will surely get out of date at some point in the future.</p>
+<h3 id="inflexible-configuration"><a href="#inflexible-configuration" id="inflexible-configuration" class="anchor"></a>Inflexible Configuration</h3>
+<p>Another problem with managing the configurations for many pages manually or via scaffolding is that it makes it
+incredibly difficult to play around with the settings to find what works best for all pages. If you were to set up a few
+pages, or a few hundred pages, using the <code>location</code> page template as shown earlier, and then later decided to change it,
+you would have a long and difficult road ahead of you. Using static configuration and scaffolding just doesn't work for
+long-term site maintenance or iterative development.</p>
+<h2 id="orchid-archetypes"><a href="#orchid-archetypes" id="orchid-archetypes" class="anchor"></a>Orchid Archetypes</h2>
+<p>Orchid has a unique way of addressing this problem, using a technique called <em>Archetypes</em>. The main idea is very
+straightforward: instead of using the same configurations in the Front Matter of many pages, you can just put it in
+<code>config.yml</code> instead, and Orchid will treat it as though it were in the Front Matter!</p>
+<h3 id="all-pages-archetype"><a href="#all-pages-archetype" id="all-pages-archetype" class="anchor"></a>&quot;All Pages&quot; Archetype</h3>
+<p>Let's look at an example; add the following snippet to your <code>config.yml</code>, and remove the common configuration from all
+your locations pages:</p>
+<pre><code class="language-yaml">allPages:
+  template: 'location' 
+  menu:
+    - type: pageIds
+      structure: nested
+    - type: separator
+      title: 'All Locations'
+    - type: pages
+      group: 'locations'
+</code></pre>
+<p>Look at that, your site looks the exact same! Only now, you don't have a bunch of configuration copied amongst your
+locations files! By moving the common configuration to the <code>allPages</code> property in <code>config.yml</code>, you've instructed Orchid
+to use that configuration data <em>in addition</em> to the config present in each page's Front Matter.</p>
+<h3 id="page-group-archetype"><a href="#page-group-archetype" id="page-group-archetype" class="anchor"></a>&quot;Page Group&quot; Archetype</h3>
+<p>But this solution isn't perfect yet. The <code>allPages</code> Archetype data will be used on <em>every</em> page that Orchid generates,
+which means all our services and staff pages will also start using the page template and menu we've set up. We only want
+our locations pages to have the configuration. Fortunately, Orchid comes with many different archetypes, which are
+more scoped to just the pages you want them on. Let's look at another one that will work much better:</p>
+<pre><code class="language-yaml">pages:
+  locations:
+    template: 'location' 
+    menu:
+      - type: pageIds
+        structure: nested
+      - type: separator
+        title: 'All Locations'
+      - type: pages
+        group: 'locations'
+</code></pre>
+<p>This time, instead of putting the archetype data at <code>allPages</code> in <code>config.yml</code>, we put it at <code>pages.locations</code>. Now,
+when the site rebuilds, this configuration data will only be pulled into our locations pages but not the services or
+staff pages, just like we want!</p>
+<h3 id="whats-going-on-here"><a href="#whats-going-on-here" id="whats-going-on-here" class="anchor"></a>What's Going On Here?</h3>
+<p>You'll notice that <code>pages</code> is the name of the Pages plugin which creates our locations pages, and that our locations are
+all in the <code>locations/</code> top-level subdirectory, which gives them a &quot;group&quot; of <code>locations</code>. The &quot;static pages&quot; plugin is
+opinionated in this way, and expects that pages in subdirectories are related, and so provides its own custom Archetype
+to help with the configuration of that group. You can set up dedicated &quot;page group&quot; configurations for the other groups
+as well, and they will automatically adapt.</p>
+<p>Other plugins each have their own opinionated conventions for Archetypes as well. For example, the &quot;Posts&quot; plugin allows
+similar configuration to be pulled from <code>config.yml</code> for each post's category, and the &quot;Wiki&quot; plugin does the same for
+each section.</p>
+<p>There are many different types of Archetypes. Most will pull data from <code>config.yml</code>, some work in completely different
+ways, but they are all working together to fetch the configuration values you need without having to specify them all
+directly in a page's Front Matter.</p>
+<p>With so many different ways to configure each page it can be a bit tricky to keep it all straight, but the next tutorial
+will show you how Orchid's self-documenting nature and its admin panel allows you to find all this information for
+yourself.</p>
+<h3 id="using-multiple-archetypes"><a href="#using-multiple-archetypes" id="using-multiple-archetypes" class="anchor"></a>Using Multiple Archetypes</h3>
+<p>Pages usually have more than one possible archetype, and you are able to mix configuration values from all of them at
+the same time. For example, you can use the &quot;all pages&quot; Archetype to set all pages in your site to use a given layout
+template, and then use the &quot;page group&quot; Archetype to customize the page template. There are a few things to keep in
+mind, however, when configuring pages with multiple Archetypes:</p>
+<ul>
+<li>For single values (such as Strings or numbers):
+<ul>
+<li>Archetypes are prioritized. If multiple Archetypes provide the same property, the value from the Archetype with
+the highest priority is chosen. For example, the &quot;page group&quot; Archetype has higher priority than the &quot;all pages&quot;
+Archetype since it is more specialized, so if both archetypes set a layout, the one set by the &quot;page group&quot;
+archetype would be used.</li>
+<li>Values specified in a page's Front Matter <em>always</em> override Archetype values. For example, if the &quot;page group&quot;
+Archetype set the layout, it can be overridden for a single page by setting the layout in that page's Front
+Matter.</li>
+</ul>
+</li>
+<li>For lists or maps:
+<ul>
+<li>List items are concatenated together. The order in which list items are added is unspecified, but most items that
+are configured as a list (such as menu items) have a way of manually specifying the sort order that doesn't rely
+on the order the list items originally appear in.</li>
+<li>Maps are combined with a deep merge. If multiple Archetypes include the same key, the values at each key are
+recursively combined with this same strategy, where higher-priority Archetypes override single values, and lists
+and maps are merged together.</li>
+</ul>
+</li>
+</ul>
+<p>Using this knowledge, let's set up our locations pages using both the &quot;all pages&quot; and &quot;page groups&quot; archetypes. We'll
+also go ahead and set up similar archetype configs for the services and staff pages. Replace the <code>config.yml</code> contents
+with the following snippet:</p>
+<pre><code class="language-yaml">theme:
+  primaryColor: '#dd9999'
+  menu:
+    - type: 'page'
+      itemId: 'Locations'
+    - type: 'page'
+      itemId: 'Services'
+    - type: 'page'
+      itemId: 'Staff'
+
+allPages:
+  template: 'page'
+  menu:
+    - type: pageIds
+      structure: nested
+      order: 1
+
+pages:
+  locations:
+    template: 'location'
+    menu:
+      - type: separator
+        title: 'All Locations'
+        order: 2
+      - type: pages
+        group: 'locations'
+        order: 3
+</code></pre>
+<p>When the site rebuilds, you'll notice that the <code>template</code> for the locations pages is set to <code>location</code>, and that all
+pages have the <code>pageIds</code> menu item, which has been set from the &quot;all pages&quot; archetype, while the &quot;page groups&quot; archetype
+added the page menu items for all locations.</p>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>As your site grows in scope and complexity, there is a need to be able to configure it accordingly. There are many pages
+that are similar, and many of those might have subtle nuances that need to be addressed individually. Orchid's
+Archetypes gives you the freedom to do exactly that, so let's recap:</p>
+<ol>
+<li>Large sites typically lead to lots of configuration repetition which doesn't scale very well, and is very difficult
+to change once established.</li>
+<li>Orchid allows pages to be configured from multiple sources, not just from its Front Matter. Most commonly, this
+additional configuration comes from the same <code>config.yml</code> that you can use to configure the rest of the site, so
+everything is nicely managed from one location.</li>
+<li>The specifics of where in <code>config.yml</code> the Archetype data comes from is determined by the individual plugin. Plugins
+each have their own conventions for how to structure Archetype data that makes the most sense for that one plugin.</li>
+<li>Multiple Archetypes can be used simultaneously, and are ordered such that more-specific Archetypes override
+configurations from more-general ones. When multiple archetypes define lists or maps at the same key, they are
+merged recursively rather than overriding one another.</li>
+</ol>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#the-problem-with-large-sites" class="">
+  
+  The Problem With Large Sites
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#repeated-configuration" class="">
+  
+  Repeated Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#inflexible-configuration" class="">
+  
+  Inflexible Configuration
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#orchid-archetypes" class="">
+  
+  Orchid Archetypes
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#all-pages-archetype" class="">
+  
+  &quot;All Pages&quot; Archetype
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#page-group-archetype" class="">
+  
+  &quot;Page Group&quot; Archetype
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#whats-going-on-here" class="">
+  
+  What&#39;s Going On Here?
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#using-multiple-archetypes" class="">
+  
+  Using Multiple Archetypes
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/all-about-archetypes 268777039 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/whats-on-the-menu">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    What&#39;s on the Menu?
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/amazing-admin-panel">
+    The Amazing, Auto-Documenting Admin Panel
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

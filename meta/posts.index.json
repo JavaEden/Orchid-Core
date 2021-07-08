@@ -1,0 +1,433 @@
+{
+  "ownKey": "posts",
+  "childrenPages": {
+    "news": {
+      "ownKey": "news",
+      "childrenPages": {
+        "2019-5-7": {
+          "ownKey": "2019-5-7",
+          "childrenPages": {"in-bloom": {
+            "ownKey": "in-bloom",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-5-7",
+                "baseUrl": "https://orchid.run",
+                "fileName": "in-bloom",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-5-7/in-bloom"
+              },
+              "next": {
+                "path": "news/2019-9-10",
+                "baseUrl": "https://orchid.run",
+                "fileName": "summer-recap",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-9-10/summer-recap"
+              },
+              "previous": {
+                "path": "news/2019-4-3",
+                "baseUrl": "https://orchid.run",
+                "fileName": "march-madness",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-4-3/march-madness"
+              },
+              "description": "April 2019 Orchid News",
+              "title": "April 2019 Update: In Bloom",
+              "content": "<p>April has just ended, which means summer is coming! April in Texas means lots of rain, the first hot days of summer, and bluebonnets in bloom along every highway. It's also been a relatively slow month for Orchid, but lots of really cool stuff is just about to bloom here too!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 196 stars on Github. Just 4 more stars until the next major milestone of 200, will you help us get there?<\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Orchid is now at version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.16.10\">0.16.10<\/a>, with a few minor updates released throughout the month.<\/p>\n<ul>\n<li>Orchid no longer includes any Lombok code, for a more stable codebase and a better roadmap for converting the remaining Java code to Kotlin.<\/li>\n<li>Relative base URLs are now supported<\/li>\n<li>Adds <code>baseUrl<\/code> and <code>homepageUrl<\/code> filters to be more tolerant when formatting ad-hoc URLs<\/li>\n<li>Updates to Pebble 3.0.9, which includes the <a href=\"https://pebbletemplates.io/wiki/tag/embed/\"><code>embed<\/code><\/a> tag I contributed to that project. This will go a long way in improving theme development in Orchid<\/li>\n<li>Improved error-handling<\/li>\n<\/ul>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>I've been pretty busy in April and haven't had as much time to dedicate to Orchid development. One of my other hobbies is woodworking, and I've been taking some time in this nice weather to build a new coffee table as a late Christmas present to my wife. I'm pretty proud of my work on it, it's teaching me some skills that are valuable in software development, and you can keep an eye out for a blog post on that! Here's my progress on this build so far:<\/p>\n<p><img src=\"https://thepracticaldev.s3.amazonaws.com/i/ur5u51trpnk2ugquizpj.png\" alt=\"Design in SketchUp\" /><\/p>\n<p><img src=\"https://thepracticaldev.s3.amazonaws.com/i/z0r4l8l1xbu9ddj82gmt.jpg\" alt=\"Tabletop in Progress\" /><\/p>\n<p>But despite that, I'm also making some great progress toward the next major release, 0.17.0! This will be a significant refactoring and improvement of the wiki and deployment features in Orchid to allow better integrations with all the major Git hosting platforms and pave the way for easier integration of similar features in the future.<\/p>\n<p>It's a pretty significant change and is taking a lot of work, but I have a goal of finally getting it out this month! Here's the full list of features that you can expect in this release:<\/p>\n<ul>\n<li>Netlify deploys optimized for really large sites, and able to upload <a href=\"https://www.netlify.com/products/functions/\">serverless Functions<\/a><\/li>\n<li>Deploy site to GitHub, Bitbucket, GitLab, or Azure DevOps (currently, only GitHub is supported)<\/li>\n<li>Import wiki content directly from GitHub Wikis<\/li>\n<\/ul>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-1-16": {
+          "ownKey": "2019-1-16",
+          "childrenPages": {"post-holidays-edition": {
+            "ownKey": "post-holidays-edition",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-1-16",
+                "baseUrl": "https://orchid.run",
+                "fileName": "post-holidays-edition",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-1-16/post-holidays-edition"
+              },
+              "next": {
+                "path": "news/2019-2-11",
+                "baseUrl": "https://orchid.run",
+                "fileName": "where-it-got-cold-in-texas",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-2-11/where-it-got-cold-in-texas"
+              },
+              "previous": {
+                "path": "news/2018-11-28",
+                "baseUrl": "https://orchid.run",
+                "fileName": "biggest-update-yet",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2018-11-28/biggest-update-yet"
+              },
+              "description": "December 2018 Orchid News",
+              "title": "December 2018 Update: Post-Holidays Edition",
+              "content": "<p>How it is already halfway through January? I apologize this update is so late, the holidays have kept me very busy and time just got away from me. But this is software development, and deadlines slip all the time, right? 😜<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 127 (or 0b1111111 in binary) stars on Github! Thanks for all the support, let's keep it going strong!<\/p>\n<p>I'm also seeing more activity on Orchid's <a href=\"https://github.com/orchidhq/orchid/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc\">issue tracker<\/a>, which means people are trying it out! I do my best to answer each issue within a day or so, and this is the best way to get in contact with me if you're having issues or found a bug, as it helps everyone else out as well.<\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Orchid is now at version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.15.0\">0.15.3<\/a>, with most changes being small bugfixes or minor usability improvements.<\/p>\n<p>Most of the month, however, was spent writing new tutorials, to guide you through Orchid's best features. The most up-to-date versions of these tutorials are in <a href=\"https://orchid.run/wiki/learn\">Orchid's documentation site<\/a>, but you can also find them right here on Dev.to!<\/p>\n<p><a href=\"https://orchid.run/wiki/learn/tutorials/whats-on-the-menu\">What's on the Menu?<\/a><\/p>\n<p><a href=\"https://orchid.run/wiki/learn/tutorials/all-about-archetypes\">All About Archetypes<\/a><\/p>\n<p><a href=\"https://orchid.run/wiki/learn/tutorials/amazing-admin-panel\">The Amazing, Auto-Documenting Admin Panel<\/a><\/p>\n<h1 id=\"coming-soon\"><a href=\"#coming-soon\" id=\"coming-soon\" class=\"anchor\"><\/a>Coming Soon<\/h1>\n<p>As part of Orchid's never-ending quest to be the single best tool for code documentation, I'm excited to say that research into Groovy code docs is underway! This is still very much just in the exploration phase, but I'm hopeful that I will be able to get a significant chunk of it done in the next month or so. Stay tuned here to keep up-to-date with its progress!<\/p>\n<p>I've also been working on a bit of a secret project for my company, a fun little serverless SlackBot that:<\/p>\n<ul>\n<li>runs in Node.js<\/li>\n<li>which is written in Kotlin/JS<\/li>\n<li>and is documented with Orchid<\/li>\n<li>with product pages and help forms also managed with Orchid<\/li>\n<li>all assembled with Gradle<\/li>\n<li>and uses Netlify services for all everything (although Netlify doesn't have a database so I'm using Firebase)<\/li>\n<\/ul>\n<p>It's not quite finished yet, but you are welcome to preview <a href=\"https://crederabot.netlify.com/\">CrederaBot<\/a> whenever you like! You can even install the bot on your own Slack team, but I can't guarantee that I won't delete your data if I need to change the DB schema 😇.<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2020-5-28": {
+          "ownKey": "2020-5-28",
+          "childrenPages": {"0-21-0-released": {
+            "ownKey": "0-21-0-released",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2020-5-28",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-21-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-5-28/0-21-0-released"
+              },
+              "previous": {
+                "path": "news/2020-3-29",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-20-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-3-29/0-20-0-released"
+              },
+              "description": "May 2020 Orchid News",
+              "title": "0.21.0 Released",
+              "content": "<p>Being stuck at home may not be the most exciting, but it has given me lots of time to fix bugs and make Orchid better\nfor you! This latest release, 0.21.0, includes many bug fixes identified (and sometimes fixed!) by the community, and\nalso boasts some significant internal changes which improve Orchid's overall performance and prepare a major portion of\nits functionality to be pulled into a standalone library (which you'll absolutely want to check out when it's released).<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h2 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h2>\n<p>The Orchid community is growing larger all the time, and the repo is now at 367 stars!<\/p>\n<p>Orchid also received contributions from <a href=\"https://github.com/vmj\">Mikko Värri<\/a> for improvements to sitemaps, and\n<a href=\"https://github.com/JavierSegoviaCordoba\">Javier Segovia Córdoba<\/a> with documentation fixes.<\/p>\n<p>And thank you to everyone else who has been giving Orchid a try, reaching out with questions and feedback, and generally\nsupporting this growing community!<\/p>\n<h2 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h2>\n<p>Full release notes and a migration guide are available <a href=\"https://orchid.run/changelog\">here<\/a>. Here's a summary of what to\nexpect in 0.21.0:<\/p>\n<ul>\n<li>Experimental sourcedocs are now enabled by default and do not need a CLI flag to use.<\/li>\n<li>Sourcedocs modules can now cross-link between each other for multi-module projects, or those with multiple interlinked\nsourcesets (like Kotlin MPP).<\/li>\n<li>Collections have become the base unit of organizing groups of pages in Orchid, and there is now a <code>collectionPages<\/code>\nmenu item to display pages from a collection from any plugin.<\/li>\n<li>Asset management is greatly improved, and support for downloading and inlining CSS and JS assets is now available from\n<code>config.yml<\/code> as well as from plugin code.<\/li>\n<li>Diagnostic output across the board is generally improved. Pebble templates are now more descriptive about errors with\nbetter line-number tracking (to aid in resolving specific Pebble template issues), and <code>OrchidTest<\/code> now only shows\nHTML selectors from the test instead of the entire rendered page.<\/li>\n<\/ul>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>Continued work is underway to support relative URLs (for viewing an Orchid site without needing a local fileserver). In\naddition, Orchid's resource/file management is a core subsystem that would do well to be a separate library, and work is\nin progress to move it out of Orchid and into Arcana, it's own library. This library will be Kotlin\nmultiplatform-enabled, bringing Orchid's simple and flexible file-management APIs to Android, iOS, JS, and of course,\npure JVM.<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-4-3": {
+          "ownKey": "2019-4-3",
+          "childrenPages": {"march-madness": {
+            "ownKey": "march-madness",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-4-3",
+                "baseUrl": "https://orchid.run",
+                "fileName": "march-madness",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-4-3/march-madness"
+              },
+              "next": {
+                "path": "news/2019-5-7",
+                "baseUrl": "https://orchid.run",
+                "fileName": "in-bloom",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-5-7/in-bloom"
+              },
+              "previous": {
+                "path": "news/2019-3-2",
+                "baseUrl": "https://orchid.run",
+                "fileName": "one-love",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-3-2/one-love"
+              },
+              "description": "March 2019 Orchid News",
+              "title": "March 2019 Update: March Madness",
+              "content": "<p>I love watching basketball, which makes March one of the best months of the year as the NCAA National Championship, March Madness, takes place. My top pick, Michigan State, has already defeated Duke and is well on their way to becoming the National Champions!<\/p>\n<p>It has also been quite a &quot;mad&quot; month for Orchid too, with lots of big changes in progress. From being able to publish your site to Gitlab and Bitbucket, to integration with Github Wikis, and a re-theming of the documentation site all underway, it's safe to say that I've been quite busy!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 175 stars on Github. And this month, in particular, I have been absolutely blown away at the growth on Github. With 4 pull requests by 3 contributors, numerous issues opened and questions asked across Github, Twitter, and Gitter, and more than FOUR TIMES as many downloads on Bintray this month as last month, Orchid is seeing unprecedented growth that I could never have imagined.<\/p>\n<p>Thank you all so much, I certainly could not keep working this hard without your incredible support! But these successes are entirely because of you, and I love to give credit where it is due, so let's drill into this a bit deeper.<\/p>\n<h2 id=\"contributions\"><a href=\"#contributions\" id=\"contributions\" class=\"anchor\"><\/a>Contributions<\/h2>\n<ul>\n<li><a href=\"https://github.com/alejandrohdezma\">@alejandrohdezma<\/a> helped out to fix a bug using the wrong FontAwesome icon (<a href=\"https://github.com/orchidhq/orchid/pull/239\">#239<\/a>)<\/li>\n<li><a href=\"https://github.com/Sumo99\">@ Sumo99<\/a> got rid of the last of Lombok, paving the way for a pure-Kotlin future! They also helped remove Google Plus social links now that the service is officially dea. (<a href=\"https://github.com/orchidhq/orchid/pull/243\">#243<\/a> and <a href=\"https://github.com/orchidhq/orchid/pull/249\">#249<\/a>)<\/li>\n<li><a href=\"https://github.com/dkowis\">@ dkowis<\/a> fixed a broken documentation link (<a href=\"https://github.com/orchidhq/orchid/pull/252\">#252<\/a>)<\/li>\n<\/ul>\n<h2 id=\"4x-downloads-increase\"><a href=\"#4x-downloads-increase\" id=\"4x-downloads-increase\" class=\"anchor\"><\/a>4x Downloads Increase<\/h2>\n<p>The 31-day period ending February 28th saw a bit shy of 700 downloads.<\/p>\n<p><img src=\"https://thepracticaldev.s3.amazonaws.com/i/24lbbw6euqnbd2mgkpvn.png\" alt=\"February downloads\" /><\/p>\n<p>The stats show that downloads really started to take off around the end of the month, which is when I published the tutorial on how to use Orchid to document a Kotlin project. I would highly recommend you check it out if you haven't already.<\/p>\n<p><a href=\"https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin\">How to Document a Kotlin Project<\/a><\/p>\n<p>Meanwhile, The 31-day period ending March 31st saw more than 2600 downloads! And questions from y'all on how to use it have increased to match, and I'm so excited to be able to help solve your problems with Orchid!<\/p>\n<p><img src=\"https://thepracticaldev.s3.amazonaws.com/i/pk0bsb0byg2d857xetng.png\" alt=\"March downloads\" /><\/p>\n<p>All of these statistics are freely available on Bintray, <a href=\"https://bintray.com/beta/#/orchidhq/orchid/OrchidCore?tab=statistics\">go here<\/a> to check it out for yourself.<\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Orchid is currently at version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.16.7\">0.16.7<\/a>. There have been no major changes since last month, mostly just a series of bugfixes on the Copper theme and minor usability improvements.<\/p>\n<h1 id=\"coming-soon\"><a href=\"#coming-soon\" id=\"coming-soon\" class=\"anchor\"><\/a>Coming Soon<\/h1>\n<h2 id=\"new-docs\"><a href=\"#new-docs\" id=\"new-docs\" class=\"anchor\"><\/a>New Docs<\/h2>\n<p>Orchid's docs are getting a reboot! When I started work on Orchid, Bootstrap was the only CSS framework I knew of. I had no idea there were so many great options out there, and ultimately I have come to really enjoy Bulma for its simplicity and flexibility.<\/p>\n<p>And so, I've been building the &quot;Copper&quot; theme, based on Bulma, to serve as the home for all of Orchid's own documentation, and also of its supplemental libraries. Here's a preview:<\/p>\n<p><a href=\"https://orchid.run/\"><img src=\"https://thepracticaldev.s3.amazonaws.com/i/svynj5ko32iwvpgfuuo4.png\" alt=\"New Docs\" /><\/a><\/p>\n<p>Also coming with the new theme will be a major overhaul in the <em>content<\/em> on the docs site, as I continue to iterate upon the docs and figure out the best way to present the information to you.<\/p>\n<h2 id=\"more-integrations\"><a href=\"#more-integrations\" id=\"more-integrations\" class=\"anchor\"><\/a>More Integrations<\/h2>\n<p>From the very beginning, Orchid was created to be infinitely flexible, able to work with a wide variety of different systems and content structures, but until now it has been fairly closely tied to just Netlify and GitHub. I myself regularly use Microsft Azure and BitBucket at work and want to use Orchid in those places, and I can imagine y'all do as well.<\/p>\n<p>So work is currently under way to make it easier to integrate Orchid into those different Git platforms, so you do not need to change your current processes to fully utilize Orchid's power! Soon, you'll be able to use the native Wikis on Github, Bitbucket, Gitlab, and Azure DevOps as a headless CMS, and you'll also be able to deploy directly to their static hosting platforms and create releases!<\/p>\n<h1 id=\"get-involved\"><a href=\"#get-involved\" id=\"get-involved\" class=\"anchor\"><\/a>Get Involved<\/h1>\n<p>You don't have to be an expert in Java, Kotlin, Orchid, or anything else to help out the Orchid project. There are a number of ways you can contribute right now:<\/p>\n<ul>\n<li>fixing typos and improving the clarity of documentation articles<\/li>\n<li>converting Java classes to Kotlin<\/li>\n<\/ul>\n<p>However, I am currently looking for more skilled help with a couple specific areas:<\/p>\n<ul>\n<li>I'm looking for people who currently use the features of the git platforms I'm imtegrating with, to help build their integrations:\n<ul>\n<li>GitLab\n<ul>\n<li><a href=\"https://github.com/orchidhq/orchid/blob/features/integrations/integrations/OrchidGitlab/src/main/kotlin/com/eden/orchid/gitlab/wiki/GitlabWikiAdapter.kt\">Wiki adapter<\/a><\/li>\n<li><a href=\"https://github.com/orchidhq/orchid/blob/features/integrations/integrations/OrchidGitlab/src/main/kotlin/com/eden/orchid/gitlab/publication/GitlabPagesPublisher.kt\">GitLab Pages Publisher<\/a><\/li>\n<\/ul>\n<\/li>\n<li>Bitbucket\n<ul>\n<li><a href=\"https://github.com/orchidhq/orchid/blob/features/integrations/integrations/OrchidBitbucket/src/main/kotlin/com/eden/orchid/bitbucket/wiki/BitbucketWikiAdapter.kt\">Wiki adapter<\/a><\/li>\n<li><a href=\"https://github.com/orchidhq/orchid/blob/features/integrations/integrations/OrchidBitbucket/src/main/kotlin/com/eden/orchid/bitbucket/publication/BitbucketCloudPublisher.kt\">Bitbucket Cloud Publisher<\/a><\/li>\n<\/ul>\n<\/li>\n<li>Azure DevOps\n<ul>\n<li><a href=\"https://github.com/orchidhq/orchid/blob/features/integrations/integrations/OrchidAzure/src/main/kotlin/com/eden/orchid/azure/wiki/AzureWikiAdapter.kt\">Wiki adapter<\/a><\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<p>I would also love the help of a designer to make a really great home page and a new logo for Orchid.<\/p>\n<p>Please <a href=\"https://www.caseyjbrooks.com/contact/\">reach out to me<\/a> if you're interested in contributing to the project for any of these specific issues, I (and the whole community!) would really appreciate it!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2020-1-23": {
+          "ownKey": "2020-1-23",
+          "childrenPages": {"gaining-traction": {
+            "ownKey": "gaining-traction",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2020-1-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "gaining-traction",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-1-23/gaining-traction"
+              },
+              "next": {
+                "path": "news/2020-2-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-19-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-2-23/0-19-0-released"
+              },
+              "previous": {
+                "path": "news/2019-12-5",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0_18_0-the-new-face-of-orchid",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-12-5/0_18_0-the-new-face-of-orchid"
+              },
+              "description": "January 2020 Orchid News",
+              "title": "Gaining Traction",
+              "content": "<p>It's so incredible to see this project grow from a tiny seedling to the maturing sprout it is now. Especially since the\n0.18.0 release, I've seen more people try out Orchid and adopt it for their documentation sites, and I'm so incredibly\ngrateful for each and every download. But this is only the beginning, Orchid still has lots of growing-up to do, so why\ndon't you come along for the ride and help shape the future of Orchid!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h2 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h2>\n<p>Orchid has been growing so much since December's 0.18.0 release! Its now at 313 stars and version 0.18.2, with more\ndownloads, new sites, and issues created than ever before! And it's all thanks to this wonderful community of\nindividuals believing in a better way to do documentation, so thank you all!<\/p>\n<p>The holidays were fairly quiet in terms of new releases and contributions, but <a href=\"https://github.com/tomb50\">Tom Beadman<\/a>\nhelped immensely with improving the asciidoctor integration. A small PR with huge impact for improving the\nquality-of-life for Asciidoctor fans, which now includes support for <code>include::[]<\/code> macros!<\/p>\n<p>I also merged work <a href=\"https://github.com/DanySK\">Danilo Pianini<\/a> had done for improving the YouTube tag to support\naspect-ratios instead of fixed sized.<\/p>\n<h2 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h2>\n<p>Now that 0.18.0 is released, I've been able to work on some smaller features I've been wanting to support for a while. I\nhad to restrain myself from working on them for 0.18.0 to prevent feature-creep, but it's been nice finally getting to\nadd the following features:<\/p>\n<ul>\n<li>The <a href=\"https://orchid.run/plugins/orchidbible\">OrchidBible<\/a> plugin has been broken for some time, as the APIs driving it had been decommissioned.\nI have removed the previously-broken <code>bible()<\/code> function, which pre-rendered Bible verses, and replaced it with a new\n<a href=\"https://faithlife.com/products/reftagger\">Faithlife Reftagger<\/a> meta-component, which will automatically create\npopups for all Bible verses it finds on the page!<\/li>\n<li>Support for <a href=\"https://mermaid-js.github.io/mermaid\">Mermaid JS<\/a> markup has been added to the\n<a href=\"https://orchid.run/plugins/orchiddiagrams\">OrchidDiagrams<\/a> plugin. As Mermaid is a javascript library, support is added through a meta-component\ninstead of using pre-rendered markup like PlantUML.<\/li>\n<li>The <code>youtube<\/code> template tag in <a href=\"https://orchid.run/plugins/orchidwritersblocks\">OrchidWritersBlocks<\/a> can now display videos of a given aspect-ratio,\nmaking them better-suited for responsive designs.<\/li>\n<li><a href=\"https://orchid.run/plugins/orchidchangelog\">OrchidChangelog<\/a> now supports single-file changelogs, such as the\n<a href=\"https://keepachangelog.com/en/1.0.0/\">Keep A Changelog format<\/a> format.<\/li>\n<\/ul>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>Supporting include macros for Asciidoctor was a huge step forward, but there's still work to be done to improve that\nintegration, and you can expect more Asciidoctor improvements in the coming weeks, with <code>image::[]<\/code> being the next\ntarget.<\/p>\n<p>In addition to a few more quality-of-life improvements planned for the near-future, I've begun work on a new\n<code>OrchidSnippets<\/code> plugin! More details will come in a future post, but I'd love to get your feedback and suggestions for\nits implementation and usage in <a href=\"https://github.com/orchidhq/Orchid/issues/293\">this issue<\/a> on GitHub!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2020-3-29": {
+          "ownKey": "2020-3-29",
+          "childrenPages": {"0-20-0-released": {
+            "ownKey": "0-20-0-released",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2020-3-29",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-20-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-3-29/0-20-0-released"
+              },
+              "next": {
+                "path": "news/2020-5-28",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-21-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-5-28/0-21-0-released"
+              },
+              "previous": {
+                "path": "news/2020-2-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-19-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-2-23/0-19-0-released"
+              },
+              "description": "March 2020 Orchid News",
+              "title": "New Snippets plugin, 0.20.0 Released",
+              "content": "<p>The next major version of Orchid, 0.20.0, is now available! It includes the first introduction of the long-awaited\n<a href=\"https://orchid.run/plugins/orchidsnippets\">Snippets<\/a> plugin, as well as a number of smaller quality-of-life improvements throughout.\nCheck out the full release notes <a href=\"https://orchid.run/changelog\">here<\/a>, and stick around for a general update of the\ndevelopment and community around Orchid!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h2 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h2>\n<p>Orchid is now at 343 stars on Github, and since the last newsletter has received a PR from\n<a href=\"https://github.com/BrunoVernay\">Bruno Vernay<\/a> with some improvements to the formatting of blog post filenames.<\/p>\n<p>I also want to give a special thanks to everyone who provided feedback and suggestions for the new Snippets plugin! Both\non the proposal issue and on Gitter, your suggestions are what decided the features to include in this first release,\nand it's my hope that it will provide exactly the solution you're looking for!<\/p>\n<p>And thank you to everyone else who has been giving Orchid a try, reaching out with questions and feedback, and generally\nsupporting this growing community!<\/p>\n<h2 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h2>\n<p>This latest release is a continuation of the &quot;quality-of-life&quot; improvements that have been suggested by the you and are\nmaking Orchid better and easier to use. Some of these changes required breaking the internal API (thus the major version\nbump to 0.20.0), but this version does not include any deprecations or breaking changes to the public, end-user\nfeatures. Below are the new features available in 0.19.0:<\/p>\n<ul>\n<li>New Snippets plugin allows you to lookup and embed snippets from code, files, and even external webpages!<\/li>\n<li>The Admin Panel layout got a minor makeover to make it easier to use and more flexible.<\/li>\n<li>Forms and snippets located during the site build are care listed and can be previewed in the admin panel.<\/li>\n<li>Allows Forms to be embedded with a new <code>form<\/code> tag, instead of only as Components as before.<\/li>\n<li>Replaces default accordion markup with details/summary HTML5 tag for best usage in all themes<\/li>\n<li>Tabbed TemplateTags can now be rendered dynamically! You can now use loops and conditionals to add individual tabs to\nthe body of tabbed tags, instead of having to have them be statically-determined.<\/li>\n<li>Both the base URL and your theme can now be set in <code>config.yml<\/code>, instead of needing to be set in your Gradle or Maven\nbuild scripts.<\/li>\n<li>Improvements to base URL management now allow plugins to provide &quot;helpers&quot; for determining the base URL, such as\nOrchidNetlify detecting when Orchid is running on Netlify's CI platform and using its build environment variables\nto find the base URL.<\/li>\n<li>OrchidPosts now relaxes slightly the strict filename requirements for post files.<\/li>\n<\/ul>\n<p>Full release notes and a migration guide are available <a href=\"https://orchid.run/changelog\">here<\/a>.<\/p>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>The changes allowing base URLs to be set from <code>config.yml<\/code>, instead of being a flag from the CLI or build plugins,\nbrings us closer to having <em>relative<\/em> urls for generated links instead <em>absolute<\/em> as they are now. Relative URLs don't\ninclude a base URL, but instead provide a path from the current page to the linked one, and will make it possible to\nview an Orchid site directly in the filesystem instead of needing to start an HTTP server to view it.<\/p>\n<p>There is still work to be done on this, but it's now considered a mid- to short-term goal for Orchid instead of a\nlong-term one, and it will be a <em>huge<\/em> win for those of you using Orchid for documentation. Thank you to everyone who\nhas been asking for this, I hope to be able to provide this feature for you soon!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2020-2-23": {
+          "ownKey": "2020-2-23",
+          "childrenPages": {"0-19-0-released": {
+            "ownKey": "0-19-0-released",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2020-2-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-19-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-2-23/0-19-0-released"
+              },
+              "next": {
+                "path": "news/2020-3-29",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0-20-0-released",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-3-29/0-20-0-released"
+              },
+              "previous": {
+                "path": "news/2020-1-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "gaining-traction",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-1-23/gaining-traction"
+              },
+              "description": "February 2020 Orchid News",
+              "title": "0.19.0 Released",
+              "content": "<p>The next major version of Orchid, 0.19.0, is now available! Check out the full release notes\n<a href=\"https://orchid.run/changelog\">here<\/a>, and stick around for a general update of the development and community around Orchid!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h2 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h2>\n<p>Orchid is now at 329 stars on Github, and since the last newsletter has received a PR from\n<a href=\"https://github.com/tomb50\">tomb50<\/a> to improve Orchid's Asciidoctor integration. And thank you to everyone else who has\nbeen giving Orchid a try, reaching out with questions and feedback, and generally supporting this growing community!<\/p>\n<h2 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h2>\n<p>Since the release of 0.18.0, I've been able to work on many smaller &quot;quality-of-life&quot; improvements to Orchid that have\nbeen suggested by the community. Some of these changes required breaking the internal API (thus the major version bump\nto 0.19.0), but the last few releases have mainly just been smaller new features and improvements to existing plugins.\nBelow are the new features available in 0.19.0:<\/p>\n<ul>\n<li>Improve Asciidoc formatting. Specifically, other files relative to the source file can now be included.<\/li>\n<li>Automatically add <code>CNAME<\/code> files to GithubPages deploys, if not already present in the deployed site. The CNAME value\nwill be inferred from the base URL of the site during the deploy.<\/li>\n<li>Adds <code>feedLinks<\/code> metaComponent to Posts plugin, which adds <code>&lt;link rel='alternate'&gt;<\/code> tags to page heads, pointing to\nthe generated feed pages.<\/li>\n<li>Images uploaded and referenced from GitLab wikis are now copied over automatically with the rest of the site<\/li>\n<\/ul>\n<p>Full release notes and a migration guide are available <a href=\"https://orchid.run/changelog\">here<\/a>.<\/p>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>Most work over the past month has been refactoring needed to support a better Asciidoctor experience, and generally\nclean up some of the older parts of the Orchid codebase. This is work that will eventually be extracted to a separate\nlibrary, so be on the look-out for that!<\/p>\n<p>There is still work to be done with the Asciidoctor integration, but it's getting better all the time, and work on the\nSnippets plugin will be picking back up soon, too. I've already had some good feedback and suggestions for this feature\nwhich I will be taking into account as I build it out, so be sure to leave your thoughts on\n<a href=\"https://github.com/orchidhq/Orchid/issues/293\">the appropriate issue<\/a>, to make this plugin exactly what you need!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-9-10": {
+          "ownKey": "2019-9-10",
+          "childrenPages": {"summer-recap": {
+            "ownKey": "summer-recap",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-9-10",
+                "baseUrl": "https://orchid.run",
+                "fileName": "summer-recap",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-9-10/summer-recap"
+              },
+              "next": {
+                "path": "news/2019-12-5",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0_18_0-the-new-face-of-orchid",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-12-5/0_18_0-the-new-face-of-orchid"
+              },
+              "previous": {
+                "path": "news/2019-5-7",
+                "baseUrl": "https://orchid.run",
+                "fileName": "in-bloom",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-5-7/in-bloom"
+              },
+              "description": "Summer 2019 Orchid News",
+              "title": "Summer 2019 Update: Summer Recap",
+              "content": "<p>Sorry for the absence, it's been a very busy summer for me! Lots of stuff going on both for me and for Orchid, so stick around to see what's coming up!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 233 stars on Github, thank you so much for all the support! And a special thanks goes to the following individuals who submitted pull requests to Orchid!<\/p>\n<ul>\n<li><a href=\"https://github.com/Sumo99\">Sumo99<\/a><\/li>\n<li><a href=\"https://github.com/jmfayard\">Jean-Michel Fayard<\/a><\/li>\n<\/ul>\n<p>I've also been preparing for <a href=\"https://hacktoberfest.digitalocean.com\">Hacktoberfest<\/a>, which is coming up in less than a month. I've curated a bunch of new issues labeled for <a href=\"https://github.com/orchidhq/orchid/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc+label%3A&quot;Good+First+Issue&quot;\">first-time contributors<\/a>, how about getting a head-start on Hacktoberfest and helping out with some of these issues? 😎 Feel free to hold off on your PR until Hacktoberfest officially begins, just comment on the issue so others know what you're working on.<\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Orchid is now at version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.17.4\">0.17.4<\/a>. 0.17.0, which came out at the end of May, was a really big update and included a handful of new &quot;integrations&quot; projects. These integrations make it easy to create wikis from Github and Gitlab wikis, and to publish your site to Gitlab Pages and Bitbucket Cloud (in addition to the already-supported Github and Netlify publishers).<\/p>\n<h1 id=\"in-progress\"><a href=\"#in-progress\" id=\"in-progress\" class=\"anchor\"><\/a>In Progress<\/h1>\n<p>Y'all. Some big things are just up the road for Orchid. Really big. Like, <em>Texas-sized big<\/em>. I'm talking about:<\/p>\n<ul>\n<li>A completely redesigned documentation site (you can preview it <a href=\"https://orchid.run\">here<\/a>, I'd greatly appreciate any feedback on it!)<\/li>\n<li>Mutli-module code documentation<\/li>\n<li>Completely decoupling code documentation from Orchid with <a href=\"https://github.com/copper-leaf/kodiak\">Kodiak<\/a>, to vastly simplify the process of supporting new languages and ensure consistency of usage across all languages<\/li>\n<li>Some much-needed refactoring of core Orchid functionality<\/li>\n<li>A new framework for automated testing of Orchid plugins and themes<\/li>\n<li>Migrating to GitHub Actions for continuous releases<\/li>\n<\/ul>\n<p>All this will be coming in the upcoming 0.18.0 release. While I don't want to put a date on this release (I don't want to release it until it's 100% ready-to-go), I can say that I'm nearly code-complete with the changes I wanted to add. From here, it's mostly just adding the finishing touches to the new site, documenting the new functionality, and testing everything thoroughly.<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-3-2": {
+          "ownKey": "2019-3-2",
+          "childrenPages": {"one-love": {
+            "ownKey": "one-love",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-3-2",
+                "baseUrl": "https://orchid.run",
+                "fileName": "one-love",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-3-2/one-love"
+              },
+              "next": {
+                "path": "news/2019-4-3",
+                "baseUrl": "https://orchid.run",
+                "fileName": "march-madness",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-4-3/march-madness"
+              },
+              "previous": {
+                "path": "news/2019-2-11",
+                "baseUrl": "https://orchid.run",
+                "fileName": "where-it-got-cold-in-texas",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-2-11/where-it-got-cold-in-texas"
+              },
+              "description": "February 2019 Orchid News",
+              "title": "February 2019 Update: One Love",
+              "content": "<p>Ah February, a month to celebrate love in all of its meanings: Valentines Day to celebrate love with your significant other, Black History Month to love and celebrate those different from us, and for Orchid, hippie love with new support for the Groovy programming language.<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 157 stars on Github. This was a really great month, with Orchid's new features and a blog post here garnering quite a bit of attention. Thanks for all the support!<\/p>\n<h1 id=\"in-the-media\"><a href=\"#in-the-media\" id=\"in-the-media\" class=\"anchor\"><\/a>In The Media<\/h1>\n<p>After releasing 0.16.0, I published a post here on Dev.to detailing how to use Orchid to document Kotlin projects from beginning-to-end. It got quite a bit of attention and is definitely the best place to start if you're wanting t get started using Orchid for any of your projects. Be sure to check it out if you haven't already!<\/p>\n<p><a href=\"https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin\">How to Document a Kotlin Project<\/a><\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Orchid is now at version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.16.1\">0.16.1<\/a>, a bugfix version after 0.16.0, which brought with it a ton of cool new features that I teased with last month's entry. All of these features have been released and are ready for you to use!<\/p>\n<h3 id=\"new-theme-copper\"><a href=\"#new-theme-copper\" id=\"new-theme-copper\" class=\"anchor\"><\/a>New theme: <strong>Copper<\/strong><\/h3>\n<p><img src=\"https://res.cloudinary.com/orchid/image/upload/v1549253492/themes/copper/1.png\" alt=\"Copper Theme Example\" /><\/p>\n<p>The theme I built for my own site, now you can use for yours! Based on Bulma, this theme is great for showcasing the best projects for your portfolio, but is equally good for documentation.<\/p>\n<p>For examples of Orchid sites using this new theme, checkout <a href=\"https://www.caseyjbrooks.com/\">caseyjbrooks.com<\/a> or the <a href=\"https://copper-leaf.github.io/trellis/\">Trellis docs<\/a> and <a href=\"https://copper-leaf.github.io/dokka-json/\">JSON Documentation Formatters docs<\/a>.<\/p>\n<h3 id=\"new-bundle-orchid-docs\"><a href=\"#new-bundle-orchid-docs\" id=\"new-bundle-orchid-docs\" class=\"anchor\"><\/a>New bundle: <strong>Orchid Docs<\/strong><\/h3>\n<p>After setting up many of my other library projects with Orchid documentation, I've noticed myself adding the same plugins over and over to each project. To make it easier for others to get started with Orchid as a documentation tool, I've created a new Bundle, <code>OrchidDocs<\/code>, which contains the following plugins:<\/p>\n<ul>\n<li><code>OrchidCore<\/code>: The core Orchid framework<\/li>\n<li><code>OrchidEditorial<\/code>: A default theme (subject to change in a later version)<\/li>\n<li><code>OrchidPages<\/code>: Static pages to hold changelogs, contact forms, project license, etc.<\/li>\n<li><code>OrchidWiki<\/code>: The full wiki documentation for the site<\/li>\n<li><code>OrchidForms<\/code>: Easily add contact or bug report forms<\/li>\n<li><code>OrchidChangelog<\/code>: Manage project versions, and update Github releases automatically on deploy<\/li>\n<li><code>OrchidSearch<\/code>: Enable full-text search of your docs<\/li>\n<li><code>OrchidDiagrams<\/code>: Describe your project with diagrams and flow charts<\/li>\n<li><code>OrchidSyntaxHighlighter<\/code>: Your choice of either server-side or Javascript-based highlighting<\/li>\n<\/ul>\n<h3 id=\"new-plugin-groovydoc\"><a href=\"#new-plugin-groovydoc\" id=\"new-plugin-groovydoc\" class=\"anchor\"><\/a>New plugin: <strong>Groovydoc<\/strong><\/h3>\n<p>Delivered by request, Groovy will be an officially-supported language for Orchid code documentation. The Groovy plugin allows you to easily document your Groovy and Java source code and embed it in any Orchid theme you like.<\/p>\n<h1 id=\"coming-soon\"><a href=\"#coming-soon\" id=\"coming-soon\" class=\"anchor\"><\/a>Coming Soon<\/h1>\n<p>Orchid is currently in the aftermath of releasing a major version, which typically means focusing on bugfixes, tests, and documentation. You can expect increasing stability and theme improvements over the next few weeks/months.<\/p>\n<p>In addition, adding the Groovydoc plugin helped me understand better how Orchid <em>should<\/em> handle code documentation, and work is underway to greatly improve this for all languages. Work is underway that will make it significantly easier to add additional programming languages that Orchid can work with, and also make it easier and more flexible for you to document your projects. You can follow the work toward this goal in the following issue on Github.<\/p>\n<p><a href=\"https://github.com/orchidhq/orchid/issues/232\">Issue #232<\/a><\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-12-5": {
+          "ownKey": "2019-12-5",
+          "childrenPages": {"0_18_0-the-new-face-of-orchid": {
+            "ownKey": "0_18_0-the-new-face-of-orchid",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-12-5",
+                "baseUrl": "https://orchid.run",
+                "fileName": "0_18_0-the-new-face-of-orchid",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-12-5/0_18_0-the-new-face-of-orchid"
+              },
+              "next": {
+                "path": "news/2020-1-23",
+                "baseUrl": "https://orchid.run",
+                "fileName": "gaining-traction",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2020-1-23/gaining-traction"
+              },
+              "previous": {
+                "path": "news/2019-9-10",
+                "baseUrl": "https://orchid.run",
+                "fileName": "summer-recap",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-9-10/summer-recap"
+              },
+              "description": "Fall 2019 Orchid News",
+              "title": "0.18.0, The New Face of Orchid",
+              "content": "<p>It's. Finally. Here. I've been working on and teasing a new major version of Orchid for several months, and it's finally\navailable! This release represents a major step in the maturity of Orchid, coming alongside the move to a new GitHub\norganization, a completely redesigned website, and a brand new logo!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h2 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h2>\n<p>As of the time of writing, Orchid is at 279 stars on Github, thank you so much for all the support!<\/p>\n<p>Since the last update, Orchid has had several contributions, especially during Hacktoberfest, so a special thanks goes\nout to the following individuals for their help improving this project:<\/p>\n<ul>\n<li><a href=\"https://github.com/spind42\">spind42<\/a> - Fixed an issue running Orchid from Maven<\/li>\n<li><a href=\"https://github.com/jmfayard\">Jean-Michel Fayard<\/a> - Added a readme badge for CodeTriage<\/li>\n<li><a href=\"https://github.com/singularsyntax\">Steve S<\/a> - Added a new Spotify tag to the <a href=\"https://orchid.run/plugins/orchidwritersblocks\">OrchidWritersBlocks<\/a> plugin<\/li>\n<li><a href=\"https://github.com/swaldman\">Steve Waldman<\/a> - Wrote a plugin to run Orchid from SBT!<\/li>\n<\/ul>\n<h2 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h2>\n<p>The long-awaited version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.18.0\">0.18.0<\/a> has finally arrived!<\/p>\n<p>This release includes a major cleanup to Orchid's internal APIs, which will help make better plugins moving forward, but\nmost importantly introduces the new, completely rewritten code documentation system based on\n<a href=\"https://github.com/copper-leaf/kodiak\">Kodiak<\/a>. The new system improves consistency of generated docs among all\nlanguages and enables multi-module documentation. It also paves the way to make it significantly easier to develop\nintegrations for other languages, so let me know which languages you would like to see supported by Orchid!<\/p>\n<p>Be sure to check out the <a href=\"https://orchid.run/changelog\">Changelog<\/a> for the full list of changes, and the\n<a href=\"https://orchid.run/migration/0_18\">Migration Guide<\/a> for help updating to this new version.<\/p>\n<p>In addition, some of you may have noticed a few changes around the Orchid ecosystem! The Orchid repo has been moved to\n@orchidhq on Github, and we have a completely redesigned documentation site and new logos. Together with the 0.18.0\nrelease, this marks the biggest change in the development and ecosystem of Orchid to help cement it is as the\nsingle-best tool for producing documentation websites.<\/p>\n<p>You can help spread the word about this major milestone by sharing <a href=\"https://orchid.run\">https://orchid.run<\/a> and tagging\n@OrchidSSG on Twitter!<\/p>\n<h2 id=\"whos-using-orchid\"><a href=\"#whos-using-orchid\" id=\"whos-using-orchid\" class=\"anchor\"><\/a>Who's Using Orchid?<\/h2>\n<p>I periodically search GitHub to find new projects getting set up with Orchid. Here are a couple great examples of\nprojects being documented with Orchid:<\/p>\n<ul>\n<li><a href=\"https://alchemistsimulator.github.io/\">The Alchemist Simulator<\/a><\/li>\n<li><a href=\"https://nhaarman.github.io/acorn/\">Acorn<\/a><\/li>\n<li><a href=\"https://camunda.github.io/camunda-rest-client-spring-boot/\">Camunda<\/a><\/li>\n<\/ul>\n<p>For more examples of sites using Orchid, head on over to our new <a href=\"https://orchid.run/showcase\">Showcase<\/a>, and feel free to reach out\nor submit a PR to add your site to the showcase as well!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2018-11-28": {
+          "ownKey": "2018-11-28",
+          "childrenPages": {"biggest-update-yet": {
+            "ownKey": "biggest-update-yet",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2018-11-28",
+                "baseUrl": "https://orchid.run",
+                "fileName": "biggest-update-yet",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2018-11-28/biggest-update-yet"
+              },
+              "next": {
+                "path": "news/2019-1-16",
+                "baseUrl": "https://orchid.run",
+                "fileName": "post-holidays-edition",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-1-16/post-holidays-edition"
+              },
+              "description": "November 2018 Orchid News",
+              "title": "November 2018 Update: The Biggest Update Yet!",
+              "content": "<p>Orchid has had a great month, y'all!<\/p>\n<p>As Orchid is getting more popular, there is a growing need to keep the community up-to-date on all the happenings around Orchid. This post is the first in a new monthly series where I will share Orchid's progress during the previous month! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github, and see who's using Orchid!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>Orchid just hit 100 stars at the end of October, and it's up to 108 as of the time of writing. Thanks for all the support, I'm amazed that this little side-project of mine has been so popular! Keep the sharing going!<\/p>\n<p>The Orchid repo also received contributions from the following people, thanks so much for the help!<\/p>\n<ul>\n<li><a href=\"https://github.com/epidemia\">Andrey Mochalov<\/a><\/li>\n<li><a href=\"https://github.com/yaroslavm\">Yaroslav Matveychuk<\/a><\/li>\n<li><a href=\"https://github.com/bjansen\">Bastien Jansen<\/a><\/li>\n<\/ul>\n<h1 id=\"new-features\"><a href=\"#new-features\" id=\"new-features\" class=\"anchor\"><\/a>New Features<\/h1>\n<p>Orchid <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.13.0\">0.13.0<\/a> and <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.14.0\">0.14.0<\/a> were released around Thanksgiving, and together mark the biggest Orchid release to-date! This includes:<\/p>\n<ul>\n<li>Update to Kotlin 1.3<\/li>\n<li>Wikis can now generate PDFs for offline documentation. See documentation <a href=\"https://orchid.run/plugins/OrchidWiki#offline-documentation\">here<\/a>.<\/li>\n<li>A new Asset Manager improves build times, and intelligently renders your image assets. It even includes basic image manipulation for automated thumbnail generation! Learn more about media management <a href=\"https://orchid.run/wiki/user-manual/content-management/media\">here<\/a>.<\/li>\n<\/ul>\n<h1 id=\"whos-using-orchid\"><a href=\"#whos-using-orchid\" id=\"whos-using-orchid\" class=\"anchor\"><\/a>Who's Using Orchid?<\/h1>\n<p>Orchid now powers the documentation for two really incredible open-source projects, go check them out!<\/p>\n<ul>\n<li>Pebble is the main template engine used by Orchid, and <a href=\"https://pebbletemplates.io/\">pebbletemplates.io<\/a> was officially launched on November 11. Some of the most notable Orchid features it uses are:\n<ul>\n<li><a href=\"https://orchid.run/themes/OrchidEditorial\">Editorial<\/a> theme<\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidChangelog\">Changelogs<\/a> and <a href=\"https://orchid.run/wiki/user-manual/publication/github-releases\">automated Github releases<\/a><\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidWiki\">Wiki<\/a> with offline documentation<\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidJavadoc\">Javadocs<\/a> Java source code documentation<\/li>\n<li>Deployment to <a href=\"https://orchid.run/wiki/user-manual/publication/github-pages\">Github Pages<\/a><\/li>\n<\/ul>\n<\/li>\n<li>Strikt is a new assertion library for Kotlin, and <a href=\"https://strikt.io/\">strikt.io<\/a> went live October 19th using the following Orchid features:\n<ul>\n<li>A fully-custom theme, including custom template tags<\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidChangelog\">Changelogs<\/a><\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidWiki\">Wiki<\/a><\/li>\n<li><a href=\"https://orchid.run/plugins/OrchidKotlindoc\">Kotlindocs<\/a> Kotlin source code documentation<\/li>\n<li>Deployment to <a href=\"https://orchid.run/wiki/user-manual/publication/github-pages\">Github Pages<\/a><\/li>\n<\/ul>\n<\/li>\n<\/ul>\n<p>In addition, my personal website at <a href=\"https://www.caseyjbrooks.com/\">caseyjbrooks.com<\/a> got a major facelift. It previously used the <a href=\"https://orchid.run/themes/OrchidFutureImperfect\">FutureImperfect<\/a> theme, but I have been working on creating a custom theme based on Bulma, with some very helpful advice from @aspittel's <a href=\"https://dev.to/aspittel/portfolio-advice-thread-56g9\">Profile Advice Thread<\/a>. When the theme is finished, it will be merged into the main Orchid repo, so you can use it for your Orchid sites too!<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        },
+        "2019-2-11": {
+          "ownKey": "2019-2-11",
+          "childrenPages": {"where-it-got-cold-in-texas": {
+            "ownKey": "where-it-got-cold-in-texas",
+            "ownPages": [{
+              "reference": {
+                "path": "news/2019-2-11",
+                "baseUrl": "https://orchid.run",
+                "fileName": "where-it-got-cold-in-texas",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-2-11/where-it-got-cold-in-texas"
+              },
+              "next": {
+                "path": "news/2019-3-2",
+                "baseUrl": "https://orchid.run",
+                "fileName": "one-love",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-3-2/one-love"
+              },
+              "previous": {
+                "path": "news/2019-1-16",
+                "baseUrl": "https://orchid.run",
+                "fileName": "post-holidays-edition",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/news/2019-1-16/post-holidays-edition"
+              },
+              "description": "January 2019 Orchid News",
+              "title": "January 2019 Update: The One Where It Got Cold In Texas",
+              "content": "<p>When I moved to Houston, I never expected it would get this cold! Temperatures have been jumping between 30°F and 80°F just about every other day, but that's alright because it gives me an excuse to do more work for Orchid!<\/p>\n<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to\nkeep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,\nand future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,\nand see who's using Orchid!<\/p>\n<h1 id=\"on-github\"><a href=\"#on-github\" id=\"on-github\" class=\"anchor\"><\/a>On Github<\/h1>\n<p>As of the time of writing, Orchid is at 134 stars on Github. Thanks for all the support!<\/p>\n<h1 id=\"whats-new\"><a href=\"#whats-new\" id=\"whats-new\" class=\"anchor\"><\/a>What's New?<\/h1>\n<p>Version <a href=\"https://github.com/orchidhq/orchid/releases/tag/0.15.4\">0.15.4<\/a> was release later in the month, which was mostly a bugfix release, and will be the last release before the next major version, 0.16.0. There's some really exciting stuff coming soon to Orchid, check out what's in progress below!<\/p>\n<h1 id=\"coming-soon\"><a href=\"#coming-soon\" id=\"coming-soon\" class=\"anchor\"><\/a>Coming Soon<\/h1>\n<h3 id=\"new-theme-copper\"><a href=\"#new-theme-copper\" id=\"new-theme-copper\" class=\"anchor\"><\/a>New theme: <strong>Copper<\/strong><\/h3>\n<p><img src=\"https://res.cloudinary.com/orchid/image/upload/v1549253492/themes/copper/1.png\" alt=\"Copper Theme Example\" /><\/p>\n<p>The theme I built for my own site, now you can use for yours! Based on Bulma, this theme is great for showcasing the best projects for your portfolio, but is equally good for documentation.<\/p>\n<p>Visit <a href=\"https://www.caseyjbrooks.com/\">caseyjbrooks.com<\/a> for a live demo.<\/p>\n<p><strong>Current Status<\/strong>: Waiting for release<\/p>\n<h3 id=\"new-bundle-orchid-docs\"><a href=\"#new-bundle-orchid-docs\" id=\"new-bundle-orchid-docs\" class=\"anchor\"><\/a>New bundle: <strong>Orchid Docs<\/strong><\/h3>\n<p>After setting up many of my other library projects with Orchid documentation, I've noticed myself adding the same plugins over and over to each project. To make it easier for others to get started with Orchid as a documentation tool, I've created a new Bundle, <code>OrchidDocs<\/code>, which contains the following plugins:<\/p>\n<ul>\n<li><code>OrchidCore<\/code>: The core Orchid framework<\/li>\n<li><code>OrchidEditorial<\/code>: A default theme (subject to change in a later version)<\/li>\n<li><code>OrchidPages<\/code>: Static pages to hold changelogs, contact forms, project license, etc.<\/li>\n<li><code>OrchidWiki<\/code>: The full wiki documentation for the site<\/li>\n<li><code>OrchidForms<\/code>: Easily add contact or bug report forms<\/li>\n<li><code>OrchidChangelog<\/code>: Manage project verions, and update Github releases automatically on deploy<\/li>\n<li><code>OrchidSearch<\/code>: Enable full-text search of your docs<\/li>\n<li><code>OrchidDiagrams<\/code>: Describe your project with diagrams and flow charts<\/li>\n<li><code>OrchidSyntaxHighlighter<\/code>: Your choice of either server-side or Javascript-based highlighting<\/li>\n<\/ul>\n<p><strong>Current Status<\/strong>: Waiting for release<\/p>\n<h3 id=\"new-plugin-groovydoc\"><a href=\"#new-plugin-groovydoc\" id=\"new-plugin-groovydoc\" class=\"anchor\"><\/a>New plugin: <strong>Groovydoc<\/strong><\/h3>\n<p>Delivered by request, Groovy will be an officially-supported language for Orchid code documentation. The Groovy plugin allows you to easily document your Groovy and Java source code and embed it in any Orchid theme you like.<\/p>\n<p><strong>Current Status<\/strong>: In development (nearly complete)<\/p>\n<hr />\n<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for\nyour project, and I'd love to help you get set up!<\/p>\n<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of\nstatic site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,\nreach out on <a href=\"https://gitter.im/JavaEden/Orchid\">Gitter<\/a>, or <a href=\"https://www.caseyjbrooks.com/contact/\">contact me here<\/a>\nand I will be with you every step of the way.<\/p>\n<p>And as always, let me know if you start using Orchid so I can feature you in the next update!<\/p>\n"
+            }]
+          }}
+        }
+      }
+    },
+    "authors": {
+      "ownKey": "authors",
+      "childrenPages": {"casey-brooks": {
+        "ownKey": "casey-brooks",
+        "ownPages": [{
+          "reference": {
+            "path": "authors",
+            "baseUrl": "https://orchid.run",
+            "fileName": "casey-brooks",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://orchid.run/authors/casey-brooks"
+          },
+          "description": "",
+          "title": "Casey Brooks",
+          "content": ""
+        }]
+      }}
+    }
+  }
+}

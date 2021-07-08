@@ -1,0 +1,492 @@
+
+
+<!DOCTYPE html>
+<html class="homepage">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>0.19.0 Released</title>
+
+
+<meta name="description" content="February 2020 Orchid News">
+
+
+
+<link rel="prev" href="https://orchid.run/news/2020-1-23/gaining-traction">
+
+
+<link rel="next" href="https://orchid.run/news/2020-3-29/0-20-0-released">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="has-navbar-fixed-top">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+  
+
+
+
+
+<nav
+  class="navbar is-white is-fixed-top"
+  role="navigation"
+  aria-label="main navigation"
+  style="border-bottom: thin solid rgba(0,0,0,0.1);"
+>
+  <div class="container">
+    <div class="navbar-brand">
+      <a class="navbar-item" href="https://orchid.run">
+        <img src="https://orchid.run/assets/svg/orchid/logo_left_light.svg" width="112" height="28" alt="Orchid">
+      </a>
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+        <div class="navbar-item">
+          <div class="buttons">
+          
+
+
+  <a class="button is-primary " href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+
+
+          
+
+
+  <a class="button is-light " href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+
+
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+    <section
+      class="
+        section
+        has-background-light
+        is-
+        component
+        component-pageContent
+        component-order-0"
+    >
+      <div class="container content is-medium-tablet is-large-fullhd">
+      
+<!-- null -->
+
+
+
+<div class="card">
+  <div class="card-content">
+  
+<div class="" style="margin-bottom: 1rem">
+
+
+  <h1 class="title has-text-centered">0.19.0 Released</h1>
+  <div class="subtitle has-text-centered">
+    <time datetime="2020-02-23">February 23, 2020</time>
+  </div>
+
+
+
+  <div class="has-text-centered">
+    <a href="https://orchid.run/authors/casey-brooks" style="display:flex;flex-direction:row;align-items:center;justify-content:center;">
+      <span class="image is-48x48">
+        <img
+          src="https://www.gravatar.com/avatar/9a105afbe16e8306cb505d426bcbf0c5"
+          alt="Casey Brooks Avatar"
+          style="border-radius: 50%"
+        >
+      </span>
+      <span style="margin-left: 16px">Casey Brooks</span>
+    </a>
+  </div>
+
+</div>
+
+  
+<div class="content card-content is-medium-tablet is-large-fullhd">
+<p>The next major version of Orchid, 0.19.0, is now available! Check out the full release notes
+<a href="https://orchid.run/changelog">here</a>, and stick around for a general update of the development and community around Orchid!</p>
+<p>This is the official Orchid newsletter, the newest and best documentation site generator. There is a growing need to
+keep the community up-to-date on all the happenings around Orchid, and here I will share Orchid's progress, milestones,
+and future plans! Follow along with this series to stay on top of Orchid's newest features, track adoption on Github,
+and see who's using Orchid!</p>
+<h2 id="on-github"><a href="#on-github" id="on-github" class="anchor"></a>On Github</h2>
+<p>Orchid is now at 329 stars on Github, and since the last newsletter has received a PR from
+<a href="https://github.com/tomb50">tomb50</a> to improve Orchid's Asciidoctor integration. And thank you to everyone else who has
+been giving Orchid a try, reaching out with questions and feedback, and generally supporting this growing community!</p>
+<h2 id="whats-new"><a href="#whats-new" id="whats-new" class="anchor"></a>What's New?</h2>
+<p>Since the release of 0.18.0, I've been able to work on many smaller &quot;quality-of-life&quot; improvements to Orchid that have
+been suggested by the community. Some of these changes required breaking the internal API (thus the major version bump
+to 0.19.0), but the last few releases have mainly just been smaller new features and improvements to existing plugins.
+Below are the new features available in 0.19.0:</p>
+<ul>
+<li>Improve Asciidoc formatting. Specifically, other files relative to the source file can now be included.</li>
+<li>Automatically add <code>CNAME</code> files to GithubPages deploys, if not already present in the deployed site. The CNAME value
+will be inferred from the base URL of the site during the deploy.</li>
+<li>Adds <code>feedLinks</code> metaComponent to Posts plugin, which adds <code>&lt;link rel='alternate'&gt;</code> tags to page heads, pointing to
+the generated feed pages.</li>
+<li>Images uploaded and referenced from GitLab wikis are now copied over automatically with the rest of the site</li>
+</ul>
+<p>Full release notes and a migration guide are available <a href="https://orchid.run/changelog">here</a>.</p>
+<h1 id="in-progress"><a href="#in-progress" id="in-progress" class="anchor"></a>In Progress</h1>
+<p>Most work over the past month has been refactoring needed to support a better Asciidoctor experience, and generally
+clean up some of the older parts of the Orchid codebase. This is work that will eventually be extracted to a separate
+library, so be on the look-out for that!</p>
+<p>There is still work to be done with the Asciidoctor integration, but it's getting better all the time, and work on the
+Snippets plugin will be picking back up soon, too. I've already had some good feedback and suggestions for this feature
+which I will be taking into account as I build it out, so be sure to leave your thoughts on
+<a href="https://github.com/orchidhq/Orchid/issues/293">the appropriate issue</a>, to make this plugin exactly what you need!</p>
+<hr />
+<p>Are you interested in getting started with Orchid? There simply is no better way to manage all the documentation for
+your project, and I'd love to help you get set up!</p>
+<p>If you have an open-source project that needs docs, are building a new portfolio, or are building any other kind of
+static site, I want to work with you to get you set up with Orchid! Comment on this post, send me a PM here on Dev.to,
+reach out on <a href="https://gitter.im/JavaEden/Orchid">Gitter</a>, or <a href="https://www.caseyjbrooks.com/contact/">contact me here</a>
+and I will be with you every step of the way.</p>
+<p>And as always, let me know if you start using Orchid so I can feature you in the next update!</p>
+
+</div>
+
+  
+
+<p>Tagged with:</p>
+<div class="field is-grouped is-grouped-multiline">
+
+  <div class="control">
+    <div class="tags">
+      <a class="tag is-link" href="https://orchid.run/tags/orchid-news">#Orchid News</a>
+    </div>
+  </div>
+
+</div>
+
+  </div>
+</div>
+
+
+
+
+
+
+
+
+
+      </div>
+    </section>
+    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  
+    <footer class="footer has-background-white">
+      <div class="container content">
+      <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+      </div>
+    </footer>
+  
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

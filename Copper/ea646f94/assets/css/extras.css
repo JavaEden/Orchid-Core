@@ -1,0 +1,154 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,700|Source+Sans+Pro&display=swap");
+.preview-card {
+  width: 100%;
+  text-align: center;
+  flex-grow: 1;
+  flex-shrink: 0;
+  align-self: flex-end; }
+  .preview-card .card-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    display: inline-block;
+    cursor: pointer; }
+  .preview-card .card-shadow, .preview-card .card-content {
+    width: 100%;
+    height: 100%;
+    padding: 1.25rem 10%;
+    z-index: 10;
+    position: relative;
+    display: block;
+    transition: transform 0.15s;
+    transform: translate(0, 0);
+    border-radius: 6px;
+    box-shadow: 0 2px 3px rgba(68, 68, 68, 0.1), 0 0 0 1px rgba(68, 68, 68, 0.1); }
+    .preview-card .card-shadow .header-4, .preview-card .card-content .header-4 {
+      color: #363636; }
+  .preview-card .card-shadow {
+    z-index: 5;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #7EB394;
+    color: white;
+    display: flex;
+    flex-direction: row;
+    padding-bottom: 15px; }
+    .preview-card .card-shadow .shadow-text {
+      align-self: flex-end;
+      flex-grow: 1;
+      flex-shrink: 0; }
+    .preview-card .card-shadow .shadow-text {
+      font-size: 24px; }
+    .preview-card .card-shadow svg {
+      margin-left: 5px; }
+  .preview-card .card-content {
+    background-color: #ffffff;
+    color: #4a4a4a; }
+    .preview-card .card-content figure.image {
+      margin-bottom: 36px; }
+
+@media screen and (min-width: 1089px) {
+  .preview-card.hoverable .card-container:hover .card-shadow, .preview-card.hoverable .card-container.mock-hover .card-shadow {
+    transform: translate(-10px, -10px) rotate(-2deg); }
+  .preview-card.hoverable .card-container:hover .card-content, .preview-card.hoverable .card-container.mock-hover .card-content {
+    transform: translate(-100px, -100px) rotate(-20deg); } }
+
+@media screen and (max-width: 1088px) {
+  .preview-card.hoverable {
+    position: relative;
+    top: 50px;
+    margin-bottom: 100px; }
+    .preview-card.hoverable .card-shadow {
+      transform: translate(15px, -10px) rotate(-2deg); }
+    .preview-card.hoverable .card-content {
+      transform: translate(-15px, -75px) rotate(-6deg); } }
+
+.component .title:not(.is-4) {
+  font-size: 80px; }
+  .component .title:not(.is-4).superhero img {
+    max-width: 75%; }
+  @media screen and (max-width: 480px) {
+    .component .title:not(.is-4) {
+      font-size: 44px; }
+      .component .title:not(.is-4).superhero img {
+        max-width: 100%; } }
+.component .subtitle {
+  font-size: 48px; }
+  .component .subtitle.sidekick {
+    font-size: 64px;
+    font-weight: normal; }
+  @media screen and (max-width: 480px) {
+    .component .subtitle {
+      font-size: 28px;
+      font-weight: normal; }
+      .component .subtitle.sidekick {
+        font-size: 32px;
+        font-weight: normal; } }
+.component .list-title {
+  font-size: 38px; }
+
+.component.has-background-dark * {
+  color: white; }
+
+.component .content figure {
+  margin-left: 0;
+  margin-right: 0; }
+
+.component #whatIsOrchid {
+  margin: 100px auto;
+  display: block;
+  width: 85%; }
+
+@media screen and (max-width: 480px) {
+  .component #whatIsOrchid {
+    margin: 50px auto;
+    display: block;
+    width: 100%; } }
+
+.component .features img, .component .features .img {
+  margin-bottom: 0; }
+
+.component .features img.features-bg {
+  margin-left: auto;
+  margin-right: auto;
+  display: block; }
+
+@media screen and (min-width: 1088px) {
+  .component .features img, .component .features .img {
+    margin-bottom: -175px; }
+  .component .features .column {
+    border-radius: 20px; } }
+
+.component .features a:hover {
+  text-decoration: underline; }
+
+.button.is-large.is-rounded {
+  padding-bottom: 2px; }
+
+html.homepage .pagination {
+  display: none; }
+
+html.homepage .footer {
+  border: none; }
+
+* {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: normal; }
+
+h1, h2, h3, h4, h5, h6, .header {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: bolder; }
+
+::selection {
+  background: #d5d7ec !important; }
+
+html.homepage {
+  overflow: auto !important; }
+  html.homepage .button {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: normal; }
+  html.homepage .gitter-open-chat-button {
+    background-color: #7EB394; }

@@ -1,0 +1,888 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Link All The Things!</title>
+
+
+<meta name="description" content="Get to know the basics of how Orchid makes it easy to generate internal links in you site.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/whats-on-the-menu">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/link-all-the-things" aria-current="page">Link All The Things!</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">Link All The Things!</h2>
+<p class="subtitle is-4">Get to know the basics of how Orchid makes it easy to generate internal links in you site.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>Our Orchid site is starting to get pretty well furnished and is easy to maintain, but there are still a few things we
+need to clean up before it is fully ready-to-go. Most notably, we still have those hard-coded links in our locations
+index page. In this tutorial, I will show you the way Orchid addresses this problem.</p>
+<p>Before continuing, make sure you have followed along with the previous tutorial and have started your local Orchid
+server with <code>gradle orchidServe</code>. We will be building on that example in this tutorial.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/04">OrchidTutorials repository</a>.</p>
+<h2 id="making-dynamic-links"><a href="#making-dynamic-links" id="making-dynamic-links" class="anchor"></a>Making Dynamic Links</h2>
+<p>Let's first review what we have in our <code>locations/index.md</code> page:</p>
+<pre><code class="language-twig">- [Houston](http://localhost:8080/locations/houston)
+- [Dallas](http://localhost:8080/locations/dallas)
+- [Austin](http://localhost:8080/locations/austin)
+</code></pre>
+<p>There are a few issues with this. The first, most obvious issue is that these links are hardcoded to using our
+development base URL of <code>http://localhost:8080</code>. We don't want to go live with this site when it has links to
+development URLs, but Markdown doesn't have any way to dynamically change those links.</p>
+<p>But remember how we added a Front Matter block to enable Pebble precompilation in the previous tutorial? Even though we
+don't really have any data to put in Front Matter, let's add it anyway so I can introduce you to one of the important
+<strong>global variables</strong> available to you in Orchid, <code>site</code>.</p>
+<h3 id="site-global-variable"><a href="#site-global-variable" id="site-global-variable" class="anchor"></a>Site Global Variable</h3>
+<p>The <code>site</code> variable is available on every page in Orchid, and contains a few properties that might be of use, either for
+display or for control flow. A few notable properties are:</p>
+<ul>
+<li><code>site.about</code> - Additional information about your site, such as its title, avatar, favicon. Another tutorial will
+teach you how to customize these values</li>
+<li><code>site.baseUrl</code> - Your site's base URL</li>
+<li><code>site.debug</code> - True if Orchid is running in debug</li>
+<li><code>site.orchidVersion</code> - The current version of Orchid</li>
+<li><code>site.version</code> - The current version of your app or site</li>
+</ul>
+<p>The <code>site.baseUrl</code> property looks like just what we need! We can replace the hard-coded base URL in <code>locations/index.md</code>
+with that variable instead, and it will automatically update these URLs based on the <code>baseUrl</code> property set in
+<code>build.gradle</code>.</p>
+<pre><code class="language-twig">---
+---
+- [Houston]({{ site.baseUrl }}/locations/houston)
+- [Dallas]({{ site.baseUrl }}/locations/dallas)
+- [Austin]({{ site.baseUrl }}/locations/austin)
+
+</code></pre>
+<p>These links are still kind-of &quot;hard-coded&quot;, however, since the path of these links is just passed directly to the
+Markdown processor. Instead, we cal pass these paths to the <code>baseUrl</code> Pebble filter, which allows Orchid to be a bit
+more clever with these paths (to ensure proper formatting), and is also easier to understand and more idiomatic.</p>
+<pre><code class="language-twig">---
+---
+- [Houston]({{ '/locations/houston'|baseUrl }})
+- [Dallas]({{ '/locations/dallas'|baseUrl }})
+- [Austin]({{ '/locations/austin'|baseUrl }})
+
+</code></pre>
+<p>And yet, we can still do better. There are still some parts to those URLs that might get changed without our knowing,
+which would lead to broken links. Let's see how we can avoid that.</p>
+<h2 id="linking-functions"><a href="#linking-functions" id="linking-functions" class="anchor"></a>Linking Functions</h2>
+<p>Orchid comes with a few functions that can be used to intelligently find other pages within your Orchid site. Generally-
+speaking, you can use these functions to locate any page by its title, and from that, let Orchid generate the entire URL
+for you. This separates the link that is printed out from your intent behind making the link, which is to go to a
+specific, known page.</p>
+<h3 id="link-function"><a href="#link-function" id="link-function" class="anchor"></a>Link Function</h3>
+<p>The first function we can use is <code>link()</code>. Let's start with an example:</p>
+<pre><code class="language-twig">---
+---
+- [Houston]({{ link('Houston') }})
+- [Dallas]({{ link('Dallas') }})
+- [Austin]({{ link('Austin') }})
+
+</code></pre>
+<p>Now, instead of manually creating the links to our individual location pages, we simply pass the <em>title</em> of our target
+page to the <code>link()</code> function, which returns the String URL of the page whose title is the same, which is exactly what
+we want! If we change the location of our locations pages, say to <code>/locations/tx</code>, we do not have to go and update all
+our links to those pages as long as they still have the same title. In addition, these links use the same base URL that
+is in <code>site.baseUrl</code>, so we can trust that the links will adapt to both our development and production sites.</p>
+<h3 id="anchor-function"><a href="#anchor-function" id="anchor-function" class="anchor"></a>Anchor Function</h3>
+<p>The <code>link()</code> function is very useful, but there is still a problem. If we happen to pass the title of a page that
+doesn't exist, it will simply return an empty string. But Markdown will still create an anchor tag, though it will just
+have an empty <code>href</code> attribute. This is bad both for SEO and for your user's browsing experience. What we really want is
+to only create a clickable link if the page actually exists, otherwise just render text. While this isn't a perfect
+solution, at least you will have the visual cue of text <em>not</em> being a link when it should, and it's less detrimental
+to your SEO.</p>
+<p>Most SSGs and CMSs would have you just check if that returned URL is empty, and wrap the link in an <code>if</code> statement. But
+this gets tedious and makes your templates hard to read, so Orchid offers another tag, specifically designed for
+intelligently generating a clickable anchor link, <code>anchor()</code>. With the <code>anchor()</code> function, we can replace the entire
+Markdown link, and let Orchid create it for us instead:</p>
+<pre><code class="language-twig">---
+---
+- {{ anchor('Houston') }}
+- {{ anchor('Dallas') }}
+- {{ anchor('Austin') }}
+
+</code></pre>
+<p>Not only is our template easier to read now, but it won't generate links if the page doesn't exist, instead just
+returning the text that is passed to the function directly. By default, the text passed to the function is used as the
+text in the link, but this can be changed by passing an additional argument to the function. If there are 2 parameters,
+then the first one is the text that will be displayed in the link, while the second is used to look up a page.</p>
+<pre><code class="language-twig">---
+---
+- {{ anchor('Houston, TX', 'Houston') }}
+- {{ anchor('Dallas, TX', 'Dallas') }}
+- {{ anchor('Austin, TX', 'Austin') }}
+
+</code></pre>
+<h2 id="generating-the-page-list"><a href="#generating-the-page-list" id="generating-the-page-list" class="anchor"></a>Generating the Page List</h2>
+<h3 id="find-all-function"><a href="#find-all-function" id="find-all-function" class="anchor"></a>Find All Function</h3>
+<p>Our locations index page is looking really good now. All our links are fully dynamic and will automatically update if
+the page is moved and for our different environments. But our business is growing very quickly, and we're adding new
+locations almost daily! You don't want to have to update this list every time you add a new location; what you really
+want is to have the entire list automatically generated based on the files you have already created for each location.</p>
+<p>Fortunately for you, Orchid has a way to handle that too, which works in very much the same way as just linking to a
+single page. There is a <code>findAll()</code> function that takes the same input as the <code>link()</code> and <code>anchor()</code> functions, but
+instead of returning the String URL or anchor to that page, it will return a list of Page objects, which you can then
+use to build links for yourself just as easily.</p>
+<p>Take a look at the snippet below as an example. It is incomplete because there is a bit more we will want to add to the
+functions parameters, but I'll get back to that in a moment. For now, just notice that we can iterate over the result
+and build links manually.</p>
+<pre><code class="language-twig">{% for page in findAll(...) %}
+- [{{ page.title }}]({{ page.link }})
+{% endfor %}
+
+</code></pre>
+<h3 id="filtering-collections"><a href="#filtering-collections" id="filtering-collections" class="anchor"></a>Filtering Collections</h3>
+<p>In our example of small business locations, all the pages we want to link to come from the <code>pages</code> plugin, and more
+specifically, because their topmost folder within <code>pages</code> is <code>locations/</code> they are considered to be in the <code>locations</code>
+page group. Together, these two properties are known as the <strong>collection type</strong> and <strong>collection ID</strong>.</p>
+<p>Each plugin that generates pages, like our Static Pages plugin, also generates one or more <em>collections</em> of pages. These
+collections are what's actually underlying all the <code>link()</code>, <code>anchor()</code>, and <code>findAll()</code> functions, and they all allow
+you to filter the pages that get matched by their corresponding <code>collectionType</code> and <code>collectionId</code>. It is up to the
+plugin to decide exactly how these are formatted, so be sure to check the plugin's documentation, but as a general rule
+of thumb, the <code>collectionType</code> matches the key of the generator they are from, while the <code>collectionId</code> is a specific
+subset of the pages from that generator.</p>
+<p>When you pass a <code>collectionId</code> or <code>collectionType</code> to any of the above functions, the scope of the search is limited to
+just those matching collections. The <code>itemId</code> is the property we've been passing as the title, and is required for
+<code>link()</code> and <code>anchor()</code>, but is optional for <code>findAll()</code>. The <code>itemId</code> filters the pages contained within the matching
+collections.</p>
+<p>Armed with this knowledge, we can finish out our example and not only generate dynamic links to our location pages, but
+also dynamically generate the entire list!</p>
+<pre><code class="language-twig">{% for page in findAll(collectionType='pages', collectionId='locations') %}
+- [{{ page.title }}]({{ page.link }})
+{% endfor %}
+
+</code></pre>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>And just like that, we can now maintain our Orchid site more easily than ever before! Not only are we able to update the
+content for all our locations pages at once (as we learned in the last tutorial), but we can generate our full list of
+locations on the index page dynamically, so new locations are automatically included in that list.</p>
+<p>Let's review all the individual pieces we learned in this tutorial.</p>
+<ol>
+<li>Orchid offers many ways to generate dynamic links between your content. The first, and simplest way, is to use
+<code>site.baseUrl</code> which prints out your site's base URL, fro which you can manually build the link to a page. The
+<code>baseUrl</code> Pebble filter accomplishes the same thing, prepending the base URL to whatever is passed to it.</li>
+<li>Instead of manually building a URL, you can ask Orchid for the String URL to a page in your site with the <code>link()</code>
+function, and build a Markdown link using that.</li>
+<li>To prevent broken links, you can ask Orchid to build a full HTML anchor using the <code>anchor()</code> function. This uses the
+same search query as used by the <code>link()</code> function, and you may optionally pass the text to include in the link as
+the first parameter to this method.</li>
+<li>The same searches which generate single links can also be used to locate lists of pages from your Orchid site, using
+the <code>findAll()</code> function. You can iterate over the results of this list and build links to these pages for each item
+in the list, which allows you to make dynamic lists of page links.</li>
+<li>The <code>link()</code>, <code>anchor()</code>, and <code>findAll()</code> functions also accept the optional <code>collectionType</code> and <code>collectionId</code>
+parameters, which filter the results and can be used to narrow your search to exactly the pages you want.</li>
+</ol>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#making-dynamic-links" class="">
+  
+  Making Dynamic Links
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#site-global-variable" class="">
+  
+  Site Global Variable
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#linking-functions" class="">
+  
+  Linking Functions
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#link-function" class="">
+  
+  Link Function
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#anchor-function" class="">
+  
+  Anchor Function
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#generating-the-page-list" class="">
+  
+  Generating the Page List
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#find-all-function" class="">
+  
+  Find All Function
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#filtering-collections" class="">
+  
+  Filtering Collections
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/link-all-the-things 71209331 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    The Heart of the (Front) Matter
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/whats-on-the-menu">
+    What&#39;s on the Menu?
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

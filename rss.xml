@@ -1,0 +1,89 @@
+<?xml version="1.0"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+    <channel>
+        <id>https://orchid.run</id>
+        <title>Orchid</title>
+        <link>https://orchid.run</link>
+        <atom:link href="https://orchid.run/rss.xml" rel="self" type="application/rss+xml"/>
+        <description>Build and deploy beautiful documentation sites that grow with you</description>
+        <item>
+            <title>0.21.0 Released</title>
+            <guid>https://orchid.run/news/2020-5-28/0-21-0-released</guid>
+            <link>https://orchid.run/news/2020-5-28/0-21-0-released</link>
+            <description>May 2020 Orchid News</description>
+        </item>
+        <item>
+            <title>New Snippets plugin, 0.20.0 Released</title>
+            <guid>https://orchid.run/news/2020-3-29/0-20-0-released</guid>
+            <link>https://orchid.run/news/2020-3-29/0-20-0-released</link>
+            <description>March 2020 Orchid News</description>
+        </item>
+        <item>
+            <title>0.19.0 Released</title>
+            <guid>https://orchid.run/news/2020-2-23/0-19-0-released</guid>
+            <link>https://orchid.run/news/2020-2-23/0-19-0-released</link>
+            <description>February 2020 Orchid News</description>
+        </item>
+        <item>
+            <title>Gaining Traction</title>
+            <guid>https://orchid.run/news/2020-1-23/gaining-traction</guid>
+            <link>https://orchid.run/news/2020-1-23/gaining-traction</link>
+            <description>January 2020 Orchid News</description>
+        </item>
+        <item>
+            <title>0.18.0, The New Face of Orchid</title>
+            <guid>https://orchid.run/news/2019-12-5/0_18_0-the-new-face-of-orchid</guid>
+            <link>https://orchid.run/news/2019-12-5/0_18_0-the-new-face-of-orchid</link>
+            <description>Fall 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>Summer 2019 Update: Summer Recap</title>
+            <guid>https://orchid.run/news/2019-9-10/summer-recap</guid>
+            <link>https://orchid.run/news/2019-9-10/summer-recap</link>
+            <description>Summer 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>April 2019 Update: In Bloom</title>
+            <guid>https://orchid.run/news/2019-5-7/in-bloom</guid>
+            <link>https://orchid.run/news/2019-5-7/in-bloom</link>
+            <description>April 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>March 2019 Update: March Madness</title>
+            <guid>https://orchid.run/news/2019-4-3/march-madness</guid>
+            <link>https://orchid.run/news/2019-4-3/march-madness</link>
+            <description>March 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>February 2019 Update: One Love</title>
+            <guid>https://orchid.run/news/2019-3-2/one-love</guid>
+            <link>https://orchid.run/news/2019-3-2/one-love</link>
+            <description>February 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>January 2019 Update: The One Where It Got Cold In Texas</title>
+            <guid>https://orchid.run/news/2019-2-11/where-it-got-cold-in-texas</guid>
+            <link>https://orchid.run/news/2019-2-11/where-it-got-cold-in-texas</link>
+            <description>January 2019 Orchid News</description>
+        </item>
+        <item>
+            <title>December 2018 Update: Post-Holidays Edition</title>
+            <guid>https://orchid.run/news/2019-1-16/post-holidays-edition</guid>
+            <link>https://orchid.run/news/2019-1-16/post-holidays-edition</link>
+            <description>December 2018 Orchid News</description>
+        </item>
+        <item>
+            <title>November 2018 Update: The Biggest Update Yet!</title>
+            <guid>https://orchid.run/news/2018-11-28/biggest-update-yet</guid>
+            <link>https://orchid.run/news/2018-11-28/biggest-update-yet</link>
+            <description>November 2018 Orchid News</description>
+        </item>
+        <item>
+            <title>Casey Brooks</title>
+            <guid>https://orchid.run/authors/casey-brooks</guid>
+            <link>https://orchid.run/authors/casey-brooks</link>
+            <description></description>
+        </item>
+        
+    </channel>
+</rss>

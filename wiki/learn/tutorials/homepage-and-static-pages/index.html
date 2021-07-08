@@ -1,0 +1,749 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Homepage and Static Pages</title>
+
+
+<meta name="description" content="Create your Orchid site&#39;s first pages and learn how Orchid processes files.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/your-first-orchid-site">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages" aria-current="page">Homepage and Static Pages</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">Homepage and Static Pages</h2>
+<p class="subtitle is-4">Create your Orchid site&#39;s first pages and learn how Orchid processes files.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>In the previous tutorial, we learned about how to create a new Orchid project and how to start it from the command line.
+In this tutorial we will start to add our first content to our homepage and learn about the most basic, but one of the
+most flexible plugins: Static Pages.</p>
+<p>Before continuing, make sure you have followed along with the first tutorial and have started your local Orchid server
+with <code>gradle orchidServe</code>. We will be building on that example in this tutorial.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/02">OrchidTutorials repository</a>.</p>
+<h2 id="your-homepage"><a href="#your-homepage" id="your-homepage" class="anchor"></a>Your Homepage</h2>
+<p>Looking at your first Orchid site, you'll notice that it is a bit plain. It's just an empty page with no menus, no
+content, nothing interesting at all. But let's change that!</p>
+<p>Every Orchid site includes a Homepage. This is first page that visitors will see when they go to the root of your
+website, and is always created even if you don't include any other plugins in your Orchid build. Let's start by adding a
+new file in your project at <code>src/orchid/resources/homepage.md</code> and adding the following content to it.</p>
+<pre><code class="language-text">## Hello, Orchid
+
+&gt; You are beautiful, and so is your website.
+
+Let's build something _beautiful and unique_, **together**.
+</code></pre>
+<p>There we go, that's looking a bit better. We now have a Markdown file, and whatever you write in that file will be
+automatically converted to HTML and embedded inside your theme.</p>
+<p>But this file doesn't have to be Markdown. Orchid knows a lot of different languages, and you are free to use something
+else if you wish, such as Asciidoc. By changing the file extension from <code>.md</code> to <code>.ad</code>, you will instruct Orchid to
+process this file as Asciidoc rather than Markdown.</p>
+<p>Let's do that now. Rename <code>src/orchid/resources/homepage.md</code> to <code>src/orchid/resources/homepage.ad</code> and change its
+contents to the equivalent in Asciidoc.</p>
+<pre><code class="language-text">== Hello, Orchid
+
+____
+You are beautiful, and so is your website.
+____
+
+Let's build something _beautiful and unique_, *together*.
+</code></pre>
+<h1 id="adding-static-pages"><a href="#adding-static-pages" id="adding-static-pages" class="anchor"></a>Adding Static Pages</h1>
+<h2 id="example-small-business"><a href="#example-small-business" id="example-small-business" class="anchor"></a>Example: Small Business</h2>
+<p>Having a homepage on your site is great and all, but you've probably got a lot more content that you want to show. There
+are many ways you can add additional pages to your Orchid site, but the easiest way is with the Static Pages plugin.</p>
+<p>Let's say you are running a small business which has multiple locations throughout Texas: one in Houston, one in Dallas,
+and one in Austin. Each location should have its own page which lists its name, address, phone number, and business
+hours. You want these pages to be in your website at <code>/locations/{locationName}</code>, and also to have an &quot;index&quot; page
+showing all locations so each one can be easily located. So you want your site to have the following pages:</p>
+<ul>
+<li><code>/</code> - Site homepage</li>
+<li><code>/locations</code> - Index of all locations</li>
+<li><code>/locations/houston</code> - Houston location landing page</li>
+<li><code>/locations/dallas</code> - Dallas location landing page</li>
+<li><code>/locations/austin</code> - Austin location landing page</li>
+</ul>
+<p>Let's see how we can use the Static Pages plugin to create this site.</p>
+<h2 id="adding-location-pages"><a href="#adding-location-pages" id="adding-location-pages" class="anchor"></a>Adding Location Pages</h2>
+<p>We already have our Homepage set up at <code>/</code>, so let's go ahead and set up our Houston location page first. We'll start by
+making a new file at <code>src/orchid/resources/pages/locations/houston.md</code>. This file works just the same as your Homepage's
+file. You can write whatever content you want inside it, and it will be converted to HTML and embedded inside your theme
+for you. Also, just like the Homepage, you can change its file extension to have Orchid process it as another language,
+if desired.</p>
+<p>So let's add the following content to <code>src/orchid/resources/pages/locations/houston.md</code>.</p>
+<pre><code class="language-text">## Location
+
+Houston, TX
+
+## Address
+ 
+1234, Example Dr.
+Houston, TX, 12345
+
+## Phone
+
+(123) 456-7890
+
+## Business Hours
+
+M-F: 6am - 9pm
+Sa: 6am - 10pm
+Su: Closed
+</code></pre>
+<p>While we're at it, lets go ahead and do similar things for our Dallas and Austin locations as well. Copy the
+<code>houston.md</code> file to <code>dallas.md</code> and <code>austin.md</code>, change the content inside these files, and in just a moment Orchid
+will have rebuilt your site and included these new pages for us.</p>
+<p>You can now view the pages for each business location at
+<a href="http://localhost:8080/locations/houston">http://localhost:8080/locations/houston</a>,
+<a href="http://localhost:8080/locations/dallas">http://localhost:8080/locations/dallas</a>, and
+<a href="http://localhost:8080/locations/austin">http://localhost:8080/locations/austin</a>!</p>
+<h2 id="adding-location-index-page"><a href="#adding-location-index-page" id="adding-location-index-page" class="anchor"></a>Adding Location Index Page</h2>
+<p>Now that we have a unique page for each of our locations, lets go ahead and create an index page which lists all of our
+individual locations. As you may have already guessed, we need to create a new file at
+<code>src/orchid/resources/pages/locations.md</code>, and add the content in there. This is because the Static Pages plugin works
+by taking <em>all</em> files in your <code>src/orchid/resources/pages/</code> directory, and copies them into your final site at that same
+path.</p>
+<p>However, if we were to build a really large site with static pages, it might get a bit confusing having the locations
+index page in a different folder from the rest of the locations pages. So lets actually move
+<code>src/orchid/resources/pages/locations.md</code> to <code>src/orchid/resources/pages/locations/index.md</code>. The Static Pages plugin
+will copy any file over directly, but for files named <code>index</code>, it will keep them at the root of that folder, rather than
+making a sub-page in that folder. So <code>src/orchid/resources/pages/locations/index.md</code> will become <code>/locations</code> instead of
+<code>/locations/index</code> like the other-named pages would.</p>
+<p>We need to get this site out fast so we can start getting people visiting all locations, so let's just hardcode links to
+each page for now. Add the following to <code>locations/index.md</code>:</p>
+<pre><code class="language-text">## Our Locations
+
+- [Houston](http://localhost:8080/locations/houston)
+- [Dallas](http://localhost:8080/locations/dallas)
+- [Austin](http://localhost:8080/locations/austin)
+</code></pre>
+<h1 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h1>
+<p>Your Orchid site is starting to look pretty good, but lets review what we did:</p>
+<ol>
+<li>Orchid keeps most of its files in <code>src/orchid/resources/</code>. One special file in that folder, <code>homepage.md</code> can be
+added so that Orchid can build its front page with it.</li>
+<li>You can add any files you want to <code>src/orchid/resources/pages/</code>, and Orchid will copy them over to your final site in
+that same structure. You can also name special files here <code>index</code>, and they will be kept at the index of that folder
+in the final site rather than in a sub-directory named index, which can be used to create special landing pages.</li>
+<li>The homepage and all static pages are processed based on their file extension. Use the <code>.md</code> extension to process the
+file as Markdown, and <code>.ad</code> to process it as Asciidoc. In fact, you'll find that <em>any</em> page from <em>any</em> plugin will
+be processed in a similar manner, so that using all plugins will feel very similar.</li>
+</ol>
+<p>Stay tuned for more tutorials on how to use Orchid. In the next tutorial, I will show you how to improve this small
+business by making the links dynamic, and also adding breadcrumbs and a customizing the locations page content to
+improve consistency across your site and make it easier to navigate.</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages 463091957 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages 463091957 -->
+  <!-- menuItem.page=  -->
+  <a href="#your-homepage" class="">
+  
+  Your Homepage
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages 463091957 -->
+  <!-- menuItem.page=  -->
+  <a href="#example-small-business" class="">
+  
+  Example: Small Business
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages 463091957 -->
+  <!-- menuItem.page=  -->
+  <a href="#adding-location-pages" class="">
+  
+  Adding Location Pages
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages 463091957 -->
+  <!-- menuItem.page=  -->
+  <a href="#adding-location-index-page" class="">
+  
+  Adding Location Index Page
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/your-first-orchid-site">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    Your First Orchid Site
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter">
+    The Heart of the (Front) Matter
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

@@ -1,0 +1,962 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>How to Write a Blog</title>
+
+
+<meta name="description" content="Instructions for creating and publishing a blog with Orchid.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin">
+
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/how-to-blog" aria-current="page">How to Write a Blog</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">How to Write a Blog</h2>
+<p class="subtitle is-4">Instructions for creating and publishing a blog with Orchid.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<p>Orchid was created to create amazing project documentation sites, but it is by no means limited to documentation. Orchid
+is equally good at producing blogs for your portfolio site, or even for adding a newsletter to your docs to further
+engage with your users!</p>
+<p>This tutorial will walk you through how to create a blog, complete with archives for all your posts, and get it deployed
+to Netlify. If you want to jump right into a working project, you can find everything described here in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/blog-site">OrchidTutorials example project</a>.</p>
+<p>Alternatively, you can simply click the &quot;Deploy to Netlify&quot; button below to automatically clone, build, and deploy the
+OrchidStarter repo to the Netlify CDN. Most of what is in this tutorial is also included in that site, so you can
+follow along with this tutorial using the <a href="https://github.com/JavaEden/OrchidStarter">starter repo</a> as well.</p>
+<p><a href="https://app.netlify.com/start/deploy?repository=https://github.com/orchidhq/OrchidStarter"><img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify" /></a></p>
+<h2 id="getting-started"><a href="#getting-started" id="getting-started" class="anchor"></a>Getting Started</h2>
+<p>We'll be using Gradle for this project, and Orchid runs as a Gradle plugin. So let's get our <code>settings.gradle</code> and we'll
+also set up the <code>build.gradle</code>:</p>
+<pre><code class="language-groovy">// settings.gradle
+rootProject.name = 'My Awesome Blog'
+</code></pre>
+<pre><code class="language-groovy">// build.gradle
+// 1. Apply Orchid plugin
+plugins {
+    id &quot;com.eden.orchidPlugin&quot; version &quot;1.0.0&quot;
+}
+
+// 2. Include Orchid dependencies
+dependencies {
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidBlog:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidFutureImperfect:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidSearch:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidPluginDocs:1.0.0&quot;
+}
+
+// 3. Get dependencies from MavenCentral
+repositories {
+    mavenCentral()
+}
+
+// 4. Use the 'FutureImperfect' theme, and set the URL it will have on Github Pages
+orchid {
+    theme = &quot;FutureImperfect&quot;
+    baseUrl = &quot;https://project.netlify.com&quot;
+    version = &quot;1.0.0&quot;
+}
+</code></pre>
+<p>This is all that's required to run your Orchid site! There are still a few things we need to do to set up the blog, but
+you can run Orchid right now with <code>./gradlew orchidServe</code> and view the site on http://localhost:8080. It should give you
+an output like the following:</p>
+<pre><code class="language-text">./gradlew :docs:orchidServe
+
+&gt; Task :docs:orchidServe
+Using the following modules: 
+--------------------
+ * com.eden.orchid.StandardModule
+
+Auto-loaded modules: 
+--------------------
+ * com.eden.orchid.editorial.EditorialModule
+ * com.eden.orchid.impl.compilers.markdown.FlexmarkModule
+ * com.eden.orchid.impl.compilers.pebble.PebbleModule
+ * com.eden.orchid.kotlindoc.KotlindocModule
+ * com.eden.orchid.pages.PagesModule
+ * com.eden.orchid.search.SearchModule
+ * com.eden.orchid.wiki.WikiModule
+
+Flag values: 
+--------------------
+-adminTheme: Default
+-baseUrl: https://project.netlify.com
+-defaultTemplateExtension: peb
+-dest: ...
+-dryDeploy: false
+-environment: debug
+-logLevel: VERBOSE
+-port: 8080
+-src: ...
+-task: serve
+-theme: Editorial
+-version: 1.0.0
+
+[INFO] Orchid: Running Orchid version 0.16.0, site version unspecified in debug environment
+[INFO] OrchidWebserver: Webserver Running at http://localhost:8080
+[INFO] OrchidWebsocket: Websocket running at http://localhost:8081/
+[INFO] TaskServiceImpl: Build Starting...
+[INFO] GeneratorServiceImpl: Indexing [10000: assets]
+[INFO] GeneratorServiceImpl: Indexing [1000: home]
+[INFO] GeneratorServiceImpl: Indexing [1000: kotlindoc]
+[INFO] GeneratorServiceImpl: Indexing [1000: pages]
+[INFO] GeneratorServiceImpl: Indexing [1000: wiki]
+[INFO] GeneratorServiceImpl: Indexing [11: sitemap]
+[INFO] GeneratorServiceImpl: Indexing [10: indices]
+[INFO] GeneratorServiceImpl: Generating [10000: assets]
+[INFO] GeneratorServiceImpl: Generating [1000: home]
+[INFO] GeneratorServiceImpl: Generating [1000: kotlindoc]
+[INFO] GeneratorServiceImpl: Generating [1000: pages]
+[INFO] GeneratorServiceImpl: Generating [1000: wiki]
+[INFO] GeneratorServiceImpl: Generating [11: sitemap]
+[INFO] GeneratorServiceImpl: Generating [10: indices]
+
+Build Metrics:
+┌───────┬────────────┬───────────────┬─────────────────┬───────────────────────────┬─────────────────────────────┐
+│       │ Page Count │ Indexing Time │ Generation Time │ Mean Page Generation Time │ Median Page Generation Time │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│  home │     1      │     54ms      │      481ms      │           472ms           │            472ms            │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│ TOTAL │          1 │      3s 496ms │           520ms │                     472ms │                       472ms │
+└───────┴────────────┴───────────────┴─────────────────┴───────────────────────────┴─────────────────────────────┘
+
+Build Complete
+Generated 1 page in 4s 18ms
+
+
+Webserver Running at http://localhost:8080
+Hit [CTRL-C] to stop the server and quit Orchid
+</code></pre>
+<p>You will also see the basic site served on localhost:8080, which looks like:</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-01.png" alt="empty Orchid site" /></p>
+<p>But let's move on to the next step: adding content to the site!</p>
+<h2 id="adding-content"><a href="#adding-content" id="adding-content" class="anchor"></a>Adding Content</h2>
+<h3 id="homepage"><a href="#homepage" id="homepage" class="anchor"></a>Homepage</h3>
+<p>The first thing anyone will see when landing on your site is your Homepage. Orchid creates this page based on a
+<code>homepage.md</code> file in the root of your site's <em>resources</em>, which are located by default in <code>src/orchid/resources</code>. Let's
+start by creating this file and adding a short description of our project to it.</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/homepage.md
+# My Blog
+
+This is a short description of this blog.
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-02.png" alt="Orchid Site with Homepage content" /></p>
+<p>A common thing to add to your blog homepage is a list of your latest blog posts. But before we add that, we'll need to
+write some blog posts first.</p>
+<h3 id="blog-posts"><a href="#blog-posts" id="blog-posts" class="anchor"></a>Blog Posts</h3>
+<p>Blog posts are Markdown files in your <code>posts/</code> directory, where each file is a separate blog post. The filename of the
+post must be in the format of <code>YYYY-MM-DD-[post-title].md</code>, with the publication date and the &quot;slug&quot; of the post which
+will be its path in its URL.</p>
+<p>So let's add a few posts, such as <code>posts/2019-01-01-post-one.md</code>, <code>posts/2019-02-01-post-two.md</code>, and
+<code>posts/2019-03-01-post-three.md</code>. The contents of each file should start with a Front Matter section, where you can
+specify the post's title, its tags, and other metadata, and the actual post content after that. Front Matter is a block
+of YAML between pairs of triple-dashed lines.</p>
+<pre><code class="language-markdown"># posts/2019-01-01-post-one.md
+---
+title: Example Post 1
+featuredImage: assets/media/pic01.jpg
+tags:
+    - one
+    - two
+---
+
+Example Post 1
+</code></pre>
+<p>You'll now have a blog post at http://localhost:8080/2019/1/1/post-one that looks like the following;</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-03.png" alt="Orchid blog post" /></p>
+<p>Now that we have some blog posts set up, we can go back and add the latest posts to our homepage. We can do by adding
+a <strong>component</strong> to the homepage's Front Matter, configured to display the latest posts. Orchid's Components are just a
+list of &quot;blocks&quot; which are rendered to the page in order. There are many different types of components, and different
+plugins can add their own. An example is the <code>recentPosts</code> component from the OrchidPosts plugin. We can also add the
+<code>pageContent</code> component, which adds the Markdown content of the <code>homepage.md</code>. If you don't define any components this
+one is added automatically, but if you use any additional components you'll have to add it yourself.</p>
+<pre><code class="language-markdown"># homepage.md
+---
+components:
+  - type: pageContent
+  - type: recentPosts
+    limit: 4
+    noWrapper: true
+    template:
+      - 'includes/postPreview_large'
+---
+# My Blog
+
+This is a short description of this blog.
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-04.png" alt="Orchid blog post" /></p>
+<h3 id="creating-archives"><a href="#creating-archives" id="creating-archives" class="anchor"></a>Creating Archives</h3>
+<h4 id="post-archive"><a href="#post-archive" id="post-archive" class="anchor"></a>Post Archive</h4>
+<p>Now, while it is nice to show the most recent posts on your site's homepage, if you've got more than a couple posts you
+simply can't show a complete archive on the homepage. Instead, we can use the OrchidTaxonomies plugin to generate proper
+archives.</p>
+<p>Orchid is designed around a concept of &quot;collections&quot; of pages. When we set up the blog posts, Orchid also created a
+<code>posts</code> collection. We can tell the Taxonomies plugin to generate an archive of any of our collections from any plugin,
+making it simple to create any archives we may need.</p>
+<p>Configuring archives is done through a <code>config.yml</code> file in our site resources. This is the main entry-point to
+configuring <em>anything</em> in our site. The following snippet will set up a <em>collection archive</em> for all our blog posts.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+taxonomies:
+  collectionArchives:
+    - collectionType: 'posts'
+      collectionId: 'blog'
+</code></pre>
+<p>Now, if we visit http://localhost:8080/blog, we will see a listing of all our blog posts. As our blog grows, this
+archive will automatically become paginated, keeping any single page from growing too large.</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-05.png" alt="Collection Archive" /></p>
+<p>You may wish to create archives for other collections as well. If you visit http://localhost:8080/admin while your site
+is serving locally, you can view Orchid's admin panel where we can see a list of all the collections that have been set
+up for us.</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-06.png" alt="Orchid Admin Panel Collections" /></p>
+<h4 id="tag-archives"><a href="#tag-archives" id="tag-archives" class="anchor"></a>Tag Archives</h4>
+<p>But the full listing of posts may not be the only kind of archives we want! Most blogs will also contain listings of
+posts by tag (remember, we provided a list of tags to our posts earlier!). Orchid did not create a collection for these
+tagged pages, but that doesn't mean we can't create an archive for them too! The Taxonomies plugin is able to generate
+<em>any</em> kind of arbitrary archive, based on the metadata attached to each post. These are called <em>taxonomy archives</em>,
+because you get to create any kind of taxonomy (or labelling) you need.</p>
+<p>Configuration of a taxonomy archive is similar to a collection archive, but instead of giving it the values for a
+collection, we tell it a property to look for in our posts' Front Matter, such as <code>tags</code>:</p>
+<pre><code class="language-yaml">taxonomies:
+  collectionArchives:
+    - collectionType: 'posts'
+      collectionId: 'blog'
+  taxonomies:
+    - key: tags
+      single: false
+      orderBy:
+        - entryCount
+</code></pre>
+<p>This will now go through all our posts, find any that have a <code>tags</code> property in its Front Matter, and add it to that
+archive. And this will actually create <em>two</em> archives for each &quot;taxonomy&quot;: one listing all the pages with each tag (a
+term archive), and another archive simply listing all the tags that it found (a taxonomy archive).</p>
+<p><strong>http://localhost:8080/tags</strong></p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-07.png" alt="Taxonomy Archive" /></p>
+<p><strong>http://localhost:8080/tags/one</strong></p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-08.png" alt="Term Archive" /></p>
+<h3 id="site-infotheme-configuration"><a href="#site-infotheme-configuration" id="site-infotheme-configuration" class="anchor"></a>Site Info/Theme Configuration</h3>
+<p>With the skeleton of our site content set up, it's time to make some customizations to the theme and add additional info
+about your site, such as its name and the author of your posts. These can be added to <code>config.yml</code>, just like how we
+configured the archives.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: My Blog
+    siteDescription: This is a short description of this blog.
+    avatar: 'https://picsum.photos/seed/city/320/320'
+theme:
+  social:
+    github: 'username/project'
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-09.png" alt="Orchid site with some configuration" /></p>
+<p>But these configuration values didn't just come out of nowhere. Going back to the admin panel, you can find all the
+options available for customization for your theme, for components, and for just about anything else.</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-10.png" alt="Orchid site with some configuration" /></p>
+<p>There's a final bit of info that we should need to <code>config.yml</code> before finishing: setting the author for all our posts.</p>
+<p>You would normally add the necessary configuration to each post's Front Matter, but it is really difficult,
+time-consuming, and error-prone to copy this data to each post file. Instead, Orchid has <em>Archetypes</em> which allow you to
+set that configuration once in <code>config.yml</code> and have it shared amongst a bunch of pages just as if it were added to the
+Front Matter of each one.</p>
+<p>For adding configuration values to all post pages, use <code>posts.postPages</code> in the <code>config.yml</code>. We'll add an author to the
+blog by adding an item to the <code>posts.authors</code> list, and using the archetype we'll set the author for each page to the
+one you just set up:</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+posts:
+  authors:
+    - name: 'Author One'
+      avatar: 'https://picsum.photos/seed/animals/320/320'
+      email: 'email@domain.tld'
+  postPages:
+    author: 'Author One'
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/blog-11.png" alt="Blog post with tag archive links" /></p>
+<h2 id="deploy-on-netlify"><a href="#deploy-on-netlify" id="deploy-on-netlify" class="anchor"></a>Deploy On Netlify</h2>
+<p>Our site is now ready to be deployed! For blogs and personal sites, you really can't go wrong with Netlify as your site
+host. It offers everything you could want for both small and large sites, such as purchasing custom domains, form
+handling, and automated site deploys. While Orchid has its own Netlify publisher for advanced use cases, it's far
+simpler to use Netlify as intended.</p>
+<p>All you need to do is create an account at https://www.netlify.com/, add a <code>netlify.toml</code> file to the root of your repo
+with the following content, and push to GitHub.</p>
+<pre><code class="language-toml">[build]
+  base    = &quot;&quot;
+  publish = &quot;build/docs/orchid&quot;
+  command = &quot;./gradlew orchidBuild -PorchidEnvironment=prod&quot;
+</code></pre>
+<p>Now, once you've connected that repo to Netlify, they will take care of the rest! Of course, this is just the minimum
+needed to deploy, and I'd encourage you to also check out their <a href="https://docs.netlify.com/#get-started">full documentation</a>
+for more help building and deploying your Orchid site on Netlify.</p>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>And with all that, our blog site is finished! Now it may have seemed like a ton of work getting all that setup, but
+let's recall all the features included in this site:</p>
+<ul>
+<li>A homepage that displays our latest blog posts</li>
+<li>A full, paginated archive of all blog posts</li>
+<li>A listing of all tags in your blog</li>
+<li>An archive for all the pages with each tag</li>
+<li>Ability to set the author for each post</li>
+<li>Ability to easily change the configurations for all your blog posts from a single location, instead of copying data
+to each post</li>
+</ul>
+<p>And everything outlined in this tutorial is really just a sampling of the full functionality available in Orchid! Orchid
+has other plugins for different source code documentation, presentations, wikis, and much more. Check out the full list
+of plugins <a href="https://orchid.run/plugins">here</a>, or you can even make your own!</p>
+<p>Thanks for following along, happy blogging!</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#getting-started" class="">
+  
+  Getting Started
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#adding-content" class="">
+  
+  Adding Content
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#homepage" class="">
+  
+  Homepage
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#blog-posts" class="">
+  
+  Blog Posts
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#creating-archives" class="">
+  
+  Creating Archives
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#site-infotheme-configuration" class="">
+  
+  Site Info/Theme Configuration
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#deploy-on-netlify" class="">
+  
+  Deploy On Netlify
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-blog 1453382929 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    How to Document a Kotlin Project
+  </a>
+
+
+
+  <a class="pagination-next" disabled>
+    <span class="inner">
+      Next
+      <span class="icon"><i class="fas fa-chevron-right"></i></span>
+    </span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

@@ -1,0 +1,1255 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>How to Document a Kotlin Project</title>
+
+
+<meta name="description" content="Instructions for documenting and publishing a Kotlin project with Orchid.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/amazing-admin-panel">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/how-to-blog">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin" aria-current="page">How to Document a Kotlin Project</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">How to Document a Kotlin Project</h2>
+<p class="subtitle is-4">Instructions for documenting and publishing a Kotlin project with Orchid.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<p>Documentation is far from being the sexiest thing about software development, but it is certainly necessary. Think back
+to all the libraries and tools you use every day; they all must have some pretty good documentation, otherwise, you
+would have never learned how to use them.</p>
+<p>So if you're building a library, and you want people to use it, it should also have good documentation. And if that
+library happens to be written in Kotlin, you're in luck because creating a great documentation website is actually much
+easier than you might think with the help of a new tool called <a href="https://orchid.run/">Orchid</a>.</p>
+<p>This tutorial will walk you through how to create a basic documentation site for your Kotlin project with Orchid,
+including Dokka code docs, a wiki, and changelogs, and get it deployed Github Pages. If you want to jump right into a
+working project, you can find everything described here in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/kotlin-site">OrchidTutorials example project</a>.</p>
+<h2 id="getting-started"><a href="#getting-started" id="getting-started" class="anchor"></a>Getting Started</h2>
+<p>We'll be using Gradle for this project, but the process will be nearly identical if you prefer Maven.</p>
+<p>To start, we'll need a Kotlin project to work with. Ideally, it will be in its own Gradle subproject, such as <code>:app</code>,
+while the documentation will be in another subproject like <code>:docs</code>. For illustration purposes I am going to quickly set
+up an example application, but you are free to just follow along using your own library and skip directly to the
+<a href="#orchid-setup"><em>Orchid Setup</em> section</a>.</p>
+<h3 id="app-setup"><a href="#app-setup" id="app-setup" class="anchor"></a>App Setup</h3>
+<p>Starting with a basic Gradle project, we'll need to create our two subprojects. This involves telling Gradle about our
+projects in <code>settings.gradle</code>, and setting up the Kotlin plugin in the <code>:app</code> project's <code>build.gradle</code></p>
+<pre><code class="language-groovy">// settings.gradle
+rootProject.name = 'Kotlin Project'
+
+include ':app'
+</code></pre>
+<pre><code class="language-groovy">// app/build.gradle
+plugins {
+    id 'org.jetbrains.kotlin.jvm' version '1.3.21'
+    id 'application'
+}
+repositories {
+    mavenCentral()
+}
+dependencies {
+    compile 'org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.3.21'
+}
+application {
+    mainClassName = 'com.example.MainKt'
+}
+</code></pre>
+<p>Now we're ready to start adding and running Kotlin files. For simplicity, we're using the <code>application</code> plugin so we can
+run a <code>main</code> method in our Kotlin project. We'll set up the application as an <code>Application</code> interface, an
+<code>ExampleApplication</code> class that implements that interface, and have the main method run that app. Though it is quite
+simplistic, it will work well enough as an example of the kind of documentation Orchid will generate for it.</p>
+<p>So let's get these all set up!</p>
+<pre><code class="language-kotlin">// app/src/main/kotlin/main.kt
+package com.example
+
+/**
+ * Run the ExampleApplication
+ */
+fun main() {
+    ExampleApplication().run {
+        println(&quot;Running $name version $version...&quot;)
+        start(&quot;3&quot;)
+        println(&quot;Finished!&quot;)
+    }
+}
+
+/**
+ * An Application that can be run with arbitrary arguments.
+ */
+interface Application {
+
+    /**
+     * The name of the application
+     */
+    val name: String
+
+    /**
+     * The current application version
+     */
+    val version: String
+
+    /**
+     * Run this application with the arguments provided
+     *
+     * @param args the args to configure the application
+     */
+    fun start(vararg args: String)
+}
+
+class ExampleApplication : Application {
+    override val version: String = &quot;1.0.0&quot;
+    override val name: String = &quot;Example Application&quot;
+
+    override fun start(vararg args: String) {
+        for(i in 1..args.first().toInt()) {
+            println(&quot;$i...&quot;)
+            Thread.sleep(1000)
+        }
+    }
+}
+</code></pre>
+<p>Now we can run <code>./gradlew :app:run</code> and Gradle will compile the Kotlin sources and run its main method. You should see
+the following output:</p>
+<pre><code class="language-text">./gradlew :app:run
+
+&gt; Task :app:run
+Running Example Application version 1.0.0...
+1...
+2...
+3...
+Finished!
+
+BUILD SUCCESSFUL in 4s
+2 actionable tasks: 2 executed
+</code></pre>
+<h3 id="orchid-setup"><a href="#orchid-setup" id="orchid-setup" class="anchor"></a>Orchid Setup</h3>
+<p>Now let's get our project ready to use Orchid. Orchid is a new static site generator, written in Kotlin, which
+specializes in generating code documentation. It supports Kotlin sources but also has plugins for Java, Groovy, and
+Swift, which all work very similar to this tutorial.</p>
+<p>Orchid runs as a Gradle plugin and is best if it is given its own Gradle subproject. So let's get our <code>settings.gradle</code>
+setup with a new <code>:docs</code> project, and we'll also set up the <code>docs/build.gradle</code>:</p>
+<pre><code class="language-groovy">// settings.gradle
+rootProject.name = 'Kotlin Project'
+
+include ':app'
+include ':docs'
+</code></pre>
+<pre><code class="language-groovy">// docs/build.gradle
+// 1. Apply Orchid plugin
+plugins {
+    id &quot;com.eden.orchidPlugin&quot; version &quot;1.0.0&quot;
+}
+
+// 2. Include Orchid dependencies
+dependencies {
+    orchidRuntime &quot;io.github.javaeden.orchid:OrchidDocs:1.0.0&quot;
+    orchidRuntime &quot;io.github.javaeden.orchid:OrchidKotlindoc:1.0.0&quot;
+    orchidRuntime &quot;io.github.javaeden.orchid:OrchidPluginDocs:1.0.0&quot;
+}
+
+// 3. Get dependencies from JCenter and Kotlinx Bintray repo
+repositories {
+    mavenCentral()
+    maven { url = &quot;https://kotlin.bintray.com/kotlinx/&quot; }
+}
+
+// 4. Use the 'Editorial' theme, and set the URL it will have on Github Pages
+orchid {
+    theme = &quot;Editorial&quot;
+    baseUrl = &quot;https://username.github.io/project&quot;
+    version = &quot;1.0.0&quot;
+}
+</code></pre>
+<p>This is all that's required to run your Orchid site! There are still a few things we need to do to set up the wiki and
+tell it where to find our Kotlin code, but you can run Orchid right now with <code>./gradlew :docs:orchidServe</code> and view the
+site on http://localhost:8080. It should give you an output like the following:</p>
+<pre><code class="language-text">./gradlew :docs:orchidServe
+
+&gt; Task :docs:orchidServe
+Using the following modules: 
+--------------------
+ * com.eden.orchid.StandardModule
+
+Auto-loaded modules: 
+--------------------
+ * com.eden.orchid.editorial.EditorialModule
+ * com.eden.orchid.impl.compilers.markdown.FlexmarkModule
+ * com.eden.orchid.impl.compilers.pebble.PebbleModule
+ * com.eden.orchid.kotlindoc.KotlindocModule
+ * com.eden.orchid.pages.PagesModule
+ * com.eden.orchid.search.SearchModule
+ * com.eden.orchid.wiki.WikiModule
+
+Flag values: 
+--------------------
+-adminTheme: Default
+-baseUrl: http://username.github.io/project
+-defaultTemplateExtension: peb
+-dest: ...
+-dryDeploy: false
+-environment: debug
+-logLevel: VERBOSE
+-port: 8080
+-src: ...
+-task: serve
+-theme: Editorial
+-version: 1.0.0
+
+[INFO] Orchid: Running Orchid version 1.0.0, site version unspecified in debug environment
+[INFO] OrchidWebserver: Webserver Running at http://localhost:8080
+[INFO] OrchidWebsocket: Websocket running at http://localhost:8081/
+[INFO] TaskServiceImpl: Build Starting...
+[INFO] GeneratorServiceImpl: Indexing [10000: assets]
+[INFO] GeneratorServiceImpl: Indexing [1000: home]
+[INFO] GeneratorServiceImpl: Indexing [1000: kotlindoc]
+[INFO] GeneratorServiceImpl: Indexing [1000: pages]
+[INFO] GeneratorServiceImpl: Indexing [1000: wiki]
+[INFO] GeneratorServiceImpl: Indexing [11: sitemap]
+[INFO] GeneratorServiceImpl: Indexing [10: indices]
+[INFO] GeneratorServiceImpl: Generating [10000: assets]
+[INFO] GeneratorServiceImpl: Generating [1000: home]
+[INFO] GeneratorServiceImpl: Generating [1000: kotlindoc]
+[INFO] GeneratorServiceImpl: Generating [1000: pages]
+[INFO] GeneratorServiceImpl: Generating [1000: wiki]
+[INFO] GeneratorServiceImpl: Generating [11: sitemap]
+[INFO] GeneratorServiceImpl: Generating [10: indices]
+
+Build Metrics: 
+┌───────┬────────────┬───────────────┬─────────────────┬───────────────────────────┬─────────────────────────────┐
+│       │ Page Count │ Indexing Time │ Generation Time │ Mean Page Generation Time │ Median Page Generation Time │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│  home │     1      │     54ms      │      481ms      │           472ms           │            472ms            │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│ TOTAL │          1 │      3s 496ms │           520ms │                     472ms │                       472ms │
+└───────┴────────────┴───────────────┴─────────────────┴───────────────────────────┴─────────────────────────────┘
+
+Build Complete
+Generated 1 page in 4s 18ms
+
+[WARN] Warnings:
+[WARN] WikiGenerator: 
+[WARN]     - Could not find wiki summary page in 'wiki/'
+
+
+Webserver Running at http://localhost:8080
+Hit [CTRL-C] to stop the server and quit Orchid
+</code></pre>
+<p>You will also see the basic site served on localhost:8080, which looks like:</p>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/0w4awux9ya5vm1a84z5i.png" alt="empty Orchid site" /></p>
+<p>But let's move on to the next step: adding content to the site!</p>
+<h2 id="adding-content"><a href="#adding-content" id="adding-content" class="anchor"></a>Adding Content</h2>
+<h3 id="homepage"><a href="#homepage" id="homepage" class="anchor"></a>Homepage</h3>
+<p>The first thing anyone will see when landing on your site is your Homepage. Orchid creates this page based on a
+<code>homepage.md</code> file in the root of your site's <em>resources</em>, which are located by default in <code>src/orchid/resources</code>. Let's
+start by creating this file and adding a short description of our project to it.</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/homepage.md
+# Kotlin Project
+
+This is a short description of this project.
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/q9olagjvmkeud0jwxgnh.png" alt="Orchid Site with Homepage content" /></p>
+<p>A common thing to add to the homepage is your project's <code>README</code>, which has things like badges, basic setup
+instructions, etc. We don't want to have to copy everything from the README to our Homepage file, so let's just tell
+Orchid to include the README on the homepage for us!</p>
+<p>To do this, we will add a <strong>Front Matter</strong> section to the top of the homepage file, and add the &quot;Readme&quot; <strong>Component</strong>
+to the homepage in that Front Matter. If you've previously used Jekyll or another static site generator, Orchid handles
+Front Matter in the exact same way: YAML between a pair of triple-dashes lines.</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/homepage.md
+---
+components:
+  - type: 'pageContent'
+  - type: 'readme'
+---
+# Kotlin Project
+
+This is a short description of this project.
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/p6yuklpfg3fxf2x5inzj.png" alt="Homepage with Readme contents" /></p>
+<p>Orchid's Components are just a list of &quot;blocks&quot; which are rendered to the page in order. There are many different types
+of components, and different plugins can add their own. Here, we've added the <code>readme</code> component, which searches for the
+README in your project and adds it to the page. We also added the <code>pageContent</code> component, which adds the Markdown
+content of the <code>homepage.md</code>. If you don't define any components this one is added automatically, but if you use
+components you'll have to add it yourself.</p>
+<p>That's about it for the Homepage. But our site is looking a bit boring, and there's some information that the theme
+would like us to provide. So let's go ahead and configure the theme.</p>
+<h3 id="site-infotheme-configuration"><a href="#site-infotheme-configuration" id="site-infotheme-configuration" class="anchor"></a>Site Info/Theme Configuration</h3>
+<p>Orchid handles configuration with a <code>config.yml</code> in the root of your resources. In it, we will add some basic info about
+our site, and we can also configure our theme, such as changing its colors.</p>
+<p>This config file includes some configurations under <code>site</code>, which is common info typically used by any theme you choose,
+and some theme-specific configuration under <code>Editorial</code>. If you remember, this key is the same value we set as our theme
+in <code>docs/build.gradle</code>. For the theme, we're changing the site's accent color, and also putting in the Github project
+for a social link.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+Editorial:
+  primaryColor: '#DE9149'
+  social:
+    github: 'username/project'
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/d2nyfiehj7tdrdnt9ugl.png" alt="Orchid site with some configuration" /></p>
+<p>But these configuration values didn't just come out of nowhere. If you visit http://localhost:8080/admin while your site
+is serving locally, you can view Orchid's admin panel. In here you can find all the options available for customization
+for your theme, for components, and for just about anything else.</p>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/dnfh7gg6cvpyryin9200.png" alt="Orchid Admin Panel Theme Options" /></p>
+<h3 id="wiki"><a href="#wiki" id="wiki" class="anchor"></a>Wiki</h3>
+<p>Now that our site is looking a bit more unique, we can start adding some additional content to help our users learn how
+to use the project. Orchid's Wiki plugin will help us here, allowing us to create an easily-navigable knowledge base,
+walking users through everything they need to get going with the project.</p>
+<p>This plugin starts with a <code>wiki/summary.md</code> file. In here, we'll add relative links to the subpages in the wiki. Orchid
+will then create a new page in your site for each entry, and join them all together so that they link from one to the
+next, in the order declared in the summary.</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/wiki/summary.md
+- [Installation](installation.md)
+- [Basic Configuration](configuration.md)
+- [Features](features.md)
+  - [Feature One](features/one.md)
+  - [Feature Two](features/two.md)
+- [Extending](extending.md)    
+</code></pre>
+<p>I'll leave the creation of these wiki entries to you. They each work in exactly the same way as the Homepage file and
+can contain Markdown content and a Front Matter section with any components you wish.</p>
+<p>Now, if you visit http://localhost:8080/wiki you'll be able to start navigating your wiki. One of the really nice
+features of Orchid is the built-in static search. All of your wiki pages support full-text search, to make it easy to
+look up anything in your site. All the individual pages of the wiki are also linked together with forward and backward
+links.</p>
+<p>To add static search, we need to add another component to our site, called <code>orchidSearch</code>. This time, instead of
+attaching the component to the homepage, we will attach it to the theme's <code>metaComponents</code> to add the necessary assets
+to all pages, instead of just the homepage.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+Editorial:
+  primaryColor: '#DE9149'
+  social:
+    github: 'username/project'
+  metaComponents: # this is the replacement for the deprecated automatic search addition
+    - type: 'orchidSearch'
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/5r4apzo10ip7wtnpqxos.png" alt="Wiki summary with search results" /></p>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/nlpgex5lkcx1gjv8seur.png" alt="Wiki entry with next and previous page links" /></p>
+<p>The last thing we need to do is start setting up our site menus, and include a link to this wiki. You can do this in
+<code>config.yml</code>. Change it to look like the following:</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#DE9149'
+  legacySearch: false
+  social:
+    github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+</code></pre>
+<p>I've added a <code>menu</code> property to the <code>Editorial</code> theme config. Similar to components, a menu contains a list of menu item
+types which are rendered in order. A single menu item configuration may produce more than one entry in the actual menu
+as in the <code>wiki</code> item, which adds a link to the sidebar for each page in your wiki.</p>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/k7f8mvcoyjojnw00htyd.png" alt="Wiki Page with Wiki Menu Items" /></p>
+<h3 id="changelog"><a href="#changelog" id="changelog" class="anchor"></a>Changelog</h3>
+<p>That last piece of content we want to add to our site is a changelog. This way, users can track the changes you've been
+making to the project, and Orchid can also use this same information to create Releases on Github.</p>
+<p>Changelog entries are each set up as a file in your resources <code>changelog</code> directory. Each entry should have a Front
+Matter section with a <code>version</code> property with the version name (as semantic versioning). So let's go ahead and create
+some changelog entries, such as <code>changelog/1.0.0.md</code>, and maybe a few others if you want:</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/changelog/1.0.0.md
+- Project is now ready for production!
+</code></pre>
+<p>The Changelog plugin does not create a page for the list of changelog entries by default, but we can create a
+<em>Static Page</em> to display the list of changelog entries. Static pages are markdown files, just like the wiki and homepage
+files, in the <code>pages</code> directory. We will create a <code>changelog.md</code> file and give it the <code>changelog</code> component to render
+our versions in order on the page http://localhost:8080/changelog:</p>
+<pre><code class="language-markdown">// docs/src/orchid/resources/pages/changelog.md
+---
+components:
+  - type: changelog
+---
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/hmwr5trhhzyszyubzesz.png" alt="Changelog entries" /></p>
+<p>Let's also add this to our site menu, so users can easily find the recent changes:</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#DE9149'
+  legacySearch: false
+  social:
+    github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+</code></pre>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/7j1ra7v0908l3rww4ib1.png" alt="Menu with Changelog item" /></p>
+<h3 id="kotlin-code-docs"><a href="#kotlin-code-docs" id="kotlin-code-docs" class="anchor"></a>Kotlin Code Docs</h3>
+<h4 id="setting-up-the-plugin"><a href="#setting-up-the-plugin" id="setting-up-the-plugin" class="anchor"></a>Setting Up The Plugin</h4>
+<p>Now we're at a point where we could start documenting our Kotlin sources. First, we need to set up the plugin and point
+it at our other project with Kotlin source files. The Orchid plugin is already installed as the <code>OrchidKotlindoc</code>
+dependency in <code>docs/build.gradle</code>, so we just need to update our <code>config.yml</code>.</p>
+<p>If we pop back to our admin panel, we can find the config values we need to get going. Specifically, we need to find the
+&quot;Kotlindoc&quot; <strong>Generator</strong> menu item in the sidebar. Clicking that shows us the available configuration values that we
+need to add to <code>config.yml</code>:</p>
+<p><img src="https://thepracticaldev.s3.amazonaws.com/i/ae0099ddden8rvvbvbv1.png" alt="Kotlindoc docs page in Orchid admin panel" /></p>
+<p>This tells us that we can add the following snippet to <code>config.yml</code>, and that's all we need! We'll set <code>sourceDirs</code> to
+the relative file path from the docs site resources to the app project's Kotlin sources.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+kotlindoc:
+  sourceDirs:
+    - './../../../../app/src/main/kotlin'
+</code></pre>
+<p>Now, Orchid will hook into <a href="https://github.com/Kotlin/dokka">Dokka</a> to get the info it needs, and then generate pages
+for each class and package it finds in your source directories (both Java and Kotlin). The fully-qualified name creates
+nested directories with that same path, so <code>com.example.ExampleApplication</code> will create
+http://localhost:8080/kotlindoc/com/example/ExampleApplication in your site.</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/kotlin-01.png" alt="Kotlin Class page" /></p>
+<p>We can navigate to http://localhost:8080/kotlindoc/com/example/ to view its package page as well, which looks very
+similar. And just as the full-text search worked on our wiki pages, it also will find matches within our code comments
+on these pages as well!</p>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/kotlin-02.png" alt="Kotlin Package page with search results" /></p>
+<h4 id="creating-the-menus"><a href="#creating-the-menus" id="creating-the-menus" class="anchor"></a>Creating The Menus</h4>
+<p>We're nearly done setting up our site, there's just one more piece to the puzzle we need: menu links to our Kotlin doc
+pages! We'll start by adding links to all the classes and packages in our project to the sidebar. This gets added to the
+same menu list we used earlier for wiki pages in <code>config.yml</code>.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+site:
+  about:
+    siteName: Kotlin Project
+    siteDescription: This is a short description of this project.
+
+Editorial:
+  primaryColor: '#DE9149'
+  legacySearch: false
+  social:
+    github: 'username/project'
+  metaComponents:
+    - type: 'orchidSearch'
+  menu:
+    - type: 'separator'
+      title: 'Wiki'
+    - type: 'wiki'
+    - type: 'page'
+      itemId: 'Changelog'
+    - type: 'separator'
+      title: 'API Docs'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      node: 'classes'
+      asSubmenu: true
+      submenuTitle: 'Classes'
+    - type: 'sourcedocPages'
+      moduleType: 'kotlindoc'
+      node: 'packages'
+      asSubmenu: true
+      submenuTitle: 'Packages'
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/kotlin-03.png" alt="Menu item links for all Kotlin class and package pages" /></p>
+<p>There's one more menu that is nice to include here as well. Just as the theme has a menu, <em>each page</em> in Orchid can also
+have its own menu, so that menus may change slightly on different parts of the site, highlighting relevant content. So
+let's add a menu to all our Kotlin doc pages with links to each method, constructor, etc. on each page. Clicking one of
+these menu items will link you to the appropriate <em>anchor</em> on the page rather than taking you to a new page.</p>
+<pre><code class="language-yaml">kotlindoc:
+  sourceDirs:
+    - './../../../../app/src/main/kotlin'
+  sourcePages:
+    menu:
+      - type: 'sourcedocPageLinks'
+        moduleType: 'kotlindoc'
+        itemTitleType: 'SIGNATURE'
+        includeItems: true
+</code></pre>
+<p><img src="https://orchid.run/wiki/learn/tutorials/media/kotlin-04.png" alt="Kotlindoc Class Links" /></p>
+<h2 id="deploy-on-github-pages"><a href="#deploy-on-github-pages" id="deploy-on-github-pages" class="anchor"></a>Deploy On Github Pages</h2>
+<p>Our site is now ready to be deployed! For most projects, Github Pages is a great place to host your docs. All you have
+to do is push static files to the <code>gh-pages</code> branch of a repository and Github will host it for you.</p>
+<p>While many static site generators expect you to commit and push your site to this branch manually, Orchid actually makes
+it incredibly simple for you by providing you with a simple deployment pipeline. So let's get the Github Pages
+publication set up. Add the following snippet to <code>config.yml</code>.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+services:
+  publications:
+    stages:
+      ghPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+</code></pre>
+<p>In addition, we will need to authenticate with Github in order to actually succeed in pushing to that branch. To do
+that, you need to create a
+<a href="https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/">Github Personal Access Token</a>
+and set it to the <code>githubToken</code> environment variable.</p>
+<pre><code class="language-sh">export githubToken=...
+</code></pre>
+<p>Now, instead of running <code>./gradlew :docs:orchidServe</code> simply run <code>./gradlew :docs:orchidDeploy -PorchidEnvironment=prod</code>, and Orchid
+will build your site using your production base URL, and after a successful build push the built site to the <code>gh-pages</code>
+branch of your repo.</p>
+<p>But let's take this just one step further. We always want to make sure that our doc site is up-to-date with the Releases
+on Github, so no one ever gets misleading or conflicting information. Fortunately, Orchid has another publisher that
+will create a Github Release based on the latest changelog version! It's just as simple to set up and uses the same
+<code>githubToken</code> environment variable as the <code>ghPages</code> publisher.</p>
+<pre><code class="language-yaml"># docs/src/orchid/resources/config.yml
+services:
+  publications:
+    stages:
+      githubPages:
+        branch: gh-pages
+        repo: 'project'
+        username: 'username'
+      githubReleases:
+        repo: 'username/project'
+</code></pre>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>And with all that, our Kotlin project's doc site is finished! Now it may have seemed like a ton of work getting all that
+setup, but let's recall all the features included in this site:</p>
+<ul>
+<li>A homepage that automatically pulls in the README</li>
+<li>Wiki that links forward and backward between its entries</li>
+<li>A changelog that gets ordered by semantic versioning</li>
+<li>Source-code documentation for all your Kotlin and Java sources</li>
+<li>Full-text search of your wiki and your KDoc comments</li>
+<li>Automatically-generated menu items linking to each page in your wiki and each class and package in your source code.</li>
+<li>Easy links to specific methods, properties, etc. on your class and package pages</li>
+<li>Deploy the rendered site to Github Pages</li>
+<li>Create a Release on Github with the latest changelog version</li>
+</ul>
+<p>That's a lot of stuff! And specifically, that's a lot that would normally need a separate tool/build process/3rd-party
+service for each. In fact, for basic projects Orchid combines all the following tools into its one, unique, integrated
+platform:</p>
+<ul>
+<li>Jekyll</li>
+<li>Gitbook</li>
+<li>Algolia</li>
+<li>Dokka</li>
+<li>Custom deployment scripts to publish to Github Pages</li>
+<li>Manual Release creation on Github on every release</li>
+</ul>
+<p>And everything outlined in this tutorial is really just a sampling of the full functionality available in Orchid! Orchid
+has other plugins for different source code documentation, presentations, blogs, and much more. Check out the full list
+of plugins <a href="https://orchid.run/plugins">here</a>, or you can even make your own!</p>
+<p>Thanks for following along, happy documenting!</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#getting-started" class="">
+  
+  Getting Started
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#app-setup" class="">
+  
+  App Setup
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#orchid-setup" class="">
+  
+  Orchid Setup
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#adding-content" class="">
+  
+  Adding Content
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#homepage" class="">
+  
+  Homepage
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#site-infotheme-configuration" class="">
+  
+  Site Info/Theme Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#wiki" class="">
+  
+  Wiki
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#changelog" class="">
+  
+  Changelog
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#kotlin-code-docs" class="">
+  
+  Kotlin Code Docs
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#deploy-on-github-pages" class="">
+  
+  Deploy On Github Pages
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin 964325592 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/amazing-admin-panel">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    The Amazing, Auto-Documenting Admin Panel
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/how-to-blog">
+    How to Write a Blog
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

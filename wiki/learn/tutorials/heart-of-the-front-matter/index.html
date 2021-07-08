@@ -1,0 +1,965 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>The Heart of the (Front) Matter</title>
+
+
+<meta name="description" content="Practice using Front Matter to customize your site and use Pebble to make your content more dynamic.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/link-all-the-things">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter" aria-current="page">The Heart of the (Front) Matter</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">The Heart of the (Front) Matter</h2>
+<p class="subtitle is-4">Practice using Front Matter to customize your site and use Pebble to make your content more dynamic.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>Last tutorial we started to get our feet wet adding pages to our site and customizing their content. In this tutorial,
+I will introduce you to Front Matter and Page Templates, and show you how to use this to increase consistency among the
+pages in your Orchid site.</p>
+<p>Before continuing, make sure you have followed along with the previous tutorial and have started your local Orchid
+server with <code>gradle orchidServe</code>. We will be building on that example in this tutorial.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/03">OrchidTutorials repository</a>.</p>
+<h2 id="front-matter"><a href="#front-matter" id="front-matter" class="anchor"></a>Front Matter</h2>
+<p>If you've worked with other static site generators, you're probably very familiar with Front Matter. Orchid uses Front
+Matter just like the other tools, but there are a few special things that Orchid does with Front Matter, so don't
+skip ahead just yet!</p>
+<h3 id="what-is-front-matter"><a href="#what-is-front-matter" id="what-is-front-matter" class="anchor"></a>What Is Front Matter?</h3>
+<p>Front Matter is a way to add configuration values and other data to a single page. It comes as a block of YAML between
+pairs of triple-dashed lines at the very beginning of a page. Let's see how we can use Front Matter to customize the
+title of our <code>houston.md</code> page. Go ahead and change the contents of <code>pages/locations/houston.md</code> to the following:</p>
+<pre><code class="language-text">
+---
+title: 'H-Town'
+---
+## Location
+
+Houston, TX
+
+## Address
+ 
+1234, Example Dr.
+Houston, TX, 12345
+
+## Phone
+
+(123) 456-7890
+
+## Business Hours
+
+M-F: 6am - 9pm
+Sa: 6am - 10pm
+Su: Closed
+</code></pre>
+<p>When Orchid has rebuilt your site, refresh the page and you'll notice that it's title now displays as &quot;H-Town&quot; instead
+of &quot;Houston&quot;. You will also notice that the Front Matter has been removed from the actual page content, so that it is
+not embedded into your theme with the rest of the text in the page.</p>
+<p>Whenever Orchid sees a page with a Front Matter block, it will remove that block from the page content, parse the text
+within the Front Matter as YAML, and use that to configure the page. There are lots of configuration values available
+for use in the Front Matter, and a later tutorial will show you how to find all of these values, but you are not limited
+to just those configuration values. You can put whatever kind of data you want in your Front Matter, and it will become
+available for use just the same.</p>
+<h3 id="pre-compilation"><a href="#pre-compilation" id="pre-compilation" class="anchor"></a>Pre-Compilation</h3>
+<p>Now that we have Front Matter added to the top of our page, Orchid will start doing something really cool. For our
+<code>houston.md</code> page, before it gets processed as Markdown, it will be <em>precompiled</em> as Pebble. Pebble is the main
+templating language used by Orchid, and it has a syntax very similar to Liquid or Twig, which means it can render any
+text content it wants.</p>
+<p>What this means for us is that we can use Pebble to add dynamic data into our Markdown, which can then be processed as
+Markdown afterwards.</p>
+<p>To see how this works, let's move the info for our Houston business location into its Front Matter, and then use Pebble
+to &quot;inject&quot; that data back into our Markdown.</p>
+<pre><code class="language-text">---
+city: 'Houston'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+---
+## Location
+
+{{ city }}, {{ state }}
+
+## Address
+ 
+{{ address }}
+{{ city }}, {{ state }} {{ postal_code }}
+
+## Phone
+
+{{ phone }}
+
+## Business Hours
+
+{% for hours in business_hours %}
+- {{ hours }}
+{% endfor %}
+
+</code></pre>
+<p>It should be pretty obvious what's going on in this page now. All the tags that look like
+<code>{{ city }}</code> will print that variable into the page at that spot. There are also <em>tags</em>,
+such as the <code>{% for %}</code> and <code>{% if %}</code> tags, which will
+iterate over the data or control which sections of content get displayed. This makes it possible to use Pebble kind-of
+like a full programming language, and because it runs before the page is converted to Markdown, you can use it to build
+more complex and powerful Markdown pages much more easily.</p>
+<p>This precompilation step is only performed for pages that have a Front Matter block, and it is entirely optional.
+However, in some cases you may find Pebble to make the underlying page format unparseable and may wish to disable it. If
+you need to have Front Matter but don't want the rest of the page precompiled, you can set <code>precompile</code> to <code>false</code> in
+the Front Matter. Alternatively, you may precompile it as a different language by setting <code>precompileAs</code> to the desired
+file extension.</p>
+<p>Alright, so now that we've got our Houston page set up with Front Matter and being precompiled as Pebble, we should
+probably do the same with our other locations pages as well.</p>
+<pre><code class="language-text">---
+city: 'Austin'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+---
+## Location
+
+{{ city }}, {{ state }}
+
+## Address
+ 
+{{ address }}
+{{ city }}, {{ state }} {{ postal_code }}
+
+## Phone
+
+{{ phone }}
+
+## Business Hours
+
+{% for hours in business_hours %}
+- {{ hours }}
+{% endfor %}
+
+</code></pre>
+<pre><code class="language-text">---
+city: 'Dallas'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+---
+## Location
+
+{{ city }}, {{ state }}
+
+## Address
+ 
+{{ address }}
+{{ city }}, {{ state }} {{ postal_code }}
+
+## Phone
+
+{{ phone }}
+
+## Business Hours
+
+{% for hours in business_hours %}
+- {{ hours }}
+{% endfor %}
+
+</code></pre>
+<p>But now you'll notice that the main content of all three of our pages is the exact same! We've managed to move all the
+data into our Front Matter to make it easier to manage, but trying to keep all our locations pages looking the same will
+be difficult if we have to change every page whenever we want to update it.</p>
+<p>Most SSGs and CMSs would address this with theme layouts. You would add a new layout for these locations pages, and in
+that layout you'd put all the structured data that we currently have in our page content. While Orchid does have theme
+layouts (we'll get to that in another tutorial), this can cause an issue as they aren't very reusable, and you end up
+with a lot of single-use layouts that are all difficult to maintain or make site-wide changes with.</p>
+<p>To address this, Orchid introduces several new mechanisms for managing the content on a page that are maintainable,
+reusable, and composable. The technique we'll talk about in the rest of this tutorial is called <strong>page templates</strong>.</p>
+<h2 id="page-templates"><a href="#page-templates" id="page-templates" class="anchor"></a>Page Templates</h2>
+<h3 id="what-are-page-templates"><a href="#what-are-page-templates" id="what-are-page-templates" class="anchor"></a>What Are Page Templates?</h3>
+<p>Put simply, page templates are kind of like your theme's layout, except they are only concerned with the small section
+of the layout that displays your page content. Typically, a full layout also includes menus, sidebars, widget areas, and
+also renders the full HTML structure, but a <em>page template</em> just structures the <em>page content</em>. While a normal CMS would
+have you create <code>page-single.peb</code> and <code>page-sidebar.peb</code>, you can now just create a <code>pages/page.peb</code> template for your
+page content and then embed that in the <code>layouts/single.peb</code> or <code>layouts/sidebar.peb</code> theme layout.</p>
+<p>The different might seem insignificant in this small example, but for sites with many different types of pages and
+layout styles, you will actually use exponentially fewer templates than the alternative. Consider that a site with 10
+page types and 3 different layouts would need <strong>30 templates</strong> in the traditional manner, but only 13 with Orchid! For
+even larger sites, the savings are even larger, and the maintenance burden will decrease significantly.</p>
+<h3 id="creating-a-page-template"><a href="#creating-a-page-template" id="creating-a-page-template" class="anchor"></a>Creating a Page Template</h3>
+<p>The first thing we'll need to do is make ourselves a new page template, and then we'll tell Orchid to use that template
+instead of the default one. So make a page in <code>templates/pages/location.peb</code> and add the following content.</p>
+<pre><code class="language-twig">{% filter compileAs('md') %}
+## Location
+
+{{ city }}, {{ state }}
+
+## Address
+
+{{ address }}
+{{ city }}, {{ state }} {{ postal_code }}
+
+## Phone
+
+{{ phone }}
+
+## Business Hours
+
+{% for hours in business_hours %}
+- {{ hours }}
+{% endfor %}
+
+---
+{% endfilter %}
+
+{{ page.content | raw }}
+
+</code></pre>
+<p>Notice that this new file has the <code>.peb</code> extension, which means it will be compiled as Pebble. Unlike our Markdown
+pages, page templates should use the file extension for a <em>templating</em> language, like <code>.peb</code>, and it does not support
+precompiling. This is because the page template is actually considered part of the <em>theme</em> and not part of the
+<em>page content</em>.</p>
+<p>As such, when setting up your page template, you should design it as if it were part of the theme, and include
+<code>{{ page.content | raw }}</code> at the appropriate area within that template. <code>page.content</code>
+is what is actually precompiling and rendering the Markdown of your page, and since Pebble is a <em>safe</em> templating
+language, it will automatically escape the HTML page content to prevent cross-site-scripting (XSS) unless you use the
+<code>| raw</code> filter as it is printed out.</p>
+<h3 id="using-your-custom-page-template"><a href="#using-your-custom-page-template" id="using-your-custom-page-template" class="anchor"></a>Using Your Custom Page Template</h3>
+<p>To use our custom page template, we must add a property in each page's Front Matter telling Orchid which template we
+want to use. The <code>templates</code> property accepts either a String or an array, and the first template that Orchid finds will
+be loaded and used as the page template.</p>
+<pre><code class="language-text">
+---
+city: 'Houston'
+state: 'TX'
+postal_code: '12345'
+address: '1234, Example Dr.'
+phone: '(123) 456-7890'
+business_hours:
+  - 'M-F: 6am - 9pm'
+  - 'Sa: 6am - 10pm'
+  - 'Su: Closed'
+template: 'location'
+---
+
+Houston, TX location coming soon.
+</code></pre>
+<p>Orchid will look for the page template in several places. First it will look for a template in <code>templates/</code> that matches
+the exact file path and filename. If that doesn't exist, it will look for any file with that filename in the
+<code>templates/pages/</code> directory. In either case, if a file extension is not provided, it will assume <code>.peb</code>. So by passing
+<code>location</code> as the template, our custom page template at <code>templates/pages/location.peb</code> will be used.</p>
+<p>Any time that you specify a custom template, it will be preferred to the defaults for that page type. Plugins with
+special page types may set special formats for looking up page templates without needing to specify it. For example, the
+OrchidPosts plugin will default to looking for <code>post-[category].peb</code> or <code>post.peb</code> before falling back to <code>page.peb</code>.
+All pages, if not specified by the plugin or by the user, fall back to using <code>page.peb</code>, which is automatically provided
+for you.</p>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>Let's review what we've learned in this tutorial.</p>
+<ol>
+<li>Orchid can render Markdown and other files just fine on their own, but you can optionally add a Front Matter block at
+the start of the page to configure it or add custom data.</li>
+<li>When a Front Matter block is present in a page, it will be first precompiled as a Pebble template. You can use any
+Pebble tags or inject any page or site variables into the content before it gets processed as Markdown.</li>
+<li>To increase consistency and ease the maintenance burden of large sites, you can use page templates in addition to
+theme layouts to give structure to page content. Page templates can be mixed-and-matched with theme layouts to
+provide great flexibility with many fewer templates than layouts alone.</li>
+<li>You can choose the page template with the <code>templates</code> property in a page's Front Matter. This can be a string or an
+array, and templates are typically kept in the <code>templates/pages/</code> directory.</li>
+<li>Plugins may provide their own formats for looking up page templates, but setting one yourself will override the
+preference of the plugin.</li>
+</ol>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#front-matter" class="">
+  
+  Front Matter
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#what-is-front-matter" class="">
+  
+  What Is Front Matter?
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#pre-compilation" class="">
+  
+  Pre-Compilation
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#page-templates" class="">
+  
+  Page Templates
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#what-are-page-templates" class="">
+  
+  What Are Page Templates?
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#creating-a-page-template" class="">
+  
+  Creating a Page Template
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#using-your-custom-page-template" class="">
+  
+  Using Your Custom Page Template
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/heart-of-the-front-matter 459340937 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    Homepage and Static Pages
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/link-all-the-things">
+    Link All The Things!
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

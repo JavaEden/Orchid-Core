@@ -1,0 +1,141 @@
+{
+  "ownKey": "taxonomies",
+  "childrenPages": {
+    "news": {
+      "ownKey": "news",
+      "ownPages": [{
+        "reference": {
+          "path": "news",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/news",
+          "title": "News"
+        },
+        "description": "",
+        "title": "News",
+        "content": ""
+      }]
+    },
+    "themes": {
+      "ownKey": "themes",
+      "ownPages": [{
+        "reference": {
+          "path": "themes",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/themes",
+          "title": "Themes"
+        },
+        "description": "",
+        "title": "Themes",
+        "content": ""
+      }]
+    },
+    "plugins": {
+      "ownKey": "plugins",
+      "ownPages": [{
+        "reference": {
+          "path": "plugins",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/plugins",
+          "title": "Plugins"
+        },
+        "description": "",
+        "title": "Plugins",
+        "content": ""
+      }]
+    },
+    "bundles": {
+      "ownKey": "bundles",
+      "ownPages": [{
+        "reference": {
+          "path": "bundles",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/bundles",
+          "title": "Bundles"
+        },
+        "description": "",
+        "title": "Bundles",
+        "content": ""
+      }]
+    },
+    "showcase": {
+      "ownKey": "showcase",
+      "ownPages": [{
+        "reference": {
+          "path": "showcase",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/showcase",
+          "title": "Showcase"
+        },
+        "description": "",
+        "title": "Showcase",
+        "content": ""
+      }]
+    },
+    "categories": {
+      "ownKey": "categories",
+      "ownPages": [{
+        "reference": {
+          "path": "categories",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/categories",
+          "title": "Categories"
+        },
+        "description": "",
+        "title": "Categories",
+        "content": ""
+      }]
+    },
+    "tags": {
+      "ownKey": "tags",
+      "childrenPages": {"orchid-news": {
+        "ownKey": "orchid-news",
+        "ownPages": [{
+          "reference": {
+            "path": "tags/orchid-news",
+            "baseUrl": "https://orchid.run",
+            "fileName": "",
+            "extension": "html",
+            "usePrettyUrl": true,
+            "link": "https://orchid.run/tags/orchid-news",
+            "title": "Orchid   News"
+          },
+          "description": "",
+          "title": "Orchid   News",
+          "content": ""
+        }]
+      }},
+      "ownPages": [{
+        "reference": {
+          "path": "tags",
+          "baseUrl": "https://orchid.run",
+          "fileName": "",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/tags",
+          "title": "Tags"
+        },
+        "description": "",
+        "title": "Tags",
+        "content": ""
+      }]
+    }
+  }
+}

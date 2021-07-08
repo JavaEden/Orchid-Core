@@ -1,0 +1,1935 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Templates</title>
+
+
+<meta name="description" content="Orchid uses Pebble templates and a unique layout composition system for fast and flexible layout design.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs">
+
+
+<link rel="next" href="https://orchid.run/wiki/user-manual/core-concepts/internal-links">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+  <div class="container sidebar-menu">
+    <details class="is-hidden-desktop">
+      <summary>
+        Menu
+      </summary>
+      <div id="mobile-sidebar-menu"></div>
+    </details>
+    <div class="is-hidden-touch">
+      <aside class="menu" id="responsive-menu-content">
+      
+  
+  
+    
+<p class="menu-label">User Manual</p>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started 1828130916 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started" class="">
+  
+  Getting Started
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/quickstart 135213329 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/quickstart" class="">
+  
+  Quick-Start
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/basic-usage 664490546 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/basic-usage" class="">
+  
+  Basic Usage
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/directory-structure 1266464928 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/directory-structure" class="">
+  
+  Directory Structure
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/site-config 1037612046 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/site-config" class="">
+  
+  Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/admin-panel 2025071865 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/admin-panel" class="">
+  
+  Admin Panel
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/plugins 984798796 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/plugins" class="">
+  
+  Plugins
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts 604699100 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts" class="">
+  
+  Core Concepts
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/pages 1509766573 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/pages" class="">
+  
+  Pages
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/themes 2011836298 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/themes" class="">
+  
+  Themes
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/compilers 773873250 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/compilers" class="">
+  
+  Compilers
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/front-matter 1570211427 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/front-matter" class="">
+  
+  Front Matter
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/components 216800482 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/components" class="">
+  
+  Components
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/menus 7025284 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/menus" class="">
+  
+  Menus
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs 1844936737 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs" class="">
+  
+  Breadcrumbs
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/templates" class="is-active">
+  
+  Templates
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/internal-links 381892750 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/internal-links" class="">
+  
+  Internal Links
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/assets 1390178738 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/assets" class="">
+  
+  Assets
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/shared-config 894151346 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/shared-config" class="">
+  
+  Shared Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/publication 410174165 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/publication" class="">
+  
+  Publication
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending 1262969962 -->
+  <a href="https://orchid.run/wiki/user-manual/extending" class="">
+  
+  Extending Orchid
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/custom-themes 1740173358 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/custom-themes" class="">
+  
+  Custom Themes
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/registration 117294628 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/registration" class="">
+  
+  Registration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/options 1473947730 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/options" class="">
+  
+  Options
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/lifecycle-events 667874039 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/lifecycle-events" class="">
+  
+  Lifecycle Events
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/tasks 123162528 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/tasks" class="">
+  
+  Tasks
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/commands 1878226312 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/commands" class="">
+  
+  Commands
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/generators 1844037660 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/generators" class="">
+  
+  Generators
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/compilers 1038145052 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/compilers" class="">
+  
+  Parsers and Compilers
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function copyElem(fromId, toId) {
+    var fromElementContent = document.getElementById(fromId);
+    var toElementContent = document.getElementById(toId);
+    toElementContent.outerHTML = fromElementContent.outerHTML;
+  }
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    copyElem('responsive-menu-content', 'mobile-sidebar-menu');
+  });
+</script>
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+<!-- Hero content: will be in the middle -->
+<div class="hero-body">
+  <div class="container sidebar-menu">
+    <details class="is-hidden-desktop">
+      <summary>
+        Menu
+      </summary>
+      <div id="mobile-sidebar-menu"></div>
+    </details>
+    <div class="is-hidden-touch">
+      <aside class="menu" id="responsive-menu-content">
+      
+  
+  
+    
+<p class="menu-label">User Manual</p>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started 1828130916 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started" class="">
+  
+  Getting Started
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/quickstart 135213329 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/quickstart" class="">
+  
+  Quick-Start
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/basic-usage 664490546 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/basic-usage" class="">
+  
+  Basic Usage
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/directory-structure 1266464928 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/directory-structure" class="">
+  
+  Directory Structure
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/site-config 1037612046 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/site-config" class="">
+  
+  Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/admin-panel 2025071865 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/admin-panel" class="">
+  
+  Admin Panel
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/getting-started/plugins 984798796 -->
+  <a href="https://orchid.run/wiki/user-manual/getting-started/plugins" class="">
+  
+  Plugins
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts 604699100 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts" class="">
+  
+  Core Concepts
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/pages 1509766573 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/pages" class="">
+  
+  Pages
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/themes 2011836298 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/themes" class="">
+  
+  Themes
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/compilers 773873250 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/compilers" class="">
+  
+  Compilers
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/front-matter 1570211427 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/front-matter" class="">
+  
+  Front Matter
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/components 216800482 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/components" class="">
+  
+  Components
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/menus 7025284 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/menus" class="">
+  
+  Menus
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs 1844936737 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs" class="">
+  
+  Breadcrumbs
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/templates" class="is-active">
+  
+  Templates
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/internal-links 381892750 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/internal-links" class="">
+  
+  Internal Links
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/assets 1390178738 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/assets" class="">
+  
+  Assets
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/shared-config 894151346 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/shared-config" class="">
+  
+  Shared Configuration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/core-concepts/publication 410174165 -->
+  <a href="https://orchid.run/wiki/user-manual/core-concepts/publication" class="">
+  
+  Publication
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending 1262969962 -->
+  <a href="https://orchid.run/wiki/user-manual/extending" class="">
+  
+  Extending Orchid
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/custom-themes 1740173358 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/custom-themes" class="">
+  
+  Custom Themes
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/registration 117294628 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/registration" class="">
+  
+  Registration
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/options 1473947730 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/options" class="">
+  
+  Options
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/lifecycle-events 667874039 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/lifecycle-events" class="">
+  
+  Lifecycle Events
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/tasks 123162528 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/tasks" class="">
+  
+  Tasks
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/commands 1878226312 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/commands" class="">
+  
+  Commands
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/generators 1844037660 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/generators" class="">
+  
+  Generators
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=https://orchid.run/wiki/user-manual/extending/compilers 1038145052 -->
+  <a href="https://orchid.run/wiki/user-manual/extending/compilers" class="">
+  
+  Parsers and Compilers
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+
+      </aside>
+    </div>
+  </div>
+</div>
+
+<script type="text/javascript">
+  function copyElem(fromId, toId) {
+    var fromElementContent = document.getElementById(fromId);
+    var toElementContent = document.getElementById(toId);
+    toElementContent.outerHTML = fromElementContent.outerHTML;
+  }
+
+  document.addEventListener("DOMContentLoaded", function (event) {
+    copyElem('responsive-menu-content', 'mobile-sidebar-menu');
+  });
+</script>
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/user-manual">User   Manual</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/user-manual/core-concepts/templates" aria-current="page">Templates</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">Templates</h2>
+<p class="subtitle is-4">Orchid uses Pebble templates and a unique layout composition system for fast and flexible layout design.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="overview"><a href="#overview" id="overview" class="anchor"></a>Overview</h2>
+<p>Templates in Orchid all live within your resources' <code>templates/</code> directory, regardless of whether it comes from local
+resources, plugins, or themes. Anytime a layout is requested or another template is included/extended from Pebble, the
+path is referenced relative to <code>templates/</code>, even if it is not specified. It is not necessary to specify the extension
+of template files, either, as Orchid will infer the exact extension of a template based on what language the theme
+prefers.</p>
+<h2 id="layouts"><a href="#layouts" id="layouts" class="anchor"></a>Layouts</h2>
+<p>When a page is rendered, Orchid will embed it within a layout. The most basic layout looks like:</p>
+<pre><code class="language-twig">&lt;!DOCTYPE HTML&gt;
+&lt;html&gt;
+&lt;head&gt;
+{% head %}
+&lt;/head&gt;
+&lt;body&gt;
+{% body %}
+    {% page %}
+{% endbody %}
+&lt;/body&gt;
+&lt;/html&gt;
+
+</code></pre>
+<p>Layouts typically come from the theme as a file in the <code>templates/layouts/</code> directory, or you may create your own layout
+(which usually extends a layout from your theme). They utilize Pebble markup to create the structure for your webpage.
+You are free to use any of Pebble's core features for building flexible and reusable layouts, and Orchid adds a few tags
+of its own:</p>
+<ul>
+<li><code>{% head %}</code>: adds the standard meta and SEO tags to the HEAD of your webpage</li>
+<li><code>{% body %}...{% endbody %}</code>: adds stylesheets from the theme, page, and all components to this page</li>
+<li><code>{% page %}</code>: renders the main page content and page components</li>
+</ul>
+<p>In addition to the above tags, Orchid offers many additional features for building layouts, such as menus, breadcrumbs,
+and additional component areas.</p>
+<p>Layouts are chosen entirely by page configuration and are not dynamically chosen based on page type. You can change a
+page's layout with the <code>layout</code> property in a page's Front Matter. The default layout is <code>index</code>, which selects the
+<code>templates/layouts/index.peb</code> template.</p>
+<h2 id="page-templates"><a href="#page-templates" id="page-templates" class="anchor"></a>Page Templates</h2>
+<p>The <code>{% page %}</code> renders the page's main components, and one of these is typically the
+special <code>pageContent</code> component. This component picks a <em>page template</em> and renders the page's own content into that
+template.</p>
+<p>The most basic page layout (and the default fallback for all pages) looks like:</p>
+<pre><code class="language-twig">{{ page.content | raw }}
+
+</code></pre>
+<p>Page templates are usually defined by plugins as a file in the <code>templates/pages/</code> directory. Alternatively, you may
+create your own page template. They are dynamically chosen based on the type of page being rendered.</p>
+<p>The page type is determined by the plugin that created the page, and it may be set up such that a series of page
+templates may be tried based on page data, in a manner similar to the
+<a href="https://wphierarchy.com/">Wordpress template hierarchy</a>. Of course, Orchid does
+not follow the same hierarchy, but it was the main inspiration for how Orchid chooses page templates and it may give
+you a better intuition on how to set up your templates.</p>
+<h3 id="example-layouts-vs-page-templates"><a href="#example-layouts-vs-page-templates" id="example-layouts-vs-page-templates" class="anchor"></a>Example: Layouts vs Page Templates</h3>
+<p>To demonstrate the differences between layouts and page templates, lets build a simple example. In this example, you
+are building a site with a main landing page which should span full-width and contain custom markup throughout the
+entire content body. You also have static pages that are also full width with custom content, but the content includes
+some extra information for each page like the author and some additional links set in each page's front matter. You also
+have a blog, where the pages each contain a sidebar with a listing of the tags on each post, and a wiki, where the
+sidebar contains the full menu for the wiki.</p>
+<p>A normal approach to setting these up would produce the following templates, each listed with the template they extend:</p>
+<ul>
+<li><code>homepage.peb</code> extends <code>single.peb</code></li>
+<li><code>staticPage.peb</code> extends <code>single.peb</code></li>
+<li><code>post.peb</code> extends <code>sidebar.peb</code></li>
+<li><code>wiki.peb</code> extends <code>sidebar.peb</code></li>
+</ul>
+<p>The problem with templates set up in this manner is that it forces each &quot;page type&quot; to know about the layout is is
+contained in, when in reality the only thing that the template actually cares to customize is what's in the main content
+body on the page. It also limits each page to <em>only</em> being able to use that one type of layout, unless you were to
+copy the templates and make a new version for each page/layout combination:</p>
+<ul>
+<li><code>homepage-single.peb</code> extends <code>single.peb</code></li>
+<li><code>homepage-sidebar.peb</code> extends <code>sidebar.peb</code></li>
+<li><code>staticPage-single.peb</code> extends <code>single.peb</code></li>
+<li><code>staticPage-sidebar.peb</code> extends <code>sidebar.peb</code></li>
+<li><code>post-single.peb</code> extends <code>single.peb</code></li>
+<li><code>post-sidebar.peb</code> extends <code>sidebar.peb</code></li>
+<li><code>wiki-single.peb</code> extends <code>single.peb</code></li>
+<li><code>wiki-sidebar.peb</code> extends <code>sidebar.peb</code></li>
+</ul>
+<p>Page Templates set up in this manner is very much how themes in Wordpress are set up, and it ends up giving you a large
+number of theme files that become difficult to manage and refactor. And while you may be able to move the logic of the
+page &quot;layout&quot; into some conditional logic that sets up the actual layout to reduce the number of files needed, it still
+requires the content body of the page to know information about the rest of the page that it really doesn't care about.
+Contrast this the Orchid model of page templates and layouts:</p>
+<ul>
+<li>Layouts
+<ul>
+<li><code>single.peb</code></li>
+<li><code>sidebar.peb</code></li>
+</ul>
+</li>
+<li>Page Templates
+<ul>
+<li><code>homepage.peb</code> doesn't extend anything</li>
+<li><code>staticPage.peb</code> doesn't extend anything</li>
+<li><code>post.peb</code> doesn't extend anything</li>
+<li><code>wiki.peb</code> doesn't extend anything</li>
+</ul>
+</li>
+</ul>
+<p>This now allows us to embed <em>any</em> page template into <em>any</em> other layout, and neither one needs to know anything about
+the markup, blocks, or filenames names of any of the others. You can even add a third layout, and start using that one
+without needing to change anything about the page templates, and no matter how many layouts or page types you have, you
+will always be able to mix-and-match them as you please with no issues.</p>
+<p>All this allows Layouts to truly just be that: a template which &quot;lays out&quot; the various site pieces into their location
+within the page. The Page Template is then only concerned with its page-specific content and structure, and doesn't care
+about the layout or even the theme, in which is is embedded.</p>
+<h2 id="component-templates"><a href="#component-templates" id="component-templates" class="anchor"></a>Component Templates</h2>
+<p>Component Templates work exactly the same as Page Templates, but for each Component on the Page. The Component type can
+specify its own list of possible template patterns, which are expanded into a full list within the <code>components/</code>
+<code>{templateBase}</code> directory. The only difference here is that there is not &quot;default&quot; component template like there is
+with a Page Template, and it is expected that plugins provide a template for the most generic markup needed for the
+specific component to look good.</p>
+<h2 id="tag-templates"><a href="#tag-templates" id="tag-templates" class="anchor"></a>Tag Templates</h2>
+<p>Contrary to the flexibility of Components and Page templates, Tags are quite strict in the templates they allow for
+themselves. This is intentional, as Pages and Components are by nature customized by the content of the page within
+which they reside, and what they output may look different based on the page using them. By contrast, Tags are intended
+to only be concerned with its inputs and outputs, and not have a template that is contingent on anything other than what
+it itself says. To that end, all custom Tag templates are found as the tag name within the <code>tags/</code> directory, and that's
+it.</p>
+<h3 id="simple-tags"><a href="#simple-tags" id="simple-tags" class="anchor"></a>Simple Tags</h3>
+<p>Some tags are simple and do not include a content block. Tags like <code>{% head %}</code> or <code>{% page %}</code> are exactly that and no
+more. They may have some configuration values, but all content for these tags is up to the template used for these tags.</p>
+<h3 id="content-tags"><a href="#content-tags" id="content-tags" class="anchor"></a>Content Tags</h3>
+<p>Some tags are take a content block and embed it somewhere within the tag's template. Tags like <code>{% alert %}</code> must end
+with a closing tag like <code>{% endalert %}</code>, and everything between the start ane end tags will be embeded as the tag's
+content.</p>
+<p>The tag content is always formatted according to Pebble by default, which may be confusing if the tag is precompiled
+in a Markdown page, where you'd expect the content to be formatted as Markdown. However, you can supply template filters
+to Content Tags which are applied to the content before being embedded. For example, to compile a tag's content as
+Markdown:</p>
+<pre><code class="language-twig">{% alert :: compileAs('md') %}
+## This will be a Markdown header
+
+** this is bold**
+{% endalert %}
+</code></pre>
+<h3 id="tabbed-tags-static"><a href="#tabbed-tags-static" id="tabbed-tags-static" class="anchor"></a>Tabbed Tags (Static)</h3>
+<p>Some tags, like <code>{% tabs %}</code> or <code>{% accordion %}</code> can contain <em>multiple</em> content sections.</p>
+<p>For tabbed tags where all tabs are statically-defined, you set them up as children of the main tag where each child tag
+is a custom-defined key, uniquely identifying each &quot;tab&quot;.</p>
+<pre><code class="language-twig">{% tabs %}
+    {% one %}Tab Content One{% endone %}
+    {% two %}Tab Content Two{% endtwo %}
+{% endtabs %}
+</code></pre>
+<p>Just like normal Content Tags, the content is processed as Pebble, but you can supply filters to the tag to compile it
+in another way. You can provide filters on each individual &quot;tab&quot;, or on the parent tag to be applied to all child tabs:</p>
+<pre><code class="language-twig">{% tabs :: compileAs('md') %}
+    {% one %}Tab Content One{% endone %}
+    {% two %}Tab Content Two{% endtwo %}
+{% endtabs %}
+</code></pre>
+<pre><code class="language-twig">{% tabs %}
+    {% one :: compileAs('md') %}Tab Content One{% endone %}
+    {% two :: compileAs('md') %}Tab Content Two{% endtwo %}
+{% endtabs %}
+</code></pre>
+<h3 id="tabbed-tags-dynamic"><a href="#tabbed-tags-dynamic" id="tabbed-tags-dynamic" class="anchor"></a>Tabbed Tags (Dynamic)</h3>
+<p>In many cases, tabs are not defined statically, but rather are dynamically created from data. In these cases, you must
+declare the tag as <code>dynamic</code>, so that the content can be evaluted with loops, <code>ifs</code>, etc. As the contents are
+<em>evaluated</em>, tabs are &quot;pushed&quot; into the parent, which then renders them just the same as if they were defined
+statically.</p>
+<pre><code class="language-twig">{% tabs dynamic :: compileAs('md') %}
+    {% for i in range(1, 3) %}
+        {% tab ''~i %}Tab Content {{i}}{% endtab %}
+    {% endfor %}
+{% endtabs %}
+</code></pre>
+<h2 id="template-overrides"><a href="#template-overrides" id="template-overrides" class="anchor"></a>Template Overrides</h2>
+<p>Orchid has a well-defined order in which resources of any type are identified. This ordering sets Orchid up such that
+plugins provide basic templates which can always be customized later by the chosen Theme to match the markup of the
+entire site. But any resource defined by a theme or a plugin can always be overridden by your local site, so you never
+have to edit core theme files to tweak the output of your site.</p>
+<h2 id="resource-lookup-order"><a href="#resource-lookup-order" id="resource-lookup-order" class="anchor"></a>Resource Lookup Order</h2>
+<p>The exact order in which all resources are located is shown in the diagram below. A resource can be anything, including
+your templates and your content files, and each plugin or theme provides the resources bundled in its JarFile.</p>
+<p><img src="https://orchid.run/assets/media/resource-lookup-order.png" alt="Resource Lookup Order" title="Resource Lookup Order" /></p>
+<h3 id="local-resource-sources"><a href="#local-resource-sources" id="local-resource-sources" class="anchor"></a>Local Resource Sources</h3>
+<p>Orchid ships with a single Local Resource Source, which locates resources as files within your <code>resourceDir</code>. This is
+typically <code>src/orchid/resources</code> within the normal Gradle project structure, but can be changed by setting the <code>srcDir</code>
+in the <code>orchid</code> configuration block of your <code>build.gradle</code>.</p>
+<p>Local resource sources are special in the fact that plugins typically index content based on local resources only.</p>
+<p>While not currently implemented, Orchid supports having multiple Local resource sources in the case that you want to
+host local resources in multiple base directories or connect to a <a href="https://headlesscms.org/">Headless CMS</a> which manages
+your content remotely or add content from your own private APIs or CMS. See the Developer's Guide for more on
+implementing new resource sources.</p>
+<h3 id="theme-resource-sources"><a href="#theme-resource-sources" id="theme-resource-sources" class="anchor"></a>Theme Resource Sources</h3>
+<p>Themes are defined as being a Resource Source in themselves; that is, the Theme class directly provides Resources to
+Orchid from its JarFile. The resources that come from a theme are typically the final templates and assets that will be
+used in the rendered site, providing customization of those templates and assets from plugins which are usually fairly
+generic.</p>
+<p>When resolving a resource that doesn't exist in a local source, only the current theme is considered. The &quot;current&quot;
+theme is usually the default theme set in <code>build.gradle</code> (in all cases except when rendering), or the theme that is set
+as a custom theme for a generator in <code>config.yml</code>.</p>
+<p>All assets (CSS and JS only) provided by a theme are rendered in the output site with a &quot;namespace&quot; that allows multiple
+instances of the same theme to each provide different versions of the same assets (e.g. stylesheets with different
+colors) without overwriting each other. This namespace is transparent to the theme picking which assets to add and which
+ones are loaded on any given page, but the path of assets in the output site won't be the exact same as their input
+path.</p>
+<h3 id="plugin-resource-sources"><a href="#plugin-resource-sources" id="plugin-resource-sources" class="anchor"></a>Plugin Resource Sources</h3>
+<p>Plugins that contribute new things like Template Tags or Components must provide their own default templates so that
+they can always be dropped into any new theme and still work great. Components may also inject CSS or Javascript into a
+page as well, which also comes from the plugin's resources. Keep in mind that <em>any</em> resource provided by a plugin can
+<strong><em>always</em></strong> be overridden by the theme or by your local resources, but without any customization plugins will still
+have everything they need to function perfectly. This makes it very easy to add new plugins to your site, as they
+usually require no setup at all to work.</p>
+<h2 id="debugging-templates"><a href="#debugging-templates" id="debugging-templates" class="anchor"></a>Debugging Templates</h2>
+<p>Having trouble figuring out which layout or page template is used to render a page? When running Orchid in &quot;serve&quot; mode,
+a comment section is added to the HEAD of each page with some useful information, such as the current template, the page
+type, the list of possible page templates, and the resolved layout/page template.</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#overview" class="">
+  
+  Overview
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#layouts" class="">
+  
+  Layouts
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#page-templates" class="">
+  
+  Page Templates
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#example-layouts-vs-page-templates" class="">
+  
+  Example: Layouts vs Page Templates
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#component-templates" class="">
+  
+  Component Templates
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#tag-templates" class="">
+  
+  Tag Templates
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#simple-tags" class="">
+  
+  Simple Tags
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#content-tags" class="">
+  
+  Content Tags
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#tabbed-tags-static" class="">
+  
+  Tabbed Tags (Static)
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#tabbed-tags-dynamic" class="">
+  
+  Tabbed Tags (Dynamic)
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#template-overrides" class="">
+  
+  Template Overrides
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#resource-lookup-order" class="">
+  
+  Resource Lookup Order
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#local-resource-sources" class="">
+  
+  Local Resource Sources
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#theme-resource-sources" class="">
+  
+  Theme Resource Sources
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#plugin-resource-sources" class="">
+  
+  Plugin Resource Sources
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/user-manual/core-concepts/templates 121656075 -->
+  <!-- menuItem.page=  -->
+  <a href="#debugging-templates" class="">
+  
+  Debugging Templates
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/user-manual/core-concepts/breadcrumbs">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    Breadcrumbs
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/user-manual/core-concepts/internal-links">
+    Internal Links
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

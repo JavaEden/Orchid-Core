@@ -1,0 +1,383 @@
+{
+  "ownKey": "pages",
+  "childrenPages": {
+    "license": {
+      "ownKey": "license",
+      "ownPages": [{
+        "reference": {
+          "path": "",
+          "baseUrl": "https://orchid.run",
+          "fileName": "license",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/license"
+        },
+        "description": "",
+        "title": "Orchid License",
+        "content": ""
+      }]
+    },
+    "themes": {
+      "ownKey": "themes",
+      "childrenPages": {
+        "orchidcopper": {
+          "ownKey": "orchidcopper",
+          "childrenPages": {
+            "wiki-layout": {
+              "ownKey": "wiki-layout",
+              "ownPages": [{
+                "reference": {
+                  "path": "themes/orchidcopper",
+                  "baseUrl": "https://orchid.run",
+                  "fileName": "wiki-layout",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://orchid.run/themes/orchidcopper/wiki-layout"
+                },
+                "description": "This is the default page layout for the Copper theme.",
+                "title": "Copper - Wiki Layout",
+                "content": "<h1 id=\"iam-caecus-tormentis-ulla\"><a href=\"#iam-caecus-tormentis-ulla\" id=\"iam-caecus-tormentis-ulla\" class=\"anchor\"><\/a>Iam caecus tormentis ulla<\/h1>\n<h2 id=\"vobis-nunc-si\"><a href=\"#vobis-nunc-si\" id=\"vobis-nunc-si\" class=\"anchor\"><\/a>Vobis nunc si<\/h2>\n<p>Lorem markdownum locum. Enim ingens: si pariturae opes. Sub suam noctis generis\nsimillima formidatis ipso, saepe, non et mortemque in voluit saltu viros.\nSanguis cornigeris maculavit sic petunt totiens Clytumque Prospicientis\nremoretur in auras.<\/p>\n<ul>\n<li>Admoverat viso Ceycis enim mea procurrunt ad<\/li>\n<li>Viderit pascitur virgo<\/li>\n<li>Neve Aegides ita tuorum refert<\/li>\n<li>Auras me pietatem somnis tam comes parte<\/li>\n<\/ul>\n<h2 id=\"crinis-instabilesque-otia\"><a href=\"#crinis-instabilesque-otia\" id=\"crinis-instabilesque-otia\" class=\"anchor\"><\/a>Crinis instabilesque otia<\/h2>\n<p><strong>Addidit<\/strong> habitare qui verbis differt pietatis luminis, quid dat armiferae\nintulit non satis sollicitat captantur cursus. Non iugulo scopulum gloria\n<a href=\"#\">matertera<\/a> sonant a ipsis praesente\ndespecta somnos. Et umor Coeranon <a href=\"#\">suos exsecrantia\nprimum<\/a>\nintercepta timor <strong>concidit laceras<\/strong>; coetus constitit niteant nondum coniugis\narmiger signatur.<\/p>\n<p>Quid cavis modo quater dumque principium moenibus nullum hominesque et ferae.\nQuibus auras aut. Ad ducta <a href=\"#\">genitum supremumque lapides<\/a>\nnigrantis iubemur. Feres manus decorem: erat non heu facibus mora iacit\ndeficiunt. Illam mox: loqui at quaeque praeside tortilis <a href=\"#\">fecere\nrespiramina<\/a> solum superum poteram\naliquid illum, nota Eurytidae animus.<\/p>\n<h2 id=\"tantum-caeleste-se-putes-peremit-lucem\"><a href=\"#tantum-caeleste-se-putes-peremit-lucem\" id=\"tantum-caeleste-se-putes-peremit-lucem\" class=\"anchor\"><\/a>Tantum caeleste se putes peremit lucem<\/h2>\n<p>Cetera sine: inquire urna, ferox fata proculcat quem; arbitrium facit cui\nLaelape tremulo tabuit nusquam quoque, cum! Illos tui spernimur ad promissaque\npropago viri dea hoc aut undis levitas, meis, tua erat modo emissumque stabat.\nTalia tenus <a href=\"#\">corpore<\/a>. Procul attonitoque\ntamen regis corpora.<\/p>\n<ol>\n<li>Dum verba et Cypro<\/li>\n<li>Deduxit finita robur<\/li>\n<li>In media nodosaque qui<\/li>\n<li>Aura possumus haec suam in sideribus alarum<\/li>\n<li>Intima effecisse<\/li>\n<\/ol>\n<p>Causa una in telae inscius! Putares visa ceram <strong>dolens quas<\/strong>, cursibus.\nLoquentis tamen Stabiasque undae invita polypus utramque Cybeleius herbis\npraeferre fessos. Damnatque est frui verum fraudem placebimus <a href=\"#\">vidi\npastor<\/a> iamque repulsam: videt est terribilem rapidi,\nfacinus.<\/p>\n"
+              }]
+            },
+            "nobox-layout": {
+              "ownKey": "nobox-layout",
+              "ownPages": [{
+                "reference": {
+                  "path": "themes/orchidcopper",
+                  "baseUrl": "https://orchid.run",
+                  "fileName": "nobox-layout",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://orchid.run/themes/orchidcopper/nobox-layout"
+                },
+                "description": "This layout can be used to be build complex layouts with custom-formatted HTML.",
+                "title": "Copper - No-Box Page Layout",
+                "content": "<div class=\"columns\">\n  <div class=\"column\">\n    <div class=\"box\">\n<h2 id=\"pronus-et-alcidae-iacuit\"><a href=\"#pronus-et-alcidae-iacuit\" id=\"pronus-et-alcidae-iacuit\" class=\"anchor\"><\/a>Pronus et Alcidae iacuit<\/h2>\n<p>Lorem markdownum ponto; <a href=\"#\">per<\/a> qui quasque.\nCincta obscena: intus, fert totum prodere clamore, progenies, Agenorides; parva\nillo circum nec salutis. Vulnus tardatus Saturnia Aello, milite par vitam\nDiomede se rauca insula nunc tempore.<\/p>\n<ul>\n<li>Loquiturque catenis magno conspicui infelix<\/li>\n<li>Dubiaeque fallunt<\/li>\n<li>Postquam in humus sed nam primis hanc<\/li>\n<\/ul>\n\n    <\/div>\n  <\/div>\n  <div class=\"column\">\n    <div class=\"box\">\n<h2 id=\"virgo-ferebant-urbes-redditur-et-et-sit\"><a href=\"#virgo-ferebant-urbes-redditur-et-et-sit\" id=\"virgo-ferebant-urbes-redditur-et-et-sit\" class=\"anchor\"><\/a>Virgo ferebant urbes redditur et et sit<\/h2>\n<p>Peto tum, ilice illis elementa sperando in fuit et dixit, quoque Asiae: haut.\nPromissaque nunc nos gravi <a href=\"#\">deducit tum patres<\/a>\naditus haec, est <em>potentia sepulcri<\/em> derat.<\/p>\n<h2 id=\"aliena-quod-pro\"><a href=\"#aliena-quod-pro\" id=\"aliena-quod-pro\" class=\"anchor\"><\/a>Aliena quod pro<\/h2>\n<p>Iubeoque ut longa dumque retinens ego nihil ausa altera vultum tacta mitis\nmirabile iam cuncta modus neque. Cruorem aequalique <a href=\"#\">operi\nme<\/a> sic coepere! Amores ductus, isset et feris testantia,\nsatis introrsus aurum possedit disiectum subitis classe? Gaudet tumebat, nec\nille folioque inculpata madefecit iter,\n<a href=\"#\">prius<\/a>.<\/p>\n\n    <\/div>\n  <\/div>\n<\/div>\n"
+              }]
+            },
+            "page-layout": {
+              "ownKey": "page-layout",
+              "ownPages": [{
+                "reference": {
+                  "path": "themes/orchidcopper",
+                  "baseUrl": "https://orchid.run",
+                  "fileName": "page-layout",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://orchid.run/themes/orchidcopper/page-layout"
+                },
+                "description": "This is the default page layout for the Copper theme.",
+                "title": "Copper - Page Layout",
+                "content": "<h1 id=\"iam-caecus-tormentis-ulla\"><a href=\"#iam-caecus-tormentis-ulla\" id=\"iam-caecus-tormentis-ulla\" class=\"anchor\"><\/a>Iam caecus tormentis ulla<\/h1>\n<h2 id=\"vobis-nunc-si\"><a href=\"#vobis-nunc-si\" id=\"vobis-nunc-si\" class=\"anchor\"><\/a>Vobis nunc si<\/h2>\n<p>Lorem markdownum locum. Enim ingens: si pariturae opes. Sub suam noctis generis\nsimillima formidatis ipso, saepe, non et mortemque in voluit saltu viros.\nSanguis cornigeris maculavit sic petunt totiens Clytumque Prospicientis\nremoretur in auras.<\/p>\n<ul>\n<li>Admoverat viso Ceycis enim mea procurrunt ad<\/li>\n<li>Viderit pascitur virgo<\/li>\n<li>Neve Aegides ita tuorum refert<\/li>\n<li>Auras me pietatem somnis tam comes parte<\/li>\n<\/ul>\n<h2 id=\"crinis-instabilesque-otia\"><a href=\"#crinis-instabilesque-otia\" id=\"crinis-instabilesque-otia\" class=\"anchor\"><\/a>Crinis instabilesque otia<\/h2>\n<p><strong>Addidit<\/strong> habitare qui verbis differt pietatis luminis, quid dat armiferae\nintulit non satis sollicitat captantur cursus. Non iugulo scopulum gloria\n<a href=\"#\">matertera<\/a> sonant a ipsis praesente\ndespecta somnos. Et umor Coeranon <a href=\"#\">suos exsecrantia\nprimum<\/a>\nintercepta timor <strong>concidit laceras<\/strong>; coetus constitit niteant nondum coniugis\narmiger signatur.<\/p>\n<p>Quid cavis modo quater dumque principium moenibus nullum hominesque et ferae.\nQuibus auras aut. Ad ducta <a href=\"#\">genitum supremumque lapides<\/a>\nnigrantis iubemur. Feres manus decorem: erat non heu facibus mora iacit\ndeficiunt. Illam mox: loqui at quaeque praeside tortilis <a href=\"#\">fecere\nrespiramina<\/a> solum superum poteram\naliquid illum, nota Eurytidae animus.<\/p>\n<h2 id=\"tantum-caeleste-se-putes-peremit-lucem\"><a href=\"#tantum-caeleste-se-putes-peremit-lucem\" id=\"tantum-caeleste-se-putes-peremit-lucem\" class=\"anchor\"><\/a>Tantum caeleste se putes peremit lucem<\/h2>\n<p>Cetera sine: inquire urna, ferox fata proculcat quem; arbitrium facit cui\nLaelape tremulo tabuit nusquam quoque, cum! Illos tui spernimur ad promissaque\npropago viri dea hoc aut undis levitas, meis, tua erat modo emissumque stabat.\nTalia tenus <a href=\"#\">corpore<\/a>. Procul attonitoque\ntamen regis corpora.<\/p>\n<ol>\n<li>Dum verba et Cypro<\/li>\n<li>Deduxit finita robur<\/li>\n<li>In media nodosaque qui<\/li>\n<li>Aura possumus haec suam in sideribus alarum<\/li>\n<li>Intima effecisse<\/li>\n<\/ol>\n<p>Causa una in telae inscius! Putares visa ceram <strong>dolens quas<\/strong>, cursibus.\nLoquentis tamen Stabiasque undae invita polypus utramque Cybeleius herbis\npraeferre fessos. Damnatque est frui verum fraudem placebimus <a href=\"#\">vidi\npastor<\/a> iamque repulsam: videt est terribilem rapidi,\nfacinus.<\/p>\n"
+              }]
+            },
+            "demo": {
+              "ownKey": "demo",
+              "ownPages": [{
+                "reference": {
+                  "path": "themes/orchidcopper",
+                  "baseUrl": "https://orchid.run",
+                  "fileName": "demo",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://orchid.run/themes/orchidcopper/demo"
+                },
+                "description": "",
+                "title": "Copper Demo",
+                "content": "<div class=\"tile is-ancestor\">\n  <div class=\"tile is-vertical\">\n  \n\n  \n  <\/div>\n<\/div>\n"
+              }]
+            },
+            "forms": {
+              "ownKey": "forms",
+              "ownPages": [{
+                "reference": {
+                  "path": "themes/orchidcopper",
+                  "baseUrl": "https://orchid.run",
+                  "fileName": "forms",
+                  "extension": "html",
+                  "usePrettyUrl": true,
+                  "link": "https://orchid.run/themes/orchidcopper/forms"
+                },
+                "description": "This shows how forms look in the Copper Theme.",
+                "title": "Copper - Forms",
+                "content": ""
+              }]
+            }
+          }
+        },
+        "orchidfutureimperfect": {
+          "ownKey": "orchidfutureimperfect",
+          "childrenPages": {"demo": {
+            "ownKey": "demo",
+            "ownPages": [{
+              "reference": {
+                "path": "themes/orchidfutureimperfect",
+                "baseUrl": "https://orchid.run",
+                "fileName": "demo",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/themes/orchidfutureimperfect/demo"
+              },
+              "description": "",
+              "title": "Demo",
+              "content": ""
+            }]
+          }}
+        },
+        "orchideditorial": {
+          "ownKey": "orchideditorial",
+          "childrenPages": {"demo": {
+            "ownKey": "demo",
+            "ownPages": [{
+              "reference": {
+                "path": "themes/orchideditorial",
+                "baseUrl": "https://orchid.run",
+                "fileName": "demo",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/themes/orchideditorial/demo"
+              },
+              "description": "",
+              "title": "Demo",
+              "content": ""
+            }]
+          }}
+        },
+        "orchidbsdoc": {
+          "ownKey": "orchidbsdoc",
+          "childrenPages": {"demo": {
+            "ownKey": "demo",
+            "ownPages": [{
+              "reference": {
+                "path": "themes/orchidbsdoc",
+                "baseUrl": "https://orchid.run",
+                "fileName": "demo",
+                "extension": "html",
+                "usePrettyUrl": true,
+                "link": "https://orchid.run/themes/orchidbsdoc/demo"
+              },
+              "description": "",
+              "title": "Demo",
+              "content": ""
+            }]
+          }}
+        }
+      }
+    },
+    "migration": {
+      "ownKey": "migration",
+      "childrenPages": {
+        "0_18": {
+          "ownKey": "0_18",
+          "ownPages": [{
+            "reference": {
+              "path": "migration",
+              "baseUrl": "https://orchid.run",
+              "fileName": "0_18",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/migration/0_18"
+            },
+            "description": "",
+            "title": "0.18.0 Migration Guide",
+            "content": "<h2 id=\"end-user-changes\"><a href=\"#end-user-changes\" id=\"end-user-changes\" class=\"anchor\"><\/a>End-User Changes<\/h2>\n<p>There are several breaking changes in this release, and some features have been deprecated. This guide will describe the\nprocess of migrating away from deprecated APIs to their replacements, and for updating breaking changes.<\/p>\n<h3 id=\"unified-source-code-documentation\"><a href=\"#unified-source-code-documentation\" id=\"unified-source-code-documentation\" class=\"anchor\"><\/a>Unified Source Code Documentation<\/h3>\n<p>The current behavior for Javadoc, Groovydoc, Kotlindoc, and Swiftdoc has been deprecated, and will be removed in version\n0.19.0. All of these plugins have been re-implemented under the common <a href=\"https://orchid.run/plugins/orchidsourcedoc\">OrchidSourceDoc<\/a> interface, and\nare more flexible, more maintainable, and are all configured in the same manner.<\/p>\n<p>Since <code>OrchidSourceDoc<\/code> is considered to be in beta for 0.18.x, it must be enabled via the <code>--experimentalSourceDoc<\/code> CLI\nflag. Without this flag, the current behaviour remains unchanged, and your site will not break. You must update your\ndocs before upgrading to 0.19.0, which will be released no earlier than February 2020.<\/p>\n<h3 id=\"dynamic-queries-for-pages-has-been-removed\"><a href=\"#dynamic-queries-for-pages-has-been-removed\" id=\"dynamic-queries-for-pages-has-been-removed\" class=\"anchor\"><\/a>Dynamic queries for pages has been removed<\/h3>\n<p>If you were using &quot;queries&quot; for locating pages, such as <code>findAll('tag=one')<\/code>, this has been removed in 0.18.0. You\nshould instead create custom <a href=\"https://orchid.run/plugins/orchidtaxonomies\">Taxonomy archives<\/a> for the pages you wish to match in\nthis manner, and then use the collections created by that plugins to locate those pages.<\/p>\n<p>For backward-compatibility, you may replace function calls like <code>findAll('tag=one')<\/code> in your templates with\n<code>index.queryPages('tag=one')<\/code>. This method may be removed in a future version of Orchid, so you should work to migrate\ntoward taxonomies as described above, but it will provide you with the expected functionality until then. Using the new\n<a href=\"https://orchid.run/wiki/user-manual/core-concepts/internal-links#debugging-internal-links\">Diagnosis Mode<\/a> mode can help you\nfind offending cases of <code>findAll('tag=one')<\/code>-like calls which need to be migrated.<\/p>\n<h3 id=\"updates-to-copper-theme\"><a href=\"#updates-to-copper-theme\" id=\"updates-to-copper-theme\" class=\"anchor\"><\/a>Updates to Copper theme<\/h3>\n<p>Orchid's own docs have been redesigned with the Copper theme as its base, and numerous changes have been applied to that\ntheme. Most notably, if you were using the homepage with the <code>copperTiles<\/code> component, you will need to re-create that\nwith the Tiles set up as menu items, rather than the ad-hoc structure used previously. See the configuration used\n<a href=\"https://github.com/JavaEden/Orchid/blob/dev/OrchidCore/src/orchid/resources/config/theme/demo/Copper.yml#L5\">here<\/a> for\nhow to recreate your homepage as a Menu. The previous functionality has been deprecated and will be removed in 0.19.0.<\/p>\n<p>There have been various other changes to the theme's design and options, but the rest should be backward-compatible.<\/p>\n<h3 id=\"updates-to-theme-search\"><a href=\"#updates-to-theme-search\" id=\"updates-to-theme-search\" class=\"anchor\"><\/a>Updates to theme search<\/h3>\n<p>Previously, the scripts needed for client-side search were added to the BsDoc, Editorial, and FutureImperfect themes\nautomatically. This functionality has been deprecated and will be removed in 0.19.0, as search should be added through\nthe <a href=\"https://orchid.run/plugins/orchidsearch\">OrchidSearch<\/a> meta-components.<\/p>\n<p>In addition, the <code>useSidebarSearch<\/code> property has been removed from the <code>BsDoc<\/code> theme, so the search field is always\nvisible, just like the other themes.<\/p>\n<h2 id=\"api-changes\"><a href=\"#api-changes\" id=\"api-changes\" class=\"anchor\"><\/a>API Changes<\/h2>\n<p>The following are changes to internal APIs and patterns of Orchid plugins. The rest of this page is only relevant if you\nare developing custom plugins. Also note that the changes listed below may not be exhaustive; it is just a high-level\noverview of the kinds of changes made to Orchid's internals. If your plugins no longer compile with version 0.18.0, you\nmight be better off just reaching out on Gitter or opening an issue, where I can help you figure out how to fix the\nproblem more specifically.<\/p>\n<h3 id=\"orchidcontext-passed-to-classes\"><a href=\"#orchidcontext-passed-to-classes\" id=\"orchidcontext-passed-to-classes\" class=\"anchor\"><\/a><code>OrchidContext<\/code> passed to classes<\/h3>\n<p>The following changes are only relevant if you develop custom plugins. The API of many of Orchid's &quot;extensible&quot; classes\nhave been changed. Most notably, the <code>OrchidContext<\/code> class is now typically passed to these classes' when they are used,\ninstead of expecting that it would be injected in their constructor if needed. In most cases, you should be able to\nsimply follow the compiler errors to fix these changes.<\/p>\n<p>The following classes are impacted:<\/p>\n<ul>\n<li><code>OrchidMenuFactory<\/code><\/li>\n<li><code>OrchidPublisher<\/code><\/li>\n<li><code>TemplateTag<\/code><\/li>\n<li><code>TemplateFunction<\/code><\/li>\n<li><code>OrchidComponent<\/code><\/li>\n<li><code>OrchidCommand<\/code><\/li>\n<li><code>OrchidTask<\/code><\/li>\n<\/ul>\n<h3 id=\"generator-models\"><a href=\"#generator-models\" id=\"generator-models\" class=\"anchor\"><\/a>Generator Models<\/h3>\n<p>There are some bigger changes regarding Generators and Collections, which may take a bit more work to address. Now,\ninstead of a <code>OrchidGenerator<\/code> returning a <code>List&lt;OrchidPage&gt;<\/code> from <code>startIndexing()<\/code>, it should return an instance of\n<code>OrchidGenerator.Model<\/code>, which effectively wraps <code>List&lt;OrchidPage&gt;<\/code>. That same model is then passed to\n<code>getCollections()<\/code> instead of <code>List&lt;OrchidPage&gt;<\/code>. This allows a Generator to pass data from the <code>startIndexing()<\/code> call\nto <code>getCollections()<\/code> without having to hold it in the Generator class itself, and it can also be injected into\n<code>OrchidMenuFactory<\/code>, <code>OrchidComponent<\/code>, etc.<\/p>\n<p>Because of this, Generators should no longer hold any state, and they should not be configured as singletons. Any state\nthat was previously contained in the Generator class should now be contained in the <code>Model<\/code> class. The model should be\naccessed not through constructor injection, but by using the <code>context.resolve(ModelClass.java)<\/code> method. Constructor\ninjection of the <code>Model<\/code> will fail since it is not bound to the DI container in an <code>OrchidModule<\/code>, but is added\ndynamically after the Generator has been indexed.<\/p>\n<h3 id=\"refined-collections\"><a href=\"#refined-collections\" id=\"refined-collections\" class=\"anchor\"><\/a>Refined Collections<\/h3>\n<p>Previously, Collections grouped Pages together under a <code>collectionType<\/code> and <code>collectionId<\/code>, but from there the page's\n<code>itemId<\/code> used to locate specific pages in a collection was done dynamically. Orchid could not statically determine if a\ngiven <code>itemId<\/code> matched a page, and could not tell the user the <code>itemId<\/code> that would select a specific page.<\/p>\n<p>Now, pages strongly define their <code>itemId<\/code>s. This allows features like the Admin Panel to display the <code>itemId<\/code>s for each\npage, and also generate the <code>anchor()<\/code> function that would match a given page as viewed in that admin panel. As such, if\nyou are creating custom <code>OrchidPage<\/code> classes, you will need to determine which properties of that class are it's IDs.\nThis also reduces the need for custom <code>OrchidCollection<\/code> classes.<\/p>\n<p>As part of this change, the concept of &quot;global collections&quot; has been removed. Previously, these were used to parse some\nkind of dynamic query string and search all indexed pages for pages which match that query. This kind of functionality\nhas been completely removed as it was determined to be something of an anti-pattern. Moving forward, you should\nstructure your collections such that pages are already grouped in more meaningful collections that reduces the need for\ncomplex, dynamic queries. Users can then perform filtering of these smaller collections if they need a more specific\nsubset of those pages, or create custom <code>TemplateFuntions<\/code> to handle that kind of query logic.<\/p>\n"
+          }]
+        },
+        "0_17": {
+          "ownKey": "0_17",
+          "ownPages": [{
+            "reference": {
+              "path": "migration",
+              "baseUrl": "https://orchid.run",
+              "fileName": "0_17",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/migration/0_17"
+            },
+            "description": "",
+            "title": "0.17.0 Migration Guide",
+            "content": "<h2 id=\"0170-migration-guide\"><a href=\"#0170-migration-guide\" id=\"0170-migration-guide\" class=\"anchor\"><\/a>0.17.0 Migration Guide<\/h2>\n<ul>\n<li>The key for the Github Pages publisher has renamed. Change <code>ghPages<\/code> to <code>githubPages<\/code> in your <code>config.yml<\/code> publication\npipeline<\/li>\n<li>The <code>baseDir<\/code> property in Swiftdoc plugin configuration has been changed to <code>sourceDirs<\/code> to match other code-doc\nplugins, and now accepts either a single String or a list of Strings as a value.<\/li>\n<li>The Github Pages publisher has been moved out of <code>OrchidCore<\/code> and into the <a href=\"https://orchid.run/plugins/orchidgithub\">OrchidGithub<\/a> integration\nproject. Likewise, the Github Releases publisher has been moved from <code>OrchidChangelog<\/code> to <code>OrchidGithub<\/code>, and the\n<code>githubProject()<\/code> global collection has been moved from <code>OrchidCopper<\/code> to <code>OrchidGithub<\/code>. Add the\n<code>io.github.javaeden.orchid:OrchidGithub:1.0.0<\/code> dependency to continue using these features<\/li>\n<li>The Netlify publisher has been moved out of <code>OrchidCore<\/code> and into the <a href=\"https://orchid.run/plugins/orchidnetlify\">OrchidNetlify<\/a> integration\nproject. Add the <code>io.github.javaeden.orchid:OrchidNetlify:1.0.0<\/code> dependency to continue using the Netlify\npublisher<\/li>\n<li>The following &quot;spells&quot; supported by Clog have been removed: [ <code>baseUrl<\/code>, <code>baseUrlScheme<\/code>, <code>baseUrlHost<\/code>,\n<code>baseUrlPort<\/code>, <code>baseUrlRoot<\/code>, <code>version<\/code>, <code>orchidVersion<\/code>, <code>env<\/code> ] . Instead, use the normal TemplateFunctions within\nClog-formatted strings for <code>baseUrl<\/code>, and create TemplateFunctions for your site as a local plugin if your need the\nother Clog spells<\/li>\n<li>The <code>changelogVersionPicker<\/code> component has been removed, as it has not worked for quite a while. You should create\nthis component yourself using Javascript to match your theme<\/li>\n<li><strong>Notable dependency changes<\/strong>\n<ul>\n<li>Flexmark <code>Extensions<\/code> have changed packages. Custom Flexmark extensions now must be of the type\n<code>com.vladsch.flexmark.util.builder.Extension<\/code><\/li>\n<\/ul>\n<\/li>\n<\/ul>\n"
+          }]
+        }
+      }
+    },
+    "changelog": {
+      "ownKey": "changelog",
+      "ownPages": [{
+        "reference": {
+          "path": "",
+          "baseUrl": "https://orchid.run",
+          "fileName": "changelog",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/changelog"
+        },
+        "description": "",
+        "title": "Changelog",
+        "content": ""
+      }]
+    },
+    "showcase": {
+      "ownKey": "showcase",
+      "childrenPages": {
+        "kodiak": {
+          "ownKey": "kodiak",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "kodiak",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/kodiak"
+            },
+            "description": "Wrappers around code documentation CLI tools to produce JSON models, usable as libraries.",
+            "title": "Kodiak",
+            "content": ""
+          }]
+        },
+        "pebble": {
+          "ownKey": "pebble",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "pebble",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/pebble"
+            },
+            "description": "java templating engine inspired by Twig.",
+            "title": "Pebble",
+            "content": ""
+          }]
+        },
+        "strikt": {
+          "ownKey": "strikt",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "strikt",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/strikt"
+            },
+            "description": "An assertion library for Kotlin.",
+            "title": "Strikt",
+            "content": ""
+          }]
+        },
+        "caseyjbrooks": {
+          "ownKey": "caseyjbrooks",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "caseyjbrooks",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/caseyjbrooks"
+            },
+            "description": "Personal homepage for Casey Brooks, creator of Orchid.",
+            "title": "Caseyjbrooks",
+            "content": ""
+          }]
+        },
+        "trellis": {
+          "ownKey": "trellis",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "trellis",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/trellis"
+            },
+            "description": "A Kotlin implementation of the Specification Pattern.",
+            "title": "Trellis",
+            "content": ""
+          }]
+        },
+        "orchid": {
+          "ownKey": "orchid",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "orchid",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/orchid"
+            },
+            "description": "Build and deploy beautiful documentation sites that grow with you",
+            "title": "Orchid",
+            "content": ""
+          }]
+        },
+        "ian-on-evs": {
+          "ownKey": "ian-on-evs",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "ian-on-evs",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/ian-on-evs"
+            },
+            "description": "Ian Darwin, EVangelist",
+            "title": "Ian On Evs",
+            "content": ""
+          }]
+        },
+        "kudzu": {
+          "ownKey": "kudzu",
+          "ownPages": [{
+            "reference": {
+              "path": "showcase",
+              "baseUrl": "https://orchid.run",
+              "fileName": "kudzu",
+              "extension": "html",
+              "usePrettyUrl": true,
+              "link": "https://orchid.run/showcase/kudzu"
+            },
+            "description": "A monadic (I think...) recursive-descent parser written in Kotlin.",
+            "title": "Kudzu",
+            "content": ""
+          }]
+        }
+      }
+    },
+    "press": {
+      "ownKey": "press",
+      "ownPages": [{
+        "reference": {
+          "path": "",
+          "baseUrl": "https://orchid.run",
+          "fileName": "press",
+          "extension": "html",
+          "usePrettyUrl": true,
+          "link": "https://orchid.run/press"
+        },
+        "description": "",
+        "title": "Orchid Press Kit",
+        "content": "\n<div class=\"has-text-centered\">\n  <h2>Primary Logo<\/h2>\n  <p>Use the primary logo whenever you can, if you have the vertical space for it.<\/p>\n  <div class=\"columns\">\n    <div class=\"column is-half\">\n      <div class=\"box\">\n        <h3>Light Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/logo_top_light.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/logo_top_light.svg\" download>Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n    <div class=\"column is-half\">\n      <div class=\"box has-background-dark\">\n        <h3 class=\"has-text-light\">Dark Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/logo_top_dark.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/logo_top_dark.svg\" download class=\"has-text-light\">Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n\n  <h2>Inline Logo<\/h2>\n  <p>Use the logo when you do not have the vertical real-estate to clearly display the primary logo.<\/p>\n  <div class=\"columns\">\n    <div class=\"column is-half\">\n      <div class=\"box\">\n        <h3>Light Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/logo_left_light.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/logo_left_light.svg\" download>Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n    <div class=\"column is-half\">\n      <div class=\"box has-background-dark has-text-light\">\n        <h3>Dark Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/logo_left_dark.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/logo_left_dark.svg\" download class=\"has-text-light\">Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n\n  <h2>Icon Mark<\/h2>\n  <p>Use the icon mark when you need a square or really tiny icon.<\/p>\n  <div class=\"columns\">\n    <div class=\"column is-half\">\n      <div class=\"box\">\n        <h3>Light Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/icon_light.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/icon_light.svg\" download>Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n    <div class=\"column is-half\">\n      <div class=\"box has-background-dark has-text-light\">\n        <h3>Dark Background<\/h3>\n        <img src=\"https://orchid.run/assets/svg/orchid/icon_dark.svg\" alt=\"\">\n        <p><a href=\"https://orchid.run/assets/svg/orchid/icon_dark.svg\" download class=\"has-text-light\">Download SVG<\/a><\/p>\n      <\/div>\n    <\/div>\n  <\/div>\n<\/div>\n"
+      }]
+    }
+  },
+  "ownPages": [{
+    "reference": {
+      "path": "",
+      "baseUrl": "https://orchid.run",
+      "fileName": "_redirects",
+      "extension": "",
+      "usePrettyUrl": false,
+      "link": "https://orchid.run/_redirects"
+    },
+    "description": "",
+    "title": "Redirects",
+    "content": "\n# Custom 404 page\n/*                                  /404.html                                404\n"
+  }]
+}

@@ -1,0 +1,800 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>The Amazing, Auto-Documenting Admin Panel</title>
+
+
+<meta name="description" content="See how Orchid&#39;s unique admin panel documents your build for you.">
+
+
+
+<link rel="prev" href="https://orchid.run/wiki/learn/tutorials/all-about-archetypes">
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<style  >
+section.section.component .container.content {
+  /*zoom: 80%;*/ }
+
+</style>
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/amazing-admin-panel" aria-current="page">The Amazing, Auto-Documenting Admin Panel</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">The Amazing, Auto-Documenting Admin Panel</h2>
+<p class="subtitle is-4">See how Orchid&#39;s unique admin panel documents your build for you.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>If you've been following along with these tutorials or been exploring some of the other great Orchid plugins, you may be
+starting to realize just how much you can do with Orchid, and especially how difficult it can be to remember exactly how
+to use it all. It can be a bit tricky to navigate the documentation to find that one little snippet of code you need,
+and you have to hope that it is up-to-date and hasn't changed if you're not yet on the latest version.</p>
+<p>Fortunately, Orchid has a solution for all of these problems: an admin panel which brings the most relevant
+documentation to you in one central location, perfectly up-to-date with your version of Orchid. This tutorial will walk
+you through setting up this plugin and navigating the admin panel to help you find what you need. And it</p>
+<p>Before continuing, make sure you have followed along with the previous tutorial and have started your local Orchid
+server with <code>gradle orchidServe</code>. We will be building on that example in this tutorial.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/07">OrchidTutorials repository</a>.</p>
+<h2 id="first-things-first"><a href="#first-things-first" id="first-things-first" class="anchor"></a>First Things First</h2>
+<p>Orchid is fundamentally created to be flexible and pluggable. The static pages we've been using to build our site is
+actually just a plugin, building on the core framework with an opinionated way to make static pages! This allows you to
+pick-and-choose exactly the features you want to use in your site, and not be given a ton of stuff you'll never use.</p>
+<p>Orchid's admin panel is another feature that is available as a plugin, and is not included by default. Let's go ahead
+and get our site set up with this new plugin.</p>
+<h3 id="adding-the-plugin-docs-plugin"><a href="#adding-the-plugin-docs-plugin" id="adding-the-plugin-docs-plugin" class="anchor"></a>Adding the &quot;Plugin Docs&quot; plugin</h3>
+<p>As Orchid is a Java-based framework, it takes full advantage of several well-known tools for managing plugins. Plugins
+are distributed as a normal Maven dependencies, and when included on the classpath are bootstrapped automatically with
+no further configuration needed.</p>
+<p>What this means for you is that adding a single line to your <code>build.gradle</code> is all you need to do to install the admin
+panel. Add the following dependency, and you're good to go!</p>
+<pre><code class="language-groovy">orchidCompile &quot;io.github.javaeden.orchid:OrchidPluginDocs:1.0.0&quot;
+</code></pre>
+<p>You'll need to fully restart Orchid in order for the new dependency to be added, but once it's started back up try
+visiting <a href="http://localhost:8080/admin">http://localhost:8080/admin</a> to see your shiny new admin panel, and then read on
+to learn how to use it!</p>
+<h2 id="admin-panel-features"><a href="#admin-panel-features" id="admin-panel-features" class="anchor"></a>Admin Panel Features</h2>
+<h3 id="collection-inspection"><a href="#collection-inspection" id="collection-inspection" class="anchor"></a>Collection Inspection</h3>
+<p>In the previous tutorials I've shown you how to create links to pages in your site, from both template function and menu
+items. I just told you how to scope your page links so they select exactly the page you expect, which is a unique
+combination of <code>itemId</code> (the page title), <code>collectionId</code> and <code>collectionType</code>.</p>
+<p>I showed you how to find these <code>collectionId</code> and <code>collectionType</code> values for the Pages plugin, but what if I never told
+them to you? How would you ever know what the <code>collectionId</code> and <code>collectionType</code> is? This is the first problem that
+Orchid's admin panel can solve for you.</p>
+<p>Let's start by opening up the &quot;manage panel&quot;, by clicking &quot;Manage&quot; on the top-right of the page. It will open up a popup
+panel that looks like the following:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-01.png" alt="manage panel" /></p>
+<p>There is a lot of cool stuff you can find in this panel, but the important bit is the table to the bottom-right of it.
+The headers of this table are exactly the <code>collectionId</code> and <code>collectionType</code> we didn't know how to find before! You
+knew that you had collections for the &quot;page groups&quot;, but there are several other collections in there too!</p>
+<p>Each plugin that produces pages will also create collections for those pages, and they will all be reflected in this
+list. That means that this table is able to fully capture <em>all</em> collections of pages from <em>all</em> plugins you install or
+create, not just the official Orchid plugins. This fact alone can be quite helpful as it becomes a quick reference for
+finding the exact values needed to filter page links, but there is more to these collections that Orchid's admin panel
+can unlock. Let's click on the &quot;pages, locations&quot; row of that table, you should be taken to a page that looks like this:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-02.png" alt="collection details" /></p>
+<p>There's a lot going on in this page, but let's break it down a bit. It has 4 tabs, but we'll just look at the first one
+for now. I'll get back to the other three tabs in just a bit.</p>
+<p>This page starts with a description of the collection. I mentioned above that the <code>itemId</code> is typically the title of the
+page. This value is actually determined by the collection, and it will be described in this section. So the &quot;manage
+panel&quot; will show you the <code>collectionId</code> and <code>collectionType</code>, and clicking into it will tell you how to link to its'
+<code>itemId</code> which is the last piece needed to uniquely link to a page. There's no magic to locating pages in Orchid, it's
+all easily accessible in the Admin panel!</p>
+<p>Below the description, you will see a list of related collections. These are collections that share a <code>collectionType</code>
+with the one you're currently viewing. A single plugin will typically produce several collections, and they should all
+be related to one another by having a common <code>collectionType</code>. This sidebar makes it easy to explore all collections
+from a single plugin.</p>
+<p>Next to the list of related collections, you'll find a table containing all the pages contained within the current
+collection which are able to be selected individually with a corresponding <code>itemId</code>. These pages show its title (because
+it is commonly used as the <code>itemId</code>), and also its URL so you can be sure you know which page it is. Clicking on any row
+in this table will take you to that page.</p>
+<h3 id="plugin-discovery-and-documentation"><a href="#plugin-discovery-and-documentation" id="plugin-discovery-and-documentation" class="anchor"></a>Plugin Discovery and Documentation</h3>
+<p>Now that we've got an understanding of how to find all collections that your plugins generate, let's find out what other
+kind of information the admin panel offers us.</p>
+<p>In tutorial 5, we learned how Orchid generates your site menus for you, and I introduced a few different menu items that
+are useful for creating dynamic menus. But just like the collections, how would you have been able to find these
+different menu item types if I hadn't told you? And then how would you know what configuration options to use for them
+without me telling you?</p>
+<p>Normally, you would have to go to the documentation for each plugin you're using, and search through it to find the
+exact information you need. But this has several issues: you're trusting that the documentation for that plugin is
+up-to-date, that it contains no errors, and even that the developer even has documentation! But even worse, what if
+you're using an older version of the plugin than is being documented, so that the public documentation is actually
+<em>different</em> from your version? Well then you're completely out-of-luck!</p>
+<p>Fortunately, Orchid does not suffer from any of these problems because the admin panel brings all of this information
+to you automatically, perfectly up-to-date with your current plugins <em>no matter their version</em>. So let's find out where
+to get all this information!</p>
+<p>Click the &quot;hamburger icon&quot; at the top-right of the screen. It will open a drawer that looks like the following:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-03.png" alt="plugin drawer" /></p>
+<p>This drawer contains a list of <em>everything</em> that is registered by <em>all</em> plugins, grouped by their type. There are two
+tabs in this drawer. The first contains the &quot;Common Types&quot;, which are the objects you're most likely to need to
+configure. You'll see categories in there for &quot;pages&quot;, &quot;menu items&quot;, and a few more. The other tab, &quot;All Types&quot; contains
+all these common types, and many other objects that might be of interest to plugin or theme developers.</p>
+<p>But let's click the &quot;Menu Items&quot; row. It will expand to show a list of all menu items that are available, along with a
+short description of each. You'll notice this list includes all of the &quot;link&quot;, &quot;page&quot;, &quot;static pages&quot;, and &quot;page IDs&quot;
+menu items we used in that tutorial. Clicking into one of these items, such as &quot;link&quot;, will take you to a page that
+looks like the following:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-04.png" alt="link menu item" /></p>
+<p>You'll notice that this page includes the same four tabs that were on the collections pages. That's because Orchid uses
+a unified system for managing metadata, which allows everything to be automatically documented in a similar way.</p>
+<p>The first tab is always an &quot;overview&quot; of that item. Menu items will all include a short description to help you
+understand what they do. Some other types of objects, like components, might include code snippets to help you get
+started using them.</p>
+<p>But the magic starts to become apparent on the next two tabs: &quot;own options&quot; and &quot;inherited options&quot;. They both contain a
+table of options for that item, and looks like the following:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-05.png" alt="link menu item" /></p>
+<p>This like tells you exactly what options can be used to set up your &quot;link&quot; menu item. Remember in the menu items
+tutorial I just told you to add the <code>title</code> and <code>url</code> options to configure it correctly? Well this is how you find that
+out! It also includes a short description for each option, and the default value for each of these options so you know
+how it will behave if you don't provide that option. The &quot;inherited options&quot; tab will show you the configurations
+available to all menu item types, not just the &quot;link&quot; type.</p>
+<p>The last tab, &quot;archetypes&quot;, is empty for the &quot;link&quot; menu item. But recall that the previous tutorial showed you how to
+use archetypes to more easily configure batches of static pages all at one, so let's check out this tab on the
+&quot;Static Page&quot; page. You can find it under the &quot;pages&quot; link in the drawer, and the &quot;archetypes&quot; tab should look like the
+following:</p>
+<p class="image-preview"><img src="https://orchid.run/wiki/learn/tutorials/media/admin-06.png" alt="link menu item" /></p>
+<p>This tab shows a table of all the possible Archetypes for each item, if they exist, along with short descriptions of
+each. This will help you to know how you can leverage Archetypes to minimize repeated configurations in your site. This
+list is also ordered such that the archetypes later in the list override those earlier in the list.</p>
+<p>Together, the overview, options, and archetypes for Orchid's various objects give you a complete picture for how to use
+that object to customize your site. Rather than going to the docs websites for all your plugins, Orchid brings all that
+documentation to you in one central location to make it easier than ever to get building your site, and helps you
+discover features that might otherwise be missed.</p>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>There is a lot more than you can do with the admin panel, and different plugin may also include their own unique
+features, but collection inspection and plugin discovery/documentation are definitely the among the best features of
+Orchid's admin panel. I would encourage you to poke around some of the other plugin objects and get comfortable
+navigating the admin panel, because it will be an indispensable tool as you build out your site!</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#first-things-first" class="">
+  
+  First Things First
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#adding-the-plugin-docs-plugin" class="">
+  
+  Adding the &quot;Plugin Docs&quot; plugin
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#admin-panel-features" class="">
+  
+  Admin Panel Features
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#collection-inspection" class="">
+  
+  Collection Inspection
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#plugin-discovery-and-documentation" class="">
+  
+  Plugin Discovery and Documentation
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/amazing-admin-panel 1430608513 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" href="https://orchid.run/wiki/learn/tutorials/all-about-archetypes">
+    <span class="icon"><i class="fas fa-chevron-left"></i></span>
+    All About Archetypes
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/how-to-document-kotlin">
+    How to Document a Kotlin Project
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

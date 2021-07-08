@@ -1,0 +1,874 @@
+
+
+<!DOCTYPE html>
+<html class="">
+<head>
+
+
+
+
+
+
+<meta charset="utf-8"/>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+<meta name="generator" content="Orchid 1.0.0"/>
+<link rel="icon" href="https://orchid.run/favicon.ico">
+
+
+<meta name="robots" content="index, follow">
+
+
+
+<title>Your First Orchid Site</title>
+
+
+<meta name="description" content="Learn the basics of setting up and building an Orchid site with Gradle.">
+
+
+
+
+<link rel="next" href="https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages">
+
+
+<!-- start:inject styles -->
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extraCss.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-tooltip.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/bulma-accordion.min.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/plugins.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/Copper/9af6e4ec/assets/css/extras.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/assets/css/prism-duotone.css"  />
+<link rel="stylesheet" type="text/css" href="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.css"  />
+<!-- end:inject styles -->
+
+
+
+<script>
+    window.site = {"orchidVersion":"1.0.0","baseUrl":"https://orchid.run","environment":"docs","version":"1.0.0"};
+</script>
+
+
+    <!-- start:inject meta-components [head] -->
+    
+
+        
+            
+        
+
+        
+            
+        
+            
+        
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+    <!-- start:inject meta-components [head] -->
+    
+    <!-- end:inject meta-components [head] -->
+
+
+
+
+
+
+
+</head>
+<body class="">
+
+
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+    <!-- start:inject meta-components [bodyStart] -->
+    
+    <!-- end:inject meta-components [bodyStart] -->
+
+
+
+
+
+<div class="columns is-marginless is-desktop">
+
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-mobile is-hidden-touch">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold is-fullheight">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+  <div class="column is-one-third-desktop is-one-quarter-widescreen is-one-fifth-fullhd is-paddingless column-main-left is-hidden-desktop">
+  
+
+
+    
+
+
+<section class="hero is-black is-bold ">
+
+
+<!-- Hero header: will stick at the top -->
+<div class="hero-head" style="padding: 0 1.5rem">
+  <a href="https://orchid.run"><img src="https://orchid.run/assets/svg/orchid/logo_top_dark.svg" style="padding: 40px 40px 0 40px;"></a>
+  <p class="subtitle is-4 has-text-centered">Build and deploy beautiful documentation sites that grow with you</p>
+
+  <div class="columns is-mobile has-text-centered">
+  
+
+
+<div class="column">
+
+  <a class="button is-primary is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started/quickstart">
+    <strong>Quick Start</strong>
+  </a>
+
+</div>
+
+
+
+  
+
+
+<div class="column">
+
+  <a class="button is-light is-fullwidth" href="https://orchid.run/wiki/user-manual/getting-started">
+  Documentation
+  </a>
+
+</div>
+
+
+
+  </div>
+</div>
+
+
+
+
+
+</section>
+
+  </div>
+
+  <div class="column is-two-thirds-desktop is-three-quarters-widescreen is-four-fifths-fullhd is-paddingless column-main-right">
+  
+
+<nav
+  class="navbar is-white border-bottom"
+  role="navigation"
+  aria-label="main navigation"
+>
+  <div class="container">
+    <div class="navbar-brand is-marginless">
+
+      <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbarMain">
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+        <span aria-hidden="true"></span>
+      </a>
+    </div>
+
+    <div class="navbar-menu is-marginless" id="navbarMain">
+      <div class="navbar-start">
+      
+<div class="navbar-item">
+  <form id="search-input" data-orchid-search>
+    <div class="field is-marginless" id="search">
+      <div class="control has-icons-left input-control">
+        <input class="input" type="text" name="query" placeholder="Search Orchid">
+
+        <span class="icon is-small is-left">
+          <i class="fas fa-search"></i>
+        </span>
+
+        <div id="search-progress" data-orchid-search-progress style="display: none;">
+          <div class="loader">Loading...</div>
+        </div>
+      </div>
+    </div>
+    <div id="search-results" data-orchid-search-results style="display: none;">
+      <div class="carat"></div>
+      <b>
+        Search Results
+        <i class="fa fa-times" aria-hidden="true" onclick="$('[data-orchid-search-results]').hide()"></i>
+      </b>
+      <ul></ul>
+    </div>
+  </form>
+</div>
+
+      
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/plugins">
+Plugins
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/themes">
+Themes
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/wiki/learn">
+Tutorials
+</a>
+
+
+  
+
+  
+  
+    
+
+<a class="navbar-item " href="https://orchid.run/showcase">
+Showcase
+</a>
+
+
+  
+
+
+      </div>
+
+      <div class="navbar-end">
+      
+
+<div class="navbar-item social-item">
+  <a class="icon" href="/" title="Home">
+    <i class="fas fa-home"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://github.com/orchidhq/orchid" title="Github">
+    <i class="fab fa-github"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://twitter.com/OrchidSSG" title="Twitter">
+    <i class="fab fa-twitter"></i>
+  </a>
+</div>
+
+<div class="navbar-item social-item">
+  <a class="icon" href="https://gitter.im/JavaEden/Orchid" title="Gitter">
+    <i class="fab fa-gitter"></i>
+  </a>
+</div>
+
+
+      </div>
+    </div>
+  </div>
+</nav>
+
+
+    <div class="textured container" style="width: 100%;">
+    
+    
+    
+    
+      <div class="box">
+      
+<nav class="breadcrumb" aria-label="breadcrumbs">
+<ul>
+
+
+    <li><a href="https://orchid.run/wiki">Wiki</a></li>
+
+
+
+    <li><a href="https://orchid.run/wiki/learn">Tutorials</a></li>
+
+
+
+    <li class="is-active"><a href="https://orchid.run/wiki/learn/tutorials/your-first-orchid-site" aria-current="page">Your First Orchid Site</a></li>
+
+
+</ul>
+</nav>
+
+
+      </div>
+    
+    
+    
+
+    
+    
+      <article style="position: relative; margin-top: 60px; margin-bottom: 60px;" role="main">
+      
+      
+      
+      
+<h2 class="title is-1 is-spaced">Your First Orchid Site</h2>
+<p class="subtitle is-4">Learn the basics of setting up and building an Orchid site with Gradle.</p>
+
+        <hr>
+      
+      
+      
+
+<div class="columns">
+  <div class="column is-three-quarters-desktop">
+  
+    <!-- start:inject components -->
+    
+        
+            
+                
+                    
+                        <div class="content is-medium-tablet is-large-fullhd">
+<h2 id="introduction"><a href="#introduction" id="introduction" class="anchor"></a>Introduction</h2>
+<p>So you've decided to give <a href="https://orchid.run/">Orchid</a> a try? Great! Follow along with this guide to get your
+first Orchid site set up, and learn the basics of what you can do with Orchid.</p>
+<p>You can follow along with this tutorial on your own, or find the source for this in the
+<a href="https://github.com/orchidhq/OrchidTutorials/tree/master/01">OrchidTutorials repository</a>.</p>
+<h2 id="first-steps"><a href="#first-steps" id="first-steps" class="anchor"></a>First Steps</h2>
+<p>Orchid is a tool built in Java and Kotlin, and is designed to be run from Gradle. Gradle is a build tool that uses
+Groovy scripts to configure your build. While it is a super-powerful tool, it can be pretty complex to use and configure
+on its own, which is why Orchid has an official Gradle plugin that makes it easy for you to get up an running with
+Orchid even if you aren't familiar with Gradle.</p>
+<h3 id="install-gradle"><a href="#install-gradle" id="install-gradle" class="anchor"></a>Install Gradle</h3>
+<p>To start, we'll need to install Gradle. If you're on a Mac, installing Gradle is easily done with Homebrew.</p>
+<pre><code class="language-bash"># Install Homebrew
+/usr/bin/ruby -e &quot;$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)&quot;
+
+# Use Homebrew to install Gradle 
+brew install gradle
+</code></pre>
+<p>If you're on another operating system, you can find the steps to install it for your system on Gradle's
+<a href="https://gradle.org/install/">installation page</a>.</p>
+<h3 id="create-a-gradle-project"><a href="#create-a-gradle-project" id="create-a-gradle-project" class="anchor"></a>Create a Gradle project</h3>
+<p>Now that you've got Gradle installed, let's go to an empty directory where you want to work on your Orchid site.</p>
+<pre><code class="language-bash">cd ~/Documents/personal/orchid
+</code></pre>
+<p>In this empty folder, run the following command, which will initialize a Gradle project for you and set up all the files
+and folders it needs.</p>
+<pre><code class="language-bash">gradle init --type java-library
+</code></pre>
+<p>This will make your project look like:</p>
+<pre><code class="language-bash">|__.gradle/
+|__gradle/
+|__gradlew
+|__build.gradle
+|__gradlew.bat
+|__settings.gradle
+|__src
+|____test/
+|____main/
+</code></pre>
+<h3 id="add-orchid-to-your-gradle-project"><a href="#add-orchid-to-your-gradle-project" id="add-orchid-to-your-gradle-project" class="anchor"></a>Add Orchid to your Gradle project</h3>
+<p>Now that we've got our Gradle project set up, let's configure it to be able to run Orchid. First, we'll need to open up
+<code>build.gradle</code> and find the <code>plugins</code> section.</p>
+<pre><code class="language-groovy">plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+}
+</code></pre>
+<p>Let's add the <code>com.eden.orchidPlugin</code> plugin to this block.</p>
+<pre><code class="language-groovy">plugins {
+    // Apply the java-library plugin to add support for Java Library
+    id 'java-library'
+    id 'com.eden.orchidPlugin' version '1.0.0'
+}
+</code></pre>
+<p>By itself, the Orchid Gradle Plugin isn't quite enough to get Orchid running. We'll also need to tell Gradle:</p>
+<ol>
+<li>The Orchid plugins and themes we want to include in our site</li>
+<li>Where it can find those plugins and themes</li>
+<li>Some basic configuration values so Orchid can run properly</li>
+</ol>
+<p>To do this, add the following lines to at the end of <code>build.gradle</code>.</p>
+<pre><code class="language-groovy">// 1. Include desired official Orchid plugins and themes
+dependencies {
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidCore:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidBsDoc:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidPages:1.0.0&quot;
+    orchidCompile &quot;io.github.javaeden.orchid:OrchidAsciidoc:1.0.0&quot;
+}
+
+// 2. Get Orchid from Jcenter
+repositories {
+    mavenCentral()
+}
+
+// 3. Use the 'BsDoc' theme, and view the site locally at 'http://localhost:8080'
+orchid { 
+    theme = &quot;BsDoc&quot;
+    baseUrl = &quot;http://localhost:8080&quot;
+}
+</code></pre>
+<h3 id="run-orchid"><a href="#run-orchid" id="run-orchid" class="anchor"></a>Run Orchid</h3>
+<p>You now have everything you need to run Orchid and view the site. Go back to your terminal and run the following command
+to start Orchid and have it host your site with its local HTTP server so you can preview it.</p>
+<pre><code class="language-bash">gradle orchidServe
+</code></pre>
+<p>After a few seconds, you should be able to visit <a href="http://localhost:8080">http://localhost:8080</a> in your browser to see
+your very first Orchid site!</p>
+<h2 id="whats-really-going-on"><a href="#whats-really-going-on" id="whats-really-going-on" class="anchor"></a>What's Really Going On?</h2>
+<p>After starting Orchid, you'll see a lot of stuff get logged to the console. Let's step briefly through the output so you
+can understand what's going on.</p>
+<pre><code class="language-text">Using the following modules: 
+--------------------
+ * com.eden.orchid.StandardModule
+
+Auto-loaded modules: 
+--------------------
+ * com.eden.orchid.bsdoc.BsDocModule
+ * com.eden.orchid.impl.compilers.markdown.FlexmarkModule
+ * com.eden.orchid.impl.compilers.pebble.PebbleModule
+ * com.eden.orchid.languages.asciidoc.AsciidocModule
+ * com.eden.orchid.pages.PagesModule
+</code></pre>
+<p>This lets you know which plugins are currently being used. Orchid will auto-load any plugin included in your Gradle
+<code>dependencies</code> block, which themselves may include other plugins, and this will let you know exactly what's being used
+in your Orchid site.</p>
+<pre><code class="language-text">Flag values: 
+--------------------
+-adminTheme: Default
+-baseUrl: http://localhost:8080
+-defaultTemplateExtension: peb
+-dest: /path/to/your/site/build/docs/orchid
+-dryDeploy: false
+-environment: debug
+-logLevel: VERBOSE
+-port: 8080
+-src: /path/to/your/site/src/orchid/resources
+-task: serve
+-theme: BsDoc
+-version: unspecified
+</code></pre>
+<p>This shows the command-line flags passed to Orchid from Gradle. This may be helpful for debugging your build,
+especially if it has been run in a CI environment.</p>
+<pre><code class="language-text">[INFO] Orchid: Running Orchid version 1.0.0, site version unspecified in debug environment
+[INFO] OrchidWebserver: Webserver Running at http://localhost:8080
+[INFO] OrchidWebsocket: Websocket running at http://localhost:8081/
+</code></pre>
+<p>This lets you know which version of Orchid you are using, as well as the version of your site. In addition, it will let
+you know which URL your site is currently being served at. By default, this will be <code>localhost:8080</code>, but if that port
+is being used by another process, the port will be changed to the nearest free port.</p>
+<pre><code class="language-text">[INFO] TaskServiceImpl: Build Starting...
+[INFO] GeneratorServiceImpl: Indexing [10000: assets]
+[INFO] GeneratorServiceImpl: Indexing [1000: home]
+[INFO] GeneratorServiceImpl: Indexing [1000: pages]
+[INFO] GeneratorServiceImpl: Indexing [11: sitemap]
+[INFO] GeneratorServiceImpl: Generating [10000: assets]
+[INFO] GeneratorServiceImpl: Generating [1000: home]
+[INFO] GeneratorServiceImpl: Generating [1000: pages]
+[INFO] GeneratorServiceImpl: Generating [11: sitemap]
+</code></pre>
+<p>Orchid works in two distinct phases: the <em>indexing</em> phase and the <em>generation</em> phase. During the indexing phase, Orchid
+will let all plugins work together to build a model of what your final site will look like. During the generating phase,
+Orchid returns control to plugins to render all of their pages. This section of output shows you which plugins are being
+indexed and generated in which order.</p>
+<p>By keeping two distinct phases, Orchid can give all plugins a great way to work together to build up your site, but also
+gives everything a guarantee that all the data it needs is there before any pages are rendered. This may not make much
+sense right now, but as you get more familiar with Orchid you will start to see the power that this really gives that no
+other static site generator can match.</p>
+<p>The result of all this is that Orchid takes data from many different places (many different plugins), and generates an
+entire website in your destination directory (the <code>-d</code> flag) as static HTML, Javascript, CSS, and other related static
+assets.</p>
+<pre><code class="language-text">Build Metrics: 
+┌───────┬────────────┬───────────────┬─────────────────┬───────────────────────────┬─────────────────────────────┐
+│       │ Page Count │ Indexing Time │ Generation Time │ Mean Page Generation Time │ Median Page Generation Time │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│  home │     2      │     50ms      │      334ms      │           166ms           │            322ms            │
+├───────┼────────────┼───────────────┼─────────────────┼───────────────────────────┼─────────────────────────────┤
+│ TOTAL │          2 │         114ms │           355ms │                     166ms │                       322ms │
+└───────┴────────────┴───────────────┴─────────────────┴───────────────────────────┴─────────────────────────────┘
+
+Build Complete
+Generated 2 pages in 470ms
+
+Webserver Running at http://localhost:8080
+Hit [CTRL-C] to stop the server and quit Orchid
+</code></pre>
+<p>Orchid is a very fast static site generator, with build speed on par with the best tools on the market, despite being so
+much more powerful and flexible. Generation time is primarily limited by the raw speed of the template engine rendering
+your pages, but this table may help you debug slow builds. Here you can see how many pages Orchid generated, and also
+the total time taken indexing and rendering for each plugin.</p>
+<p>The <code>home</code> plugin is typically the slowest just because it includes the first page rendered and so the template cache
+warm-up time is included in its generation time. For all plugins, you should expect a mean and median generation time to
+be pretty similar, and if they are vastly different you may need to see if any of the pages from that plugin are causing
+issues. This can also help you identify entire plugins that are running very slowly.</p>
+<p>The larger sites get, the longer the total build time is, but the mean page generation time tends to drop. This is in
+contrast to most other tools which per-page generation times tend to <em>increase significantly</em> for really large sites. It
+is common for the mean generation time to be closer to 20ms or less for individual pages, which means a site of
+thousands of pages could easily be built in just a couple minutes, while other tools could easily take 10 minutes or
+more (if they can even handle sites of that scale!).</p>
+<h2 id="conclusion"><a href="#conclusion" id="conclusion" class="anchor"></a>Conclusion</h2>
+<p>So now that we have a bit of an idea of how to start running Orchid, let's open up
+<a href="http://localhost:8080">http://localhost:8080</a> in our browser. Orchid has built your site into the <code>build/docs/orchid/</code>
+directory and is serving these pages directly with its own lightweight embedded HTTP server. Since an Orchid site is
+just a bunch of files on disk being served directly (with no additional server-side processing), you can even stop the
+Orchid process and start any HTTP server (like <a href="https://github.com/indexzero/http-server">this one</a>) in that directory
+and you'd get the same result.</p>
+<p>Congratulations, you now have a basic Orchid site up and running! Let's go back over what we learned:</p>
+<ol>
+<li>Orchid is a command-line tool that is run through Gradle. Orchid provides a plugin for Gradle so that it is easy to
+get set up and running Orchid without needing to know much about Gradle.</li>
+<li>Orchid is a <em>static site generator</em>, which is a tool that takes content and generates and entire website consisting
+of only HTML, CSS, and other static files that can be hosted from any webserver.</li>
+<li>Orchid uses a series of plugins to generate your site, and has a unique way of managing the build lifecycle that
+actually improves per-page generation times as your site grows, unlike most other tools which tend to slow down
+dramatically.</li>
+</ol>
+<p>Stay tuned for more tutorials on how to use Orchid. We will take what we learned here and expand upon that to learn how
+to add your first pages to start customizing your site and make it unique.</p>
+
+</div>
+
+                    
+                
+            
+        
+    
+    <!-- end:inject components -->
+
+
+  </div>
+  
+    <div class="column is-one-quarter is-hidden-touch">
+      <div class="sticky-menu" style="position: sticky; top: 30px;">
+  
+  
+    
+<p class="menu-label">In This Page</p>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#introduction" class="">
+  
+  Introduction
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    
+<ul class="menu-list">
+
+  
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#first-steps" class="">
+  
+  First Steps
+  </a>
+</li>
+
+
+
+  <li>
+    <ul>
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#install-gradle" class="">
+  
+  Install Gradle
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#create-a-gradle-project" class="">
+  
+  Create a Gradle project
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#add-orchid-to-your-gradle-project" class="">
+  
+  Add Orchid to your Gradle project
+  </a>
+</li>
+
+
+    
+      
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#run-orchid" class="">
+  
+  Run Orchid
+  </a>
+</li>
+
+
+    
+    </ul>
+  </li>
+</ul>
+
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#whats-really-going-on" class="">
+  
+  What&#39;s Really Going On?
+  </a>
+</li>
+
+</ul>
+  
+
+  
+  
+    <ul class="menu-list">
+
+<li>
+  <!-- page=https://orchid.run/wiki/learn/tutorials/your-first-orchid-site 2030216407 -->
+  <!-- menuItem.page=  -->
+  <a href="#conclusion" class="">
+  
+  Conclusion
+  </a>
+</li>
+
+</ul>
+  
+
+</div>
+    </div>
+  
+</div>
+
+      
+      </article>
+    
+      <div class="grow"></div>
+      <div class="page-footer">
+      
+        <nav class="pagination is-rounded footer-pagination" role="navigation" aria-label="pagination">
+
+  <a class="pagination-previous" disabled>
+    <span class="inner">
+      <span class="icon"><i class="fas fa-chevron-left"></i></span>
+      Previous
+    </span>
+  </a>
+
+
+
+  <a class="pagination-next" href="https://orchid.run/wiki/learn/tutorials/homepage-and-static-pages">
+    Homepage and Static Pages
+    <span class="icon"><i class="fas fa-chevron-right"></i></span>
+  </a>
+
+</nav>
+
+<footer class="footer border-top">
+  <div class="content is-small">
+  <div class="columns is-mobile">
+  <div class="column has-text-left">
+    <p>&copy; 2017-2021 Orchid</p>
+    <p>Site proudly built with <a href="https://orchid.run/">Orchid</a>.<br></p>
+  </div>
+  <div class="column has-text-right is-hidden-mobile">
+    <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+      orchidhq/orchid</a>
+    <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+  </div>
+  <div class="column has-text-right is-hidden-tablet">
+    <p>
+      <a href="https://github.com/orchidhq/orchid" style="margin-right: 10px;"><i class="fa fab fa-github"></i>
+        orchidhq/orchid</a>
+    </p>
+    <p>
+      <a href="https://twitter.com/OrchidSSG" style="margin-right: 10px;"><i class="fa fab fa-twitter"></i> @OrchidSSG</a>
+    </p>
+  </div>
+</div>
+
+<p>
+  <b>See Also:</b>
+</p>
+<p>
+  <span class="tag is-light"><a href="https://orchid.run/">Orchid</a></span>
+  <span class="tag is-light"><a href="https://javaeden.github.io/Clog/">Clog</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/krow/">Krow</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kudzu/">Kudzu</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/trellis/">Trellis</a></span>
+  <span class="tag is-light"><a href="https://copper-leaf.github.io/kodiak/">Kodiak</a></span>
+</p>
+
+  </div>
+</footer>
+
+      
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+
+        
+            
+        
+
+        
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+    <!-- start:inject meta-components [bodyEnd] -->
+    
+    <!-- end:inject meta-components [bodyEnd] -->
+
+
+
+
+<!-- start:inject scripts -->
+<script defer data-search-pseudo-elements="true" src="https://orchid.run/Copper/9af6e4ec/releases/v5.4.0/js/all.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-accordion.min.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/bulma-tabs.js"></script>
+<script  src="https://orchid.run/Copper/9af6e4ec/assets/js/simpleFilter.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/prism.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-clike.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markup-templating.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-kotlin.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-java.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-groovy.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-yaml.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-asciidoc.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-markdown.min.js"></script>
+<script  src="https://orchid.run/ajax/libs/prism/1.17.1/components/prism-twig.min.js"></script>
+<script  src="https://orchid.run/npm/docsearch.js@2/dist/cdn/docsearch.min.js"></script>
+<script >
+
+docsearch({
+    apiKey: 'f597b0a7c1080757a60853addd344aaf',
+    indexName: 'orchid',
+    
+    inputSelector: 'form[data-orchid-search] input[name=query]',
+    debug: false,
+});
+</script>
+<!-- end:inject scripts -->
+
+
+</body>
+</html>

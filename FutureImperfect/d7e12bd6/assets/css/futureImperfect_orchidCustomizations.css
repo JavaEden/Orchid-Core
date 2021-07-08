@@ -1,0 +1,24 @@
+.post.single {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.pagination-single {
+  display: flex;
+  justify-content: center; }
+  .pagination-single .actions.pagination {
+    max-width: 768px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; }
+
+@media screen and (max-width: 480px) {
+  .pagination-single .actions.pagination {
+    flex-direction: column; }
+    .pagination-single .actions.pagination li {
+      padding: 1.5em; }
+      .pagination-single .actions.pagination li a {
+        width: 100%; } }
+
+p > img, p > svg {
+  max-width: 100%; }

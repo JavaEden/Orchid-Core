@@ -1,0 +1,31 @@
+{
+  "ownKey": "home",
+  "ownPages": [
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://orchid.run",
+        "fileName": "",
+        "extension": "html",
+        "usePrettyUrl": true,
+        "link": "https://orchid.run"
+      },
+      "description": "",
+      "title": "Home",
+      "content": ""
+    },
+    {
+      "reference": {
+        "path": "",
+        "baseUrl": "https://orchid.run",
+        "fileName": "404",
+        "extension": "html",
+        "usePrettyUrl": false,
+        "link": "https://orchid.run/404.html"
+      },
+      "description": "",
+      "title": "Not Found",
+      "content": "\n<div class=\"has-text-centered\">\n  <h1 class=\"is-size-1\" style=\"margin-bottom: 30px;\">There's nothing here!<\/h1>\n  <img src=\"https://orchid.run/assets/media/undraw_page_not_found.svg\" alt=\"Not Found\">\n<\/div>\n"
+    }
+  ]
+}

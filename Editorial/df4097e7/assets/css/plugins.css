@@ -1,0 +1,33 @@
+.plugin-card {
+  box-shadow: none;
+  border-radius: 4px;
+  transition: box-shadow 0.2s ease-in-out; }
+  .plugin-card:hover {
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3); }
+
+.plugin-preview {
+  height: 200px;
+  position: relative; }
+  .plugin-preview .summary .title {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    color: white;
+    text-align: center;
+    padding: 4px 12px;
+    font-size: 22px;
+    margin-bottom: 4px;
+    margin-top: 16px; }
+  .plugin-preview .summary .description {
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.35);
+    width: 100%;
+    color: white;
+    text-align: left;
+    padding: 8px 8px;
+    font-size: 16px;
+    bottom: 0; }
+  .plugin-preview img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; }
